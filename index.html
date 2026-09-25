@@ -1,12 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amel Ahriga | Digital Experience Design</title>
+    <title data-i18n="meta.title">Amel Ahriga | Digital Experience Design</title>
     <meta
       name="description"
-      content="Portfolio of Amel Ahriga, a Digital Experience Design student focused on UX, branding, photography, and ethical design."
+      data-i18n-content="meta.description"
+      content="Portfolio van Amel Ahriga, student Digital Experience Design, met werk in fotografie, XD/UI-design en 3D-design."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,290 +20,560 @@
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="#top">Amel Ahriga</a>
-        <nav class="site-nav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <button class="brand" type="button" data-open-home>Amel Ahriga</button>
+        <div class="header-right">
+          <nav
+            class="site-nav"
+            aria-label="Hoofdnavigatie"
+            data-i18n-aria="nav.aria"
+          >
+            <button type="button" data-open-home data-i18n="nav.home">
+              Home
+            </button>
+            <button type="button" data-open-category="xd" data-i18n="cat.xd">
+              XD/UI Design
+            </button>
+            <button type="button" data-open-category="3d" data-i18n="cat.3d">
+              3D Design
+            </button>
+            <button
+              type="button"
+              data-open-category="photography"
+              data-i18n="cat.photo"
+            >
+              Fotografie
+            </button>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+          </nav>
+          <div
+            class="lang-switch"
+            role="group"
+            aria-label="Taal kiezen"
+            data-i18n-aria="lang.aria"
+          >
+            <button type="button" data-set-lang="nl" lang="nl" aria-pressed="true">
+              NL
+            </button>
+            <button type="button" data-set-lang="fr" lang="fr" aria-pressed="false">
+              FR
+            </button>
+            <button type="button" data-set-lang="en" lang="en" aria-pressed="false">
+              EN
+            </button>
+          </div>
+        </div>
       </header>
 
       <main id="top">
+        <!-- ========================= HOME ========================= -->
         <div class="portfolio-home" data-home-view>
           <section class="hero section">
             <div class="hero-copy reveal">
-              <p class="eyebrow">Portfolio</p>
+              <p class="eyebrow" data-i18n="home.eyebrow">Portfolio</p>
               <h1>Amel Ahriga</h1>
-              <p class="subtitle">Digital Experience Design Student</p>
-              <p class="intro">
-                I create thoughtful visual experiences through UX, photography,
-                branding, and a growing sensitivity for design that feels both
-                elegant and human.
+              <p class="subtitle" data-i18n="home.subtitle">
+                Student Digital Experience Design
+              </p>
+              <p class="intro" data-i18n="home.intro">
+                Ik creëer doordachte visuele ervaringen binnen drie
+                disciplines: fotografie, XD/UI-design en 3D-design. Elk
+                project hieronder is gegroepeerd per soort werk, zodat je
+                meteen kunt zien wat je wilt bekijken.
               </p>
             </div>
-            <div class="hero-panel reveal">
-              <div class="hero-orb hero-orb-one"></div>
-              <div class="hero-orb hero-orb-two"></div>
-              <div class="hero-card">
-                <span>Creativity</span>
-                <span>UX Thinking</span>
-                <span>Photography</span>
-                <span>Branding</span>
-              </div>
-            </div>
           </section>
 
-          <section class="section about reveal" id="about">
-            <div class="section-heading">
-              <p class="eyebrow">About</p>
-              <h2>A designer shaped by practice and curiosity.</h2>
-            </div>
-            <p class="section-text">
-              I’m learning through creative projects that challenge me to
-              combine concept, aesthetics, and user experience. My interests
-              move between UX, branding, photography, and ethical design, and
-              each project helps me grow into a more thoughtful and intentional
-              designer.
-            </p>
-          </section>
-
-          <section class="section projects" id="projects">
+          <section
+            class="section categories"
+            aria-label="Projectcategorieën"
+            data-i18n-aria="work.aria"
+          >
             <div class="section-heading reveal">
-              <p class="eyebrow">Projects</p>
-              <h2>Selected creative work.</h2>
+              <p class="eyebrow" data-i18n="work.eyebrow">Werk</p>
+              <h2 data-i18n="work.title">Geselecteerde disciplines.</h2>
             </div>
+            <div class="category-tiles">
+              <button
+                class="category-tile category-tile-xd reveal"
+                type="button"
+                data-open-category="xd"
+                aria-label="Bekijk XD/UI Design-projecten"
+                data-i18n-aria="tile.xd.aria"
+              >
+                <div class="category-tile-media">
+                  <img
+                    src="tile-xd.jpg"
+                    alt="Websitelayout uit het XD/UI-designwerk voor BYSAPHIR.COM."
+                    data-i18n-alt="tile.xd.alt"
+                  />
+                </div>
+                <div class="category-tile-body">
+                  <div class="category-tile-heading">
+                    <h3 data-i18n="cat.xd">XD/UI Design</h3>
+                    <span class="category-tile-arrow" aria-hidden="true">→</span>
+                  </div>
+                  <p data-i18n="tile.xd.text">
+                    Websitelayout, content en digitale presentatie.
+                  </p>
+                  <span class="category-tile-count" data-i18n="count.1"
+                    >1 project</span
+                  >
+                </div>
+              </button>
 
-            <div class="project-grid">
-              <article class="project-card reveal">
-                <button
-                  class="project-card-button"
-                  type="button"
-                  data-open-project="bysaphir"
-                  aria-label="Open BYSAPHIR.COM project details"
-                >
-                  <div class="project-image project-image-saphir">
-                    <img
-                      src="bysaphir.jpg"
-                      alt="BYSAPHIR website collection visual featuring a fashion model and editorial typography."
-                    />
+              <button
+                class="category-tile category-tile-3d reveal"
+                type="button"
+                data-open-category="3d"
+                aria-label="Bekijk 3D Design-projecten"
+                data-i18n-aria="tile.3d.aria"
+              >
+                <div class="category-tile-media">
+                  <img
+                    src="tile-3d.jpg"
+                    alt="3D-render van de Sweet Cloud-foodtruck met vegan suikerspin."
+                    data-i18n-alt="tile.3d.alt"
+                  />
+                </div>
+                <div class="category-tile-body">
+                  <div class="category-tile-heading">
+                    <h3 data-i18n="cat.3d">3D Design</h3>
+                    <span class="category-tile-arrow" aria-hidden="true">→</span>
                   </div>
-                  <div class="project-content">
-                    <p class="project-label">Project 1</p>
-                    <h3>BYSAPHIR.COM</h3>
-                    <p>
-                      A fashion-focused project combining photography, social
-                      media visuals, website content, and product management
-                      within a clean, modern aesthetic.
-                    </p>
-                    <ul
-                      class="project-tags"
-                      aria-label="BYSAPHIR project skills"
-                    >
-                      <li>Photography</li>
-                      <li>Social Media Visuals</li>
-                      <li>Website Content</li>
-                      <li>Product Management</li>
-                    </ul>
-                    <span class="project-link">View process</span>
-                  </div>
-                </button>
-              </article>
+                  <p data-i18n="tile.3d.text">
+                    Merkwerelden gemodelleerd, belicht en gerenderd in 3D.
+                  </p>
+                  <span class="category-tile-count" data-i18n="count.1"
+                    >1 project</span
+                  >
+                </div>
+              </button>
 
-              <article class="project-card reveal">
-                <button
-                  class="project-card-button"
-                  type="button"
-                  data-open-project="soumy-gold"
-                  aria-label="Open Soumy Gold project details"
-                >
-                  <div class="project-image project-image-gold">
-                    <img
-                      src="soumy-gold.jpg"
-                      alt="Soumy Gold skincare packaging photographed on soft white fabric."
-                    />
+              <button
+                class="category-tile category-tile-photography reveal"
+                type="button"
+                data-open-category="photography"
+                aria-label="Bekijk fotografieprojecten"
+                data-i18n-aria="tile.photo.aria"
+              >
+                <div class="category-tile-media">
+                  <img
+                    src="tile-photography.jpg"
+                    alt="Modeportret uit het fotografiewerk voor BYSAPHIR."
+                    data-i18n-alt="tile.photo.alt"
+                  />
+                </div>
+                <div class="category-tile-body">
+                  <div class="category-tile-heading">
+                    <h3 data-i18n="cat.photo">Fotografie</h3>
+                    <span class="category-tile-arrow" aria-hidden="true">→</span>
                   </div>
-                  <div class="project-content">
-                    <p class="project-label">Project 2</p>
-                    <h3>Soumy Gold</h3>
-                    <p>
-                      A luxury skincare concept shaped through skincare
-                      photography, branding, and creative direction with a soft,
-                      premium visual language.
-                    </p>
-                    <ul
-                      class="project-tags"
-                      aria-label="Soumy Gold project skills"
-                    >
-                      <li>Skincare Photography</li>
-                      <li>Branding</li>
-                      <li>Creative Direction</li>
-                      <li>Luxury Aesthetic</li>
-                    </ul>
-                    <span class="project-link">View process</span>
-                  </div>
-                </button>
-              </article>
-
-              <article class="project-card reveal">
-                <button
-                  class="project-card-button"
-                  type="button"
-                  data-open-project="sweet-cloud"
-                  aria-label="Open Sweet Cloud 3D Design project details"
-                >
-                  <div class="project-image project-image-3d">
-                    <img
-                      src="sweet-cloud-3d.jpg"
-                      alt="3D render of the Sweet Cloud vegan cotton candy truck with pink branding, stools and tables."
-                    />
-                  </div>
-                  <div class="project-content">
-                    <p class="project-label">Project 3</p>
-                    <h3>3D Design</h3>
-                    <p>
-                      A self-initiated 3D concept: I invented the brand Sweet
-                      Cloud, a vegan cotton candy food truck, and built its
-                      world in 3D.
-                    </p>
-                    <ul
-                      class="project-tags"
-                      aria-label="3D Design project skills"
-                    >
-                      <li>3D Modelling</li>
-                      <li>Lighting &amp; Rendering</li>
-                      <li>Brand Application</li>
-                      <li>Scene Design</li>
-                    </ul>
-                    <span class="project-link">View process</span>
-                  </div>
-                </button>
-              </article>
+                  <p data-i18n="tile.photo.text">
+                    Mode-, product- en skincarefotografie.
+                  </p>
+                  <span class="category-tile-count" data-i18n="count.2"
+                    >2 projecten</span
+                  >
+                </div>
+              </button>
             </div>
           </section>
 
           <section class="section skills reveal" id="skills">
             <div class="section-heading">
-              <p class="eyebrow">Skills</p>
-              <h2>Tools and strengths.</h2>
+              <p class="eyebrow" data-i18n="skills.eyebrow">Vaardigheden</p>
+              <h2 data-i18n="skills.title">Tools en sterktes.</h2>
             </div>
-            <div class="skill-list" aria-label="Skills list">
+            <div
+              class="skill-list"
+              aria-label="Lijst met vaardigheden"
+              data-i18n-aria="skills.aria"
+            >
               <span>Figma</span>
               <span>Shopify</span>
               <span>Photoshop</span>
               <span>Illustrator</span>
-              <span>Photography</span>
+              <span data-i18n="cat.photo">Fotografie</span>
               <span>UX/UI</span>
-              <span>Branding</span>
+              <span data-i18n="tag.branding">Branding</span>
             </div>
           </section>
         </div>
 
+        <!-- ===================== CATEGORY: PHOTOGRAPHY ===================== -->
+        <section
+          class="category-view section"
+          data-category-view="photography"
+          hidden
+        >
+          <button
+            class="back-button"
+            type="button"
+            data-back-to-home
+            data-i18n="common.backHome"
+          >
+            ← Terug naar portfolio
+          </button>
+
+          <div class="category-header reveal is-visible">
+            <p class="category-count" data-i18n="count.2">2 projecten</p>
+            <h2 data-i18n="cat.photo">Fotografie</h2>
+            <p class="category-intro" data-i18n="photo.intro">
+              Mode- en productfotografie opgebouwd rond zacht, doordacht
+              licht en een strakke, editoriale uitstraling.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal is-visible">
+              <button
+                class="project-card-button"
+                type="button"
+                data-open-project="bysaphir"
+                data-project-category="photography"
+                aria-label="Open de projectdetails van BYSAPHIR.COM"
+                data-i18n-aria="card.saphir.aria"
+              >
+                <div class="project-image project-image-saphir">
+                  <img
+                    src="bysaphir.jpg"
+                    alt="Collectiebeeld van de BYSAPHIR-website met een model en editoriale typografie."
+                    data-i18n-alt="card.saphir.photo.alt"
+                  />
+                </div>
+                <div class="project-content">
+                  <p class="project-label" data-i18n="cat.photo">Fotografie</p>
+                  <h3>BYSAPHIR.COM</h3>
+                  <p data-i18n="card.saphir.photo.text">
+                    Een modeproject dat fotografie, socialemediavisuals,
+                    websitecontent en productbeheer combineert in een strakke,
+                    moderne esthetiek.
+                  </p>
+                  <ul
+                    class="project-tags"
+                    aria-label="Vaardigheden in het BYSAPHIR-project"
+                    data-i18n-aria="card.saphir.tagsAria"
+                  >
+                    <li data-i18n="cat.photo">Fotografie</li>
+                    <li data-i18n="tag.social">Socialemediavisuals</li>
+                    <li data-i18n="tag.webContent">Websitecontent</li>
+                    <li data-i18n="tag.product">Productbeheer</li>
+                  </ul>
+                  <span class="project-link" data-i18n="common.viewProcess"
+                    >Bekijk het proces</span
+                  >
+                </div>
+              </button>
+            </article>
+
+            <article class="project-card reveal is-visible">
+              <button
+                class="project-card-button"
+                type="button"
+                data-open-project="soumy-gold"
+                data-project-category="photography"
+                aria-label="Open de projectdetails van Soumy Gold"
+                data-i18n-aria="card.gold.aria"
+              >
+                <div class="project-image project-image-gold">
+                  <img
+                    src="soumy-gold.jpg"
+                    alt="Soumy Gold-skincareverpakking gefotografeerd op zachte witte stof."
+                    data-i18n-alt="card.gold.alt"
+                  />
+                </div>
+                <div class="project-content">
+                  <p class="project-label" data-i18n="cat.photo">Fotografie</p>
+                  <h3>Soumy Gold</h3>
+                  <p data-i18n="card.gold.text">
+                    Een luxe skincareconcept vormgegeven via
+                    skincarefotografie, branding en creative direction, met
+                    een zachte, premium beeldtaal.
+                  </p>
+                  <ul
+                    class="project-tags"
+                    aria-label="Vaardigheden in het Soumy Gold-project"
+                    data-i18n-aria="card.gold.tagsAria"
+                  >
+                    <li data-i18n="tag.skincarePhoto">Skincarefotografie</li>
+                    <li data-i18n="tag.branding">Branding</li>
+                    <li data-i18n="tag.creativeDir">Creative direction</li>
+                    <li data-i18n="tag.luxury">Luxe esthetiek</li>
+                  </ul>
+                  <span class="project-link" data-i18n="common.viewProcess"
+                    >Bekijk het proces</span
+                  >
+                </div>
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <!-- ===================== CATEGORY: XD/UI DESIGN ===================== -->
+        <section class="category-view section" data-category-view="xd" hidden>
+          <button
+            class="back-button"
+            type="button"
+            data-back-to-home
+            data-i18n="common.backHome"
+          >
+            ← Terug naar portfolio
+          </button>
+
+          <div class="category-header reveal is-visible">
+            <p class="category-count" data-i18n="count.1">1 project</p>
+            <h2 data-i18n="cat.xd">XD/UI Design</h2>
+            <p class="category-intro" data-i18n="xd.intro">
+              Websitelayout, navigatie en content, gericht op een strakke en
+              minimalistische digitale presentatie.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal is-visible">
+              <button
+                class="project-card-button"
+                type="button"
+                data-open-project="bysaphir"
+                data-project-category="xd"
+                aria-label="Open de projectdetails van BYSAPHIR.COM"
+                data-i18n-aria="card.saphir.aria"
+              >
+                <div class="project-image project-image-saphir">
+                  <img
+                    src="bysaphir.jpg"
+                    alt="Homepage van de BYSAPHIR-website met navigatie, hero-tekst en productfotografie."
+                    data-i18n-alt="card.saphir.xd.alt"
+                  />
+                </div>
+                <div class="project-content">
+                  <p class="project-label" data-i18n="cat.xd">XD/UI Design</p>
+                  <h3>BYSAPHIR.COM</h3>
+                  <p data-i18n="card.saphir.xd.text">
+                    Websitecontent, layout en productbeheer voor een
+                    mode-webshop, gebouwd voor een strakke en moderne
+                    shopervaring.
+                  </p>
+                  <ul
+                    class="project-tags"
+                    aria-label="Vaardigheden in het BYSAPHIR-project"
+                    data-i18n-aria="card.saphir.tagsAria"
+                  >
+                    <li data-i18n="tag.webContent">Websitecontent</li>
+                    <li data-i18n="tag.layout">Layout</li>
+                    <li data-i18n="tag.product">Productbeheer</li>
+                    <li>Shopify</li>
+                  </ul>
+                  <span class="project-link" data-i18n="common.viewProcess"
+                    >Bekijk het proces</span
+                  >
+                </div>
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <!-- ===================== CATEGORY: 3D DESIGN ===================== -->
+        <section class="category-view section" data-category-view="3d" hidden>
+          <button
+            class="back-button"
+            type="button"
+            data-back-to-home
+            data-i18n="common.backHome"
+          >
+            ← Terug naar portfolio
+          </button>
+
+          <div class="category-header reveal is-visible">
+            <p class="category-count" data-i18n="count.1">1 project</p>
+            <h2 data-i18n="cat.3d">3D Design</h2>
+            <p class="category-intro" data-i18n="3d.intro">
+              Merkwerelden bedacht, gemodelleerd en belicht in 3D, van eerste
+              concept tot eindrender.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card reveal is-visible">
+              <button
+                class="project-card-button"
+                type="button"
+                data-open-project="sweet-cloud"
+                data-project-category="3d"
+                aria-label="Open de projectdetails van Sweet Cloud 3D Design"
+                data-i18n-aria="card.cloud.aria"
+              >
+                <div class="project-image project-image-3d">
+                  <img
+                    src="sweet-cloud-3d.jpg"
+                    alt="3D-render van de Sweet Cloud-truck met vegan suikerspin, roze branding, krukken en tafels."
+                    data-i18n-alt="card.cloud.alt"
+                  />
+                </div>
+                <div class="project-content">
+                  <p class="project-label" data-i18n="cat.3d">3D Design</p>
+                  <h3>Sweet Cloud</h3>
+                  <p data-i18n="card.cloud.text">
+                    Een eigen 3D-concept: ik bedacht het merk Sweet Cloud, een
+                    foodtruck met vegan suikerspin, en bouwde zijn wereld in
+                    3D.
+                  </p>
+                  <ul
+                    class="project-tags"
+                    aria-label="Vaardigheden in het 3D Design-project"
+                    data-i18n-aria="card.cloud.tagsAria"
+                  >
+                    <li data-i18n="tag.modelling">3D-modelleren</li>
+                    <li data-i18n="tag.lighting">Belichting &amp; rendering</li>
+                    <li data-i18n="tag.brandApp">Merktoepassing</li>
+                    <li data-i18n="tag.scene">Scèneontwerp</li>
+                  </ul>
+                  <span class="project-link" data-i18n="common.viewProcess"
+                    >Bekijk het proces</span
+                  >
+                </div>
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <!-- ===================== PROJECT: BYSAPHIR ===================== -->
         <section
           class="project-detail section"
           data-project-view="bysaphir"
           hidden
         >
-          <button class="back-button" type="button" data-back-to-home>
-            Back to portfolio
+          <button
+            class="back-button"
+            type="button"
+            data-back-to-category
+            data-i18n="common.back"
+          >
+            ← Terug
           </button>
 
           <div class="detail-hero reveal is-visible">
             <div class="detail-copy">
-              <p class="eyebrow">Project detail</p>
+              <p class="eyebrow" data-i18n="common.projectDetail">
+                Projectdetail
+              </p>
               <h2>BYSAPHIR.COM</h2>
-              <p class="section-text">
-                A fashion content project focused on creating a polished visual
-                identity across photography, social media, website content, and
-                product presentation.
+              <p class="section-text" data-i18n="saphir.lead">
+                Een modecontentproject gericht op een verzorgde visuele
+                identiteit in fotografie, sociale media, websitecontent en
+                productpresentatie.
               </p>
             </div>
             <div class="detail-image-frame">
               <img
                 src="bysaphir.jpg"
-                alt="BYSAPHIR website collection visual featuring a fashion model and editorial typography."
+                alt="Collectiebeeld van de BYSAPHIR-website met een model en editoriale typografie."
+                data-i18n-alt="card.saphir.photo.alt"
               />
             </div>
           </div>
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Project intro</p>
-              <h2>Overview</h2>
+              <p class="eyebrow" data-i18n="common.projectIntro">
+                Projectintro
+              </p>
+              <h2 data-i18n="common.overview">Overzicht</h2>
             </div>
             <div class="detail-meta-grid">
               <article class="detail-meta-card">
-                <p class="meta-label">Project name</p>
+                <p class="meta-label" data-i18n="common.projectName">
+                  Projectnaam
+                </p>
                 <p>BYSAPHIR.COM</p>
               </article>
               <article class="detail-meta-card">
-                <p class="meta-label">Short description</p>
-                <p>
-                  A contemporary fashion project combining content creation and
-                  digital presentation for an elegant online brand experience.
+                <p class="meta-label" data-i18n="common.shortDesc">
+                  Korte beschrijving
+                </p>
+                <p data-i18n="saphir.shortDesc">
+                  Een eigentijds modeproject dat contentcreatie en digitale
+                  presentatie combineert voor een elegante online
+                  merkervaring.
                 </p>
               </article>
               <article class="detail-meta-card">
-                <p class="meta-label">My role</p>
-                <p>
-                  Photographer, content creator, visual curator, and product
-                  content manager.
+                <p class="meta-label" data-i18n="common.role">Mijn rol</p>
+                <p data-i18n="saphir.role">
+                  Fotograaf, contentcreator, visual curator en
+                  productcontentmanager.
                 </p>
               </article>
               <article class="detail-meta-card">
-                <p class="meta-label">Tools used</p>
-                <p>Photoshop, Shopify content updates, camera work</p>
+                <p class="meta-label" data-i18n="common.tools">
+                  Gebruikte tools
+                </p>
+                <p data-i18n="saphir.tools">
+                  Photoshop, Shopify-contentupdates, camerawerk
+                </p>
               </article>
             </div>
           </div>
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Process</p>
-              <h2>From concept to content.</h2>
+              <p class="eyebrow" data-i18n="common.process">Proces</p>
+              <h2 data-i18n="saphir.processTitle">Van concept tot content.</h2>
             </div>
             <div class="process-grid">
               <article class="process-card">
-                <p class="meta-label">Idea / goal</p>
-                <p>
-                  Build a fashion presentation that felt refined, wearable, and
-                  visually aligned with the identity of the brand.
+                <p class="meta-label" data-i18n="common.idea">Idee / doel</p>
+                <p data-i18n="saphir.idea">
+                  Een modepresentatie bouwen die verfijnd en draagbaar
+                  aanvoelt en visueel aansluit bij de identiteit van het merk.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Research / inspiration</p>
-                <p>
-                  I looked at modest fashion photography, editorial ecommerce,
-                  and elegant online boutiques to define a clear visual tone.
+                <p class="meta-label" data-i18n="common.research">
+                  Onderzoek / inspiratie
+                </p>
+                <p data-i18n="saphir.research">
+                  Ik bekeek modest-fashionfotografie, editoriale e-commerce en
+                  elegante online boetieks om een duidelijke visuele toon te
+                  bepalen.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Design direction</p>
-                <p>
-                  The direction focused on minimal layouts, soft neutral tones,
-                  and imagery that balanced style, clarity, and product appeal.
+                <p class="meta-label" data-i18n="common.direction">
+                  Designrichting
+                </p>
+                <p data-i18n="saphir.direction">
+                  De richting focuste op minimalistische layouts, zachte
+                  neutrale tinten en beelden die stijl, helderheid en
+                  productaantrekkingskracht in balans brengen.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Creation / production</p>
-                <p>
-                  I worked on fashion photography, social media visuals, website
-                  content, product management, and Shopify content updates.
+                <p class="meta-label" data-i18n="common.creation">
+                  Creatie / productie
+                </p>
+                <p data-i18n="saphir.creation">
+                  Ik werkte aan modefotografie, socialemediavisuals,
+                  websitecontent, productbeheer en Shopify-contentupdates.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Final result</p>
-                <p>
-                  The final outcome was a more coherent fashion presence with
-                  stronger imagery and a cleaner digital presentation.
+                <p class="meta-label" data-i18n="common.result">
+                  Eindresultaat
+                </p>
+                <p data-i18n="saphir.result">
+                  Het eindresultaat was een coherentere modeaanwezigheid met
+                  sterkere beelden en een strakkere digitale presentatie.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">What I learned</p>
-                <p>
-                  I learned how much consistency matters when photography,
-                  product information, and website presentation all work
-                  together.
+                <p class="meta-label" data-i18n="common.learned">
+                  Wat ik geleerd heb
+                </p>
+                <p data-i18n="saphir.learned">
+                  Ik leerde hoe belangrijk consistentie is wanneer fotografie,
+                  productinformatie en websitepresentatie allemaal
+                  samenwerken.
                 </p>
               </article>
             </div>
@@ -310,49 +581,52 @@
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Images</p>
-              <h2>Visual process.</h2>
+              <p class="eyebrow" data-i18n="common.images">Beelden</p>
+              <h2 data-i18n="common.visualProcess">Visueel proces.</h2>
             </div>
             <div class="detail-gallery">
               <figure class="gallery-card gallery-visual gallery-visual-tall">
                 <img
                   src="bysaphir-moodboard.png"
-                  alt="BYSAPHIR inspiration board with neutral fashion references, layout ideas, and soft color tones."
+                  alt="Inspiratiebord voor BYSAPHIR met neutrale modereferenties, layoutideeën en zachte kleurtinten."
+                  data-i18n-alt="saphir.moodboardAlt"
                 />
                 <figcaption>
-                  <span>Moodboard / inspiration</span>
-                  <p>
-                    I searched for inspiration on Pinterest and fashion websites
-                    to find a modern and minimal aesthetic for the visuals and
-                    website.
+                  <span data-i18n="common.moodboard">Moodboard / inspiratie</span>
+                  <p data-i18n="saphir.moodboard">
+                    Ik zocht inspiratie op Pinterest en modewebsites om een
+                    moderne en minimalistische esthetiek te vinden voor de
+                    visuals en de website.
                   </p>
                 </figcaption>
               </figure>
               <figure class="gallery-card gallery-visual gallery-visual-tall">
                 <img
                   src="bysaphir-progress.jpeg"
-                  alt="Behind-the-scenes BYSAPHIR photography setup with camera, tripod, and studio backdrop."
+                  alt="Behind the scenes van een BYSAPHIR-fotoshoot met camera, statief en studioachtergrond."
+                  data-i18n-alt="saphir.wipAlt"
                 />
                 <figcaption>
-                  <span>Work in progress</span>
-                  <p>
-                    I started taking photos with models and experimented with
-                    different poses, lighting and compositions to create content
-                    for the brand.
+                  <span data-i18n="common.wip">Work in progress</span>
+                  <p data-i18n="saphir.wip">
+                    Ik begon foto's te maken met modellen en experimenteerde
+                    met verschillende poses, belichting en composities om
+                    content voor het merk te creëren.
                   </p>
                 </figcaption>
               </figure>
               <figure class="gallery-card gallery-visual">
                 <img
                   src="bysaphir.jpg"
-                  alt="Final BYSAPHIR collection visual."
+                  alt="Eindbeeld van de BYSAPHIR-collectie."
+                  data-i18n-alt="saphir.finalAlt"
                 />
                 <figcaption>
-                  <span>Final visual</span>
-                  <p>
-                    I updated the website homepage, added new products and
-                    worked on the final visual content for the website and
-                    social media.
+                  <span data-i18n="common.finalVisual">Eindbeeld</span>
+                  <p data-i18n="saphir.final">
+                    Ik heb de homepage van de website vernieuwd, nieuwe
+                    producten toegevoegd en gewerkt aan de uiteindelijke
+                    visuele content voor de website en sociale media.
                   </p>
                 </figcaption>
               </figure>
@@ -361,126 +635,161 @@
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Reflection</p>
-              <h2>Personal growth</h2>
+              <p class="eyebrow" data-i18n="common.reflection">Reflectie</p>
+              <h2 data-i18n="common.growth">Persoonlijke groei</h2>
             </div>
             <div class="reflection-card">
-              <p>
-                One of the challenges in this project was balancing aesthetics
-                with practical content needs, especially when imagery, website
-                updates, and product presentation all needed to stay aligned. I
-                learned how to think more holistically about a brand experience,
-                not only as visuals but also as structure and consistency. This
-                project helped me grow in creative direction, content planning,
-                and confidence in shaping a more complete digital fashion story.
+              <p data-i18n="saphir.reflection">
+                Een van de uitdagingen in dit project was het evenwicht vinden
+                tussen esthetiek en praktische contentnoden, vooral wanneer
+                beelden, website-updates en productpresentatie op één lijn
+                moesten blijven. Ik leerde holistischer na te denken over een
+                merkervaring, niet alleen als visuals maar ook als structuur
+                en consistentie. Dit project hielp me groeien in creative
+                direction, contentplanning en zelfvertrouwen om een
+                vollediger digitaal modeverhaal vorm te geven.
               </p>
             </div>
           </div>
         </section>
 
+        <!-- ===================== PROJECT: SOUMY GOLD ===================== -->
         <section
           class="project-detail section"
           data-project-view="soumy-gold"
           hidden
         >
-          <button class="back-button" type="button" data-back-to-home>
-            Back to portfolio
+          <button
+            class="back-button"
+            type="button"
+            data-back-to-category
+            data-i18n="common.back"
+          >
+            ← Terug
           </button>
 
           <div class="detail-hero reveal is-visible">
             <div class="detail-copy">
-              <p class="eyebrow">Project detail</p>
+              <p class="eyebrow" data-i18n="common.projectDetail">
+                Projectdetail
+              </p>
               <h2>Soumy Gold</h2>
-              <p class="section-text">
-                A skincare-focused branding project exploring luxury imagery,
-                careful styling, and a softer premium visual direction.
+              <p class="section-text" data-i18n="gold.lead">
+                Een brandingproject rond skincare dat luxe beelden,
+                zorgvuldige styling en een zachtere, premium visuele richting
+                verkent.
               </p>
             </div>
             <div class="detail-image-frame">
               <img
                 src="soumy-gold.jpg"
-                alt="Soumy Gold skincare packaging photographed on soft white fabric."
+                alt="Soumy Gold-skincareverpakking gefotografeerd op zachte witte stof."
+                data-i18n-alt="card.gold.alt"
               />
             </div>
           </div>
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Project intro</p>
-              <h2>Overview</h2>
+              <p class="eyebrow" data-i18n="common.projectIntro">
+                Projectintro
+              </p>
+              <h2 data-i18n="common.overview">Overzicht</h2>
             </div>
             <div class="detail-meta-grid">
               <article class="detail-meta-card">
-                <p class="meta-label">Project name</p>
+                <p class="meta-label" data-i18n="common.projectName">
+                  Projectnaam
+                </p>
                 <p>Soumy Gold</p>
               </article>
               <article class="detail-meta-card">
-                <p class="meta-label">Short description</p>
-                <p>
-                  A luxury skincare concept developed through photography,
-                  branding, and creative direction.
+                <p class="meta-label" data-i18n="common.shortDesc">
+                  Korte beschrijving
+                </p>
+                <p data-i18n="gold.shortDesc">
+                  Een luxe skincareconcept ontwikkeld via fotografie, branding
+                  en creative direction.
                 </p>
               </article>
               <article class="detail-meta-card">
-                <p class="meta-label">My role</p>
-                <p>
-                  Photographer, brand thinker, and creative director for the
-                  project’s visual identity.
+                <p class="meta-label" data-i18n="common.role">Mijn rol</p>
+                <p data-i18n="gold.role">
+                  Fotograaf, merkdenker en creative director voor de visuele
+                  identiteit van het project.
                 </p>
               </article>
               <article class="detail-meta-card">
-                <p class="meta-label">Tools used</p>
-                <p>Photoshop, camera work, branding research, visual styling</p>
+                <p class="meta-label" data-i18n="common.tools">
+                  Gebruikte tools
+                </p>
+                <p data-i18n="gold.tools">
+                  Photoshop, camerawerk, merkonderzoek, visuele styling
+                </p>
               </article>
             </div>
           </div>
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Process</p>
-              <h2>Building a luxury skincare feel.</h2>
+              <p class="eyebrow" data-i18n="common.process">Proces</p>
+              <h2 data-i18n="gold.processTitle">
+                Een luxe skincaregevoel opbouwen.
+              </h2>
             </div>
             <div class="process-grid">
               <article class="process-card">
-                <p class="meta-label">Idea / goal</p>
-                <p>
-                  Create a skincare concept that felt calm, premium, and
-                  carefully crafted through image and branding.
+                <p class="meta-label" data-i18n="common.idea">Idee / doel</p>
+                <p data-i18n="gold.idea">
+                  Een skincareconcept creëren dat rustig, premium en
+                  zorgvuldig gemaakt aanvoelt via beeld en branding.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Research / inspiration</p>
-                <p>
-                  I explored luxury skincare campaigns, refined packaging, and
-                  soft visual worlds that communicate quality and care.
+                <p class="meta-label" data-i18n="common.research">
+                  Onderzoek / inspiratie
+                </p>
+                <p data-i18n="gold.research">
+                  Ik verkende luxe skincarecampagnes, verfijnde verpakkingen
+                  en zachte visuele werelden die kwaliteit en zorg uitstralen.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Design direction</p>
-                <p>
-                  The direction combined gold accents, soft light, clean
-                  composition, and a more elegant beauty-oriented atmosphere.
+                <p class="meta-label" data-i18n="common.direction">
+                  Designrichting
+                </p>
+                <p data-i18n="gold.direction">
+                  De richting combineerde gouden accenten, zacht licht,
+                  strakke compositie en een elegantere, beautygerichte sfeer.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Creation / production</p>
-                <p>
-                  I developed skincare photography, branding ideas, and creative
-                  direction to shape a luxury visual style.
+                <p class="meta-label" data-i18n="common.creation">
+                  Creatie / productie
+                </p>
+                <p data-i18n="gold.creation">
+                  Ik ontwikkelde skincarefotografie, brandingideeën en
+                  creative direction om een luxe visuele stijl vorm te geven.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Final result</p>
-                <p>
-                  The final result communicates a premium skincare identity with
-                  a softer and more elevated visual presence.
+                <p class="meta-label" data-i18n="common.result">
+                  Eindresultaat
+                </p>
+                <p data-i18n="gold.result">
+                  Het eindresultaat communiceert een premium
+                  skincare-identiteit met een zachtere en verfijndere visuele
+                  uitstraling.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">What I learned</p>
-                <p>
-                  I learned how subtle details like material, lighting, and
-                  composition can strongly influence the feeling of a brand.
+                <p class="meta-label" data-i18n="common.learned">
+                  Wat ik geleerd heb
+                </p>
+                <p data-i18n="gold.learned">
+                  Ik leerde hoe subtiele details zoals materiaal, belichting
+                  en compositie het gevoel van een merk sterk kunnen
+                  beïnvloeden.
                 </p>
               </article>
             </div>
@@ -488,8 +797,8 @@
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Images</p>
-              <h2>Visual process.</h2>
+              <p class="eyebrow" data-i18n="common.images">Beelden</p>
+              <h2 data-i18n="common.visualProcess">Visueel proces.</h2>
             </div>
             <div class="detail-gallery detail-gallery-soumy">
               <figure
@@ -497,13 +806,14 @@
               >
                 <img
                   src="soumy-gold-moodboard.png"
-                  alt="Soumy Gold inspiration board with minimal skincare references and clean product photography."
+                  alt="Inspiratiebord voor Soumy Gold met minimalistische skincarereferenties en strakke productfotografie."
+                  data-i18n-alt="gold.moodboardAlt"
                 />
                 <figcaption>
-                  <span>Moodboard / inspiration</span>
-                  <p>
-                    I searched for minimalistic inspiration because the client
-                    wanted a clean and refined visual style for the brand.
+                  <span data-i18n="common.moodboard">Moodboard / inspiratie</span>
+                  <p data-i18n="gold.moodboard">
+                    Ik zocht minimalistische inspiratie omdat de klant een
+                    strakke en verfijnde visuele stijl voor het merk wilde.
                   </p>
                 </figcaption>
               </figure>
@@ -512,35 +822,37 @@
               >
                 <img
                   src="soumy-gold-progress.png"
-                  alt="Soumy Gold product test visuals shown to explore the photography style before the final shoot."
+                  alt="Testbeelden van Soumy Gold-producten om de fotografiestijl te verkennen vóór de definitieve shoot."
+                  data-i18n-alt="gold.wipAlt"
                 />
                 <figcaption>
-                  <span>Work in progress</span>
-                  <p>
-                    Before I started photographing the Soumy Gold products, I
-                    first showed the client skincare test visuals to see if this
-                    soft and minimal style matched what they wanted.
+                  <span data-i18n="common.wip">Work in progress</span>
+                  <p data-i18n="gold.wip">
+                    Voordat ik de Soumy Gold-producten begon te fotograferen,
+                    toonde ik de klant eerst skincaretestbeelden om te zien of
+                    deze zachte en minimalistische stijl overeenkwam met wat
+                    ze wilden.
                   </p>
                 </figcaption>
               </figure>
-              <figure
-                class="gallery-card gallery-visual gallery-visual-featured"
-              >
+              <figure class="gallery-card gallery-visual gallery-visual-featured">
                 <img
                   src="soumy-gold.jpg"
-                  alt="Final Soumy Gold skincare visual."
+                  alt="Eindbeeld van Soumy Gold-skincare."
+                  data-i18n-alt="gold.finalAlt"
                 />
                 <figcaption>
-                  <span>Final visual</span>
-                  <p>
-                    This visual represents the final direction created for Soumy
-                    Gold. I worked on the photography, branding and overall
-                    aesthetic to create a clean and luxury skincare identity for
-                    the brand.
+                  <span data-i18n="common.finalVisual">Eindbeeld</span>
+                  <p data-i18n="gold.final">
+                    Dit beeld toont de uiteindelijke richting die voor Soumy
+                    Gold werd gecreëerd. Ik werkte aan de fotografie, de
+                    branding en de algemene esthetiek om een strakke en luxe
+                    skincare-identiteit voor het merk te creëren.
                   </p>
                   <div
                     class="supporting-gallery"
-                    aria-label="Additional Soumy Gold visuals"
+                    aria-label="Extra beelden van Soumy Gold"
+                    data-i18n-aria="gold.supportAria"
                   ></div>
                 </figcaption>
               </figure>
@@ -549,126 +861,159 @@
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Reflection</p>
-              <h2>Personal growth</h2>
+              <p class="eyebrow" data-i18n="common.reflection">Reflectie</p>
+              <h2 data-i18n="common.growth">Persoonlijke groei</h2>
             </div>
             <div class="reflection-card">
-              <p>
-                The most difficult part of this project was creating a luxury
-                feeling without overcomplicating the visuals. I learned to pay
-                more attention to atmosphere, styling, and small visual choices
-                that shape perception. This project helped me grow in branding,
-                visual sensitivity, and in expressing a more intentional
-                creative direction.
+              <p data-i18n="gold.reflection">
+                Het moeilijkste aan dit project was een luxe gevoel creëren
+                zonder de beelden te ingewikkeld te maken. Ik leerde meer
+                aandacht te besteden aan sfeer, styling en kleine visuele
+                keuzes die de perceptie bepalen. Dit project hielp me groeien
+                in branding, visuele gevoeligheid en het uitdrukken van een
+                bewustere creatieve richting.
               </p>
             </div>
           </div>
         </section>
 
+        <!-- ===================== PROJECT: SWEET CLOUD ===================== -->
         <section
           class="project-detail section"
           data-project-view="sweet-cloud"
           hidden
         >
-          <button class="back-button" type="button" data-back-to-home>
-            Back to portfolio
+          <button
+            class="back-button"
+            type="button"
+            data-back-to-category
+            data-i18n="common.back"
+          >
+            ← Terug
           </button>
 
           <div class="detail-hero reveal is-visible">
             <div class="detail-copy">
-              <p class="eyebrow">Project detail</p>
-              <h2>3D Design</h2>
-              <p class="section-text">
-                A personal 3D design project in which I invented a brand, Sweet
-                Cloud, and designed its vegan cotton candy food truck with
-                signage, seating, and a glowing storefront.
+              <p class="eyebrow" data-i18n="common.projectDetail">
+                Projectdetail
+              </p>
+              <h2 data-i18n="cat.3d">3D Design</h2>
+              <p class="section-text" data-i18n="cloud.lead">
+                Een persoonlijk 3D-designproject waarin ik een merk bedacht,
+                Sweet Cloud, en de foodtruck met vegan suikerspin ontwierp,
+                met signalisatie, zitplaatsen en een oplichtende etalage.
               </p>
             </div>
             <div class="detail-image-frame">
               <img
                 src="sweet-cloud-3d.jpg"
-                alt="3D render of the Sweet Cloud vegan cotton candy truck with pink branding, stools and tables."
+                alt="3D-render van de Sweet Cloud-truck met vegan suikerspin, roze branding, krukken en tafels."
+                data-i18n-alt="card.cloud.alt"
               />
             </div>
           </div>
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Project intro</p>
-              <h2>Overview</h2>
+              <p class="eyebrow" data-i18n="common.projectIntro">
+                Projectintro
+              </p>
+              <h2 data-i18n="common.overview">Overzicht</h2>
             </div>
             <div class="detail-meta-grid">
               <article class="detail-meta-card">
-                <p class="meta-label">Project name</p>
-                <p>Sweet Cloud – 3D Design</p>
+                <p class="meta-label" data-i18n="common.projectName">
+                  Projectnaam
+                </p>
+                <p data-i18n="cloud.name">Sweet Cloud – 3D Design</p>
               </article>
               <article class="detail-meta-card">
-                <p class="meta-label">Short description</p>
-                <p>
-                  A self-created concept: a fictional vegan cotton candy brand
-                  that I designed and translated into a 3D food truck scene.
+                <p class="meta-label" data-i18n="common.shortDesc">
+                  Korte beschrijving
+                </p>
+                <p data-i18n="cloud.shortDesc">
+                  Een zelf bedacht concept: een fictief merk van vegan
+                  suikerspin dat ik ontwierp en vertaalde naar een
+                  3D-foodtruckscène.
                 </p>
               </article>
               <article class="detail-meta-card">
-                <p class="meta-label">My role</p>
-                <p>
-                  Concept creator and 3D designer: I invented the brand and
-                  handled modelling, branding, lighting, and final rendering.
+                <p class="meta-label" data-i18n="common.role">Mijn rol</p>
+                <p data-i18n="cloud.role">
+                  Conceptbedenker en 3D-designer: ik bedacht het merk en deed
+                  het modelleren, de branding, de belichting en de
+                  eindrender.
                 </p>
               </article>
               <article class="detail-meta-card">
-                <p class="meta-label">Tools used</p>
-                <p>Blender, 3D modelling, materials, lighting, rendering</p>
+                <p class="meta-label" data-i18n="common.tools">
+                  Gebruikte tools
+                </p>
+                <p data-i18n="cloud.tools">
+                  Blender, 3D-modelleren, materialen, belichting, rendering
+                </p>
               </article>
             </div>
           </div>
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Process</p>
-              <h2>From brand to 3D world.</h2>
+              <p class="eyebrow" data-i18n="common.process">Proces</p>
+              <h2 data-i18n="cloud.processTitle">Van merk tot 3D-wereld.</h2>
             </div>
             <div class="process-grid">
               <article class="process-card">
-                <p class="meta-label">Idea / goal</p>
-                <p>
-                  Invent my own brand and turn it into a memorable 3D pop-up
-                  experience that feels sweet, light, and inviting.
+                <p class="meta-label" data-i18n="common.idea">Idee / doel</p>
+                <p data-i18n="cloud.idea">
+                  Mijn eigen merk bedenken en het omzetten in een memorabele
+                  3D-pop-upervaring die zoet, licht en uitnodigend aanvoelt.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Research / inspiration</p>
-                <p>
-                  I gathered inspiration from food trucks and pastel branded
-                  spaces to imagine how my own brand could live in a space.
+                <p class="meta-label" data-i18n="common.research">
+                  Onderzoek / inspiratie
+                </p>
+                <p data-i18n="cloud.research">
+                  Ik haalde inspiratie uit foodtrucks en pastelkleurige
+                  merkruimtes om me voor te stellen hoe mijn eigen merk in een
+                  ruimte zou kunnen leven.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Design direction</p>
-                <p>
-                  I chose soft pink tones, red accents, rounded shapes, and a
-                  glowing neon-style logo to keep the atmosphere playful.
+                <p class="meta-label" data-i18n="common.direction">
+                  Designrichting
+                </p>
+                <p data-i18n="cloud.direction">
+                  Ik koos zachtroze tinten, rode accenten, afgeronde vormen en
+                  een oplichtend neonlogo om de sfeer speels te houden.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Creation / production</p>
-                <p>
-                  I modelled the truck, sign, tables, stools, and chairs,
-                  applied the branding, and lit the scene for the final render.
+                <p class="meta-label" data-i18n="common.creation">
+                  Creatie / productie
+                </p>
+                <p data-i18n="cloud.creation">
+                  Ik modelleerde de truck, het bord, de tafels, krukken en
+                  stoelen, paste de branding toe en belichtte de scène voor de
+                  eindrender.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">Final result</p>
-                <p>
-                  The final render presents a complete, cohesive brand scene
-                  where the truck and its surroundings tell one story.
+                <p class="meta-label" data-i18n="common.result">
+                  Eindresultaat
+                </p>
+                <p data-i18n="cloud.result">
+                  De eindrender toont een volledige, samenhangende merkscène
+                  waarin de truck en zijn omgeving één verhaal vertellen.
                 </p>
               </article>
               <article class="process-card">
-                <p class="meta-label">What I learned</p>
-                <p>
-                  I learned how much lighting, materials, and small props
-                  influence the mood of a brand in three dimensions.
+                <p class="meta-label" data-i18n="common.learned">
+                  Wat ik geleerd heb
+                </p>
+                <p data-i18n="cloud.learned">
+                  Ik leerde hoeveel belichting, materialen en kleine props de
+                  sfeer van een merk in drie dimensies beïnvloeden.
                 </p>
               </article>
             </div>
@@ -676,47 +1021,52 @@
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Images</p>
-              <h2>Visual process.</h2>
+              <p class="eyebrow" data-i18n="common.images">Beelden</p>
+              <h2 data-i18n="common.visualProcess">Visueel proces.</h2>
             </div>
             <div class="detail-gallery">
               <figure class="gallery-card gallery-visual gallery-visual-tall">
                 <img
                   src="sweet-cloud-detail.jpg"
-                  alt="Close-up of the Sweet Cloud truck serving window with glowing logo and cotton candy display."
+                  alt="Close-up van het verkoopraam van de Sweet Cloud-truck met oplichtend logo en suikerspindisplay."
+                  data-i18n-alt="cloud.detailAlt"
                 />
                 <figcaption>
-                  <span>Storefront detail</span>
-                  <p>
-                    The serving window with its glowing logo, cotton candy
-                    display, and small props gives the truck a warm, inviting
-                    focal point.
+                  <span data-i18n="cloud.detailLabel">Detail van de etalage</span>
+                  <p data-i18n="cloud.detail">
+                    Het verkoopraam met oplichtend logo, suikerspindisplay en
+                    kleine props geeft de truck een warm, uitnodigend
+                    blikvanger.
                   </p>
                 </figcaption>
               </figure>
               <figure class="gallery-card gallery-visual gallery-visual-tall">
                 <img
                   src="sweet-cloud-seating.jpg"
-                  alt="Sweet Cloud open sign with chairs and a small round table."
+                  alt="Open-bord van Sweet Cloud met stoelen en een klein rond tafeltje."
+                  data-i18n-alt="cloud.seatingAlt"
                 />
                 <figcaption>
-                  <span>Signage &amp; seating</span>
-                  <p>
-                    The open sign, chairs, and tables extend the brand colors
-                    into the space around the truck.
+                  <span data-i18n="cloud.seatingLabel"
+                    >Signalisatie &amp; zitplaatsen</span
+                  >
+                  <p data-i18n="cloud.seating">
+                    Het open-bord, de stoelen en de tafels trekken de
+                    merkkleuren door naar de ruimte rond de truck.
                   </p>
                 </figcaption>
               </figure>
               <figure class="gallery-card gallery-visual">
                 <img
                   src="sweet-cloud-3d.jpg"
-                  alt="Final 3D render of the Sweet Cloud food truck scene."
+                  alt="Eind-3D-render van de Sweet Cloud-foodtruckscène."
+                  data-i18n-alt="cloud.finalAlt"
                 />
                 <figcaption>
-                  <span>Final render</span>
-                  <p>
-                    The complete scene: truck, sign, stools, and tables brought
-                    together in one soft, cohesive brand world.
+                  <span data-i18n="cloud.finalLabel">Eindrender</span>
+                  <p data-i18n="cloud.final">
+                    De volledige scène: truck, bord, krukken en tafels
+                    samengebracht in één zachte, samenhangende merkwereld.
                   </p>
                 </figcaption>
               </figure>
@@ -725,17 +1075,18 @@
 
           <div class="detail-section">
             <div class="section-heading">
-              <p class="eyebrow">Reflection</p>
-              <h2>Personal growth</h2>
+              <p class="eyebrow" data-i18n="common.reflection">Reflectie</p>
+              <h2 data-i18n="common.growth">Persoonlijke groei</h2>
             </div>
             <div class="reflection-card">
-              <p>
-                The biggest challenge was keeping the scene soft and harmonious
-                while still making the brand stand out. Working in 3D taught me
-                to think about a brand as a space rather than a flat visual: how
-                it is lit, how people would move around it, and how each object
-                supports the same story. This project helped me grow in 3D
-                modelling, lighting, and spatial brand thinking.
+              <p data-i18n="cloud.reflection">
+                De grootste uitdaging was de scène zacht en harmonieus houden
+                terwijl het merk toch opviel. Werken in 3D leerde me een merk
+                te zien als een ruimte in plaats van een plat beeld: hoe het
+                belicht wordt, hoe mensen er rond zouden bewegen en hoe elk
+                object hetzelfde verhaal ondersteunt. Dit project hielp me
+                groeien in 3D-modelleren, belichting en ruimtelijk
+                merkdenken.
               </p>
             </div>
           </div>
@@ -743,18 +1094,18 @@
       </main>
 
       <footer class="site-footer section reveal" id="contact">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s connect.</h2>
+        <p class="eyebrow" data-i18n="nav.contact">Contact</p>
+        <h2 data-i18n="footer.title">Laten we connecteren.</h2>
         <div class="contact-items">
           <p>Amel Ahriga</p>
           <a href="mailto:amel.ahriga2006@gmail.com"
             >amel.ahriga2006@gmail.com</a
           >
-          <p>0472 41 45 37</p>
         </div>
       </footer>
     </div>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
