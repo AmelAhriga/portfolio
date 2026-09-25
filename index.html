@@ -9,6 +9,10 @@
       data-i18n-content="meta.description"
       content="Portfolio van Amel Ahriga, student Digital Experience Design, met werk in fotografie, XD/UI-design en 3D-design."
     />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2308080b' stroke='%23f4f1f8' stroke-width='2'/%3E%3Ctext x='31' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='27' fill='%23f4f1f8'%3EAA%3C/text%3E%3Ccircle cx='51' cy='49' r='4' fill='%23d5849c'/%3E%3C/svg%3E"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,8 +24,13 @@
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <button class="brand" type="button" data-open-home>
-          Amel Ahriga<span class="brand-dot" aria-hidden="true">.</span>
+        <button
+          class="brand"
+          type="button"
+          data-open-home
+          aria-label="Amel Ahriga, home"
+        >
+          <span class="brand-name">Amel Ahriga</span>
         </button>
         <div class="header-right">
           <nav
@@ -34,6 +43,12 @@
             </button>
             <button type="button" data-scroll-to="projects" data-i18n="nav.projects">
               Mijn projecten
+            </button>
+            <button type="button" data-scroll-to="skills" data-i18n="nav.tools">
+              Tools
+            </button>
+            <button type="button" data-scroll-to="contact" data-i18n="nav.contact">
+              Contact
             </button>
           </nav>
           <div
@@ -126,7 +141,7 @@
             <div class="work-heading">
               <div class="section-heading reveal">
                 <p class="eyebrow" data-i18n="work.eyebrow">Werk</p>
-                <h2 data-i18n="work.title">Geselecteerde disciplines.</h2>
+                <h2 data-i18n="work.title">Geselecteerde disciplines</h2>
               </div>
               <p class="work-heading-meta reveal">
                 <span class="work-heading-total">(03)</span>
@@ -209,7 +224,7 @@
           <section class="section skills reveal" id="skills">
             <div class="section-heading">
               <p class="eyebrow" data-i18n="skills.eyebrow">Vaardigheden</p>
-              <h2 data-i18n="skills.title">Tools en sterktes.</h2>
+              <h2 data-i18n="skills.title">Tools en sterktes</h2>
             </div>
             <div
               class="skill-groups"
@@ -1159,7 +1174,7 @@
         <div class="contact-layout">
           <div class="contact-intro">
             <p class="eyebrow" data-i18n="nav.contact">Contact</p>
-            <h2 data-i18n="footer.title">Laten we connecteren.</h2>
+            <h2 data-i18n="footer.title">Laten we connecteren</h2>
             <p class="footer-text" data-i18n="footer.internship">
               Ik ben student en op zoek naar een stage. Heb je een plek of een
               vraag? Stuur me gerust een mail.

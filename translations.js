@@ -10,6 +10,7 @@ const translations = {
     "nav.aria": "Hoofdnavigatie",
     "nav.home": "Home",
     "nav.projects": "Mijn projecten",
+    "nav.tools": "Tools",
     "nav.contact": "Contact",
     "cat.xd": "XD/UI Design",
     "cat.3d": "3D Design",
@@ -29,7 +30,7 @@ const translations = {
     "about.text":
       "Mijn passie ligt bij design, creativiteit en digitale ervaringen. Ik vind het leuk om ideeën om te zetten in sterke visuele concepten, van <em class=\"hl-xd\">UX/UI en branding</em> tot <em class=\"hl-photo\">fotografie</em> en <em class=\"hl-3d\">3D</em>. Daarbij combineer ik graag creativiteit met technologie om projecten te maken die niet alleen mooi zijn, maar ook goed werken.",
     "work.eyebrow": "Werk",
-    "work.title": "Geselecteerde disciplines.",
+    "work.title": "Geselecteerde disciplines",
     "work.hint": "Beweeg over een discipline",
     "work.aria": "Projectcategorieën",
 
@@ -44,7 +45,7 @@ const translations = {
     "tile.photo.text": "Mode-, product- en skincarefotografie.",
 
     "skills.eyebrow": "Vaardigheden",
-    "skills.title": "Tools en sterktes.",
+    "skills.title": "Tools en sterktes",
     "skills.design": "Design",
     "skills.dev": "Development",
     "skills.visual": "Beeld & 3D",
@@ -229,7 +230,7 @@ const translations = {
       "Ik ben student en op zoek naar een stage. Heb je een plek of een vraag? Stuur me gerust een mail.",
     "contact.email": "E-mail",
     "footer.top": "Terug naar boven ↑",
-    "footer.title": "Laten we connecteren.",
+    "footer.title": "Laten we connecteren",
   },
 
   fr: {
@@ -240,6 +241,7 @@ const translations = {
     "nav.aria": "Navigation principale",
     "nav.home": "Accueil",
     "nav.projects": "Mes projets",
+    "nav.tools": "Outils",
     "nav.contact": "Contact",
     "cat.xd": "Design XD/UI",
     "cat.3d": "Design 3D",
@@ -259,7 +261,7 @@ const translations = {
     "about.text":
       "Ma passion, c'est le design, la créativité et les expériences digitales. J'aime transformer des idées en concepts visuels forts, de <em class=\"hl-xd\">l'UX/UI et du branding</em> à <em class=\"hl-photo\">la photographie</em> et <em class=\"hl-3d\">la 3D</em>. J'aime combiner créativité et technologie pour créer des projets qui ne sont pas seulement beaux, mais qui fonctionnent aussi bien.",
     "work.eyebrow": "Travaux",
-    "work.title": "Disciplines sélectionnées.",
+    "work.title": "Disciplines sélectionnées",
     "work.hint": "Survole une discipline",
     "work.aria": "Catégories de projets",
 
@@ -274,7 +276,7 @@ const translations = {
     "tile.photo.text": "Photographie de mode, de produits et de skincare.",
 
     "skills.eyebrow": "Compétences",
-    "skills.title": "Outils et points forts.",
+    "skills.title": "Outils et points forts",
     "skills.design": "Design",
     "skills.dev": "Développement",
     "skills.visual": "Image & 3D",
@@ -460,7 +462,7 @@ const translations = {
       "Actuellement aux études, je cherche un stage. Tu as une place ou une question ? Envoie-moi un mail.",
     "contact.email": "E-mail",
     "footer.top": "Retour en haut ↑",
-    "footer.title": "Restons en contact.",
+    "footer.title": "Restons en contact",
   },
 
   en: {
@@ -471,6 +473,7 @@ const translations = {
     "nav.aria": "Main navigation",
     "nav.home": "Home",
     "nav.projects": "My projects",
+    "nav.tools": "Tools",
     "nav.contact": "Contact",
     "cat.xd": "XD/UI Design",
     "cat.3d": "3D Design",
@@ -490,7 +493,7 @@ const translations = {
     "about.text":
       "My passion lies in design, creativity and digital experiences. I love turning ideas into strong visual concepts, from <em class=\"hl-xd\">UX/UI and branding</em> to <em class=\"hl-photo\">photography</em> and <em class=\"hl-3d\">3D</em>. I like to combine creativity with technology to create projects that don't just look good, but also work well.",
     "work.eyebrow": "Work",
-    "work.title": "Selected disciplines.",
+    "work.title": "Selected disciplines",
     "work.hint": "Hover over a discipline",
     "work.aria": "Project categories",
 
@@ -505,7 +508,7 @@ const translations = {
     "tile.photo.text": "Fashion, product, and skincare photography.",
 
     "skills.eyebrow": "Skills",
-    "skills.title": "Tools and strengths.",
+    "skills.title": "Tools and strengths",
     "skills.design": "Design",
     "skills.dev": "Development",
     "skills.visual": "Visual & 3D",
@@ -691,6 +694,6 @@ const translations = {
       "I'm a student looking for an internship. Have a spot or a question? Feel free to send me an email.",
     "contact.email": "Email",
     "footer.top": "Back to top ↑",
-    "footer.title": "Let’s connect.",
+    "footer.title": "Let’s connect",
   },
 };
