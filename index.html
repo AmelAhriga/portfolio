@@ -20,7 +20,9 @@
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <button class="brand" type="button" data-open-home>Amel Ahriga</button>
+        <button class="brand" type="button" data-open-home>
+          Amel Ahriga<span class="brand-dot" aria-hidden="true">.</span>
+        </button>
         <div class="header-right">
           <nav
             class="site-nav"
@@ -30,20 +32,9 @@
             <button type="button" data-open-home data-i18n="nav.home">
               Home
             </button>
-            <button type="button" data-open-category="xd" data-i18n="cat.xd">
-              XD/UI Design
+            <button type="button" data-scroll-to="projects" data-i18n="nav.projects">
+              Mijn projecten
             </button>
-            <button type="button" data-open-category="3d" data-i18n="cat.3d">
-              3D Design
-            </button>
-            <button
-              type="button"
-              data-open-category="photography"
-              data-i18n="cat.photo"
-            >
-              Fotografie
-            </button>
-            <a href="#contact" data-i18n="nav.contact">Contact</a>
           </nav>
           <div
             class="lang-switch"
@@ -67,114 +58,150 @@
       <main id="top">
         <!-- ========================= HOME ========================= -->
         <div class="portfolio-home" data-home-view>
-          <section class="hero section">
-            <div class="hero-copy reveal">
-              <p class="eyebrow" data-i18n="home.eyebrow">Portfolio</p>
-              <h1>Amel Ahriga</h1>
-              <p class="subtitle" data-i18n="home.subtitle">
+          <section class="hero" data-hero data-role="designer">
+            <div class="hero-copy">
+              <button class="hero-status" type="button" data-scroll-to="contact">
+                <span data-i18n="hero.status">Op zoek naar een stage</span>
+                <span class="hero-status-arrow" aria-hidden="true">→</span>
+              </button>
+              <p class="eyebrow hero-eyebrow" data-i18n="home.subtitle">
                 Student Digital Experience Design
               </p>
-              <p class="intro" data-i18n="home.intro">
+              <h1 class="hero-title">Amel Ahriga</h1>
+
+              <p class="hero-roles">
+                <span data-i18n="hero.iam">Ik ben</span>
+                <span class="hero-role-wrap">
+                  <span class="hero-role" data-hero-role>designer</span>
+                </span>
+              </p>
+
+              <p class="intro hero-intro" data-i18n="home.intro">
                 Ik creëer doordachte visuele ervaringen binnen drie
                 disciplines: fotografie, XD/UI-design en 3D-design. Elk
                 project hieronder is gegroepeerd per soort werk, zodat je
                 meteen kunt zien wat je wilt bekijken.
               </p>
+              <div class="hero-actions">
+                <button
+                  class="hero-button hero-button-primary"
+                  type="button"
+                  data-scroll-to="projects"
+                >
+                  <span data-i18n="hero.ctaProjects">Bekijk mijn projecten</span>
+                  <span aria-hidden="true">→</span>
+                </button>
+                <button
+                  class="hero-button hero-button-ghost"
+                  type="button"
+                  data-scroll-to="contact"
+                  data-i18n="nav.contact"
+                >
+                  Contact
+                </button>
+              </div>
             </div>
+          </section>
+
+          <section class="section about reveal" id="about">
+            <p class="eyebrow about-label" data-i18n="about.eyebrow">Over mij</p>
+            <p class="about-text" data-i18n-html="about.text">
+              Mijn passie ligt bij design, creativiteit en digitale
+              ervaringen. Ik vind het leuk om ideeën om te zetten in sterke
+              visuele concepten, van
+              <em class="hl-xd">UX/UI en branding</em> tot
+              <em class="hl-photo">fotografie</em> en
+              <em class="hl-3d">3D</em>. Daarbij combineer ik graag
+              creativiteit met technologie om projecten te maken die niet
+              alleen mooi zijn, maar ook goed werken.
+            </p>
           </section>
 
           <section
             class="section categories"
+            id="projects"
             aria-label="Projectcategorieën"
             data-i18n-aria="work.aria"
           >
-            <div class="section-heading reveal">
-              <p class="eyebrow" data-i18n="work.eyebrow">Werk</p>
-              <h2 data-i18n="work.title">Geselecteerde disciplines.</h2>
+            <div class="work-heading">
+              <div class="section-heading reveal">
+                <p class="eyebrow" data-i18n="work.eyebrow">Werk</p>
+                <h2 data-i18n="work.title">Geselecteerde disciplines.</h2>
+              </div>
+              <p class="work-heading-meta reveal">
+                <span class="work-heading-total">(03)</span>
+                <span data-i18n="work.hint">Beweeg over een discipline</span>
+              </p>
             </div>
-            <div class="category-tiles">
+
+            <div class="work-index" data-work-index>
               <button
-                class="category-tile category-tile-xd reveal"
+                class="work-row work-row-xd reveal"
                 type="button"
                 data-open-category="xd"
                 aria-label="Bekijk XD/UI Design-projecten"
                 data-i18n-aria="tile.xd.aria"
               >
-                <div class="category-tile-media">
-                  <img
-                    src="tile-xd.jpg"
-                    alt="Websitelayout uit het XD/UI-designwerk voor BYSAPHIR.COM."
-                    data-i18n-alt="tile.xd.alt"
-                  />
-                </div>
-                <div class="category-tile-body">
-                  <div class="category-tile-heading">
-                    <h3 data-i18n="cat.xd">XD/UI Design</h3>
-                    <span class="category-tile-arrow" aria-hidden="true">→</span>
-                  </div>
-                  <p data-i18n="tile.xd.text">
-                    Websitelayout, content en digitale presentatie.
-                  </p>
-                  <span class="category-tile-count" data-i18n="count.1"
-                    >1 project</span
-                  >
-                </div>
+                <span class="work-row-num">01</span>
+                <span class="work-row-title" data-i18n="cat.xd">XD/UI Design</span>
+                <span class="work-row-info">
+                  <span class="work-row-desc" data-i18n="tile.xd.text">Websitelayout, content en digitale presentatie.</span>
+                  <span class="work-row-tools">Figma · Shopify</span>
+                </span>
+                <span class="work-row-count" data-i18n="count.1">1 project</span>
+                <span class="work-row-arrow" aria-hidden="true">→</span>
+                <img
+                  class="work-row-thumb"
+                  src="tile-xd.jpg"
+                  alt="Websitelayout uit het XD/UI-designwerk voor BYSAPHIR.COM."
+                  data-i18n-alt="tile.xd.alt"
+                />
               </button>
 
               <button
-                class="category-tile category-tile-3d reveal"
+                class="work-row work-row-3d reveal"
                 type="button"
                 data-open-category="3d"
                 aria-label="Bekijk 3D Design-projecten"
                 data-i18n-aria="tile.3d.aria"
               >
-                <div class="category-tile-media">
-                  <img
-                    src="tile-3d.jpg"
-                    alt="3D-render van de Sweet Cloud-foodtruck met vegan suikerspin."
-                    data-i18n-alt="tile.3d.alt"
-                  />
-                </div>
-                <div class="category-tile-body">
-                  <div class="category-tile-heading">
-                    <h3 data-i18n="cat.3d">3D Design</h3>
-                    <span class="category-tile-arrow" aria-hidden="true">→</span>
-                  </div>
-                  <p data-i18n="tile.3d.text">
-                    Merkwerelden gemodelleerd, belicht en gerenderd in 3D.
-                  </p>
-                  <span class="category-tile-count" data-i18n="count.1"
-                    >1 project</span
-                  >
-                </div>
+                <span class="work-row-num">02</span>
+                <span class="work-row-title" data-i18n="cat.3d">3D Design</span>
+                <span class="work-row-info">
+                  <span class="work-row-desc" data-i18n="tile.3d.text">Merkwerelden gemodelleerd, belicht en gerenderd in 3D.</span>
+                  <span class="work-row-tools">Blender</span>
+                </span>
+                <span class="work-row-count" data-i18n="count.1">1 project</span>
+                <span class="work-row-arrow" aria-hidden="true">→</span>
+                <img
+                  class="work-row-thumb"
+                  src="tile-3d.jpg"
+                  alt="3D-render van de Sweet Cloud-foodtruck met vegan suikerspin."
+                  data-i18n-alt="tile.3d.alt"
+                />
               </button>
 
               <button
-                class="category-tile category-tile-photography reveal"
+                class="work-row work-row-photography reveal"
                 type="button"
                 data-open-category="photography"
                 aria-label="Bekijk fotografieprojecten"
                 data-i18n-aria="tile.photo.aria"
               >
-                <div class="category-tile-media">
-                  <img
-                    src="tile-photography.jpg"
-                    alt="Modeportret uit het fotografiewerk voor BYSAPHIR."
-                    data-i18n-alt="tile.photo.alt"
-                  />
-                </div>
-                <div class="category-tile-body">
-                  <div class="category-tile-heading">
-                    <h3 data-i18n="cat.photo">Fotografie</h3>
-                    <span class="category-tile-arrow" aria-hidden="true">→</span>
-                  </div>
-                  <p data-i18n="tile.photo.text">
-                    Mode-, product- en skincarefotografie.
-                  </p>
-                  <span class="category-tile-count" data-i18n="count.2"
-                    >2 projecten</span
-                  >
-                </div>
+                <span class="work-row-num">03</span>
+                <span class="work-row-title" data-i18n="cat.photo">Fotografie</span>
+                <span class="work-row-info">
+                  <span class="work-row-desc" data-i18n="tile.photo.text">Mode-, product- en skincarefotografie.</span>
+                  <span class="work-row-tools">Photoshop · Camera</span>
+                </span>
+                <span class="work-row-count" data-i18n="count.2">2 projecten</span>
+                <span class="work-row-arrow" aria-hidden="true">→</span>
+                <img
+                  class="work-row-thumb"
+                  src="tile-photography.jpg"
+                  alt="Modeportret uit het fotografiewerk voor BYSAPHIR."
+                  data-i18n-alt="tile.photo.alt"
+                />
               </button>
             </div>
           </section>
@@ -185,17 +212,52 @@
               <h2 data-i18n="skills.title">Tools en sterktes.</h2>
             </div>
             <div
-              class="skill-list"
+              class="skill-groups"
               aria-label="Lijst met vaardigheden"
               data-i18n-aria="skills.aria"
             >
-              <span>Figma</span>
-              <span>Shopify</span>
-              <span>Photoshop</span>
-              <span>Illustrator</span>
-              <span data-i18n="cat.photo">Fotografie</span>
-              <span>UX/UI</span>
-              <span data-i18n="tag.branding">Branding</span>
+              <div class="skill-group skill-group-design">
+                <p class="skill-group-label">
+                  <span>01</span>
+                  <span data-i18n="skills.design">Design</span>
+                </p>
+                <ul>
+                  <li>Figma</li>
+                  <li>UX/UI</li>
+                  <li data-i18n="skills.wireframe">Wireframes</li>
+                  <li data-i18n="skills.prototype">Prototypes</li>
+                  <li data-i18n="skills.ucd">User-Centered Design</li>
+                  <li data-i18n="tag.branding">Branding</li>
+                </ul>
+              </div>
+              <div class="skill-group skill-group-dev">
+                <p class="skill-group-label">
+                  <span>02</span>
+                  <span data-i18n="skills.dev">Development</span>
+                </p>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>Webflow</li>
+                  <li>React Native</li>
+                  <li>Shopify</li>
+                </ul>
+              </div>
+              <div class="skill-group skill-group-visual">
+                <p class="skill-group-label">
+                  <span>03</span>
+                  <span data-i18n="skills.visual">Beeld &amp; 3D</span>
+                </p>
+                <ul>
+                  <li>Photoshop</li>
+                  <li>Illustrator</li>
+                  <li data-i18n="cat.photo">Fotografie</li>
+                  <li>Lightroom</li>
+                  <li>Blender</li>
+                </ul>
+              </div>
             </div>
           </section>
         </div>
@@ -1094,12 +1156,53 @@
       </main>
 
       <footer class="site-footer section reveal" id="contact">
-        <p class="eyebrow" data-i18n="nav.contact">Contact</p>
-        <h2 data-i18n="footer.title">Laten we connecteren.</h2>
-        <div class="contact-items">
-          <p>Amel Ahriga</p>
-          <a href="mailto:amel.ahriga2006@gmail.com"
-            >amel.ahriga2006@gmail.com</a
+        <div class="contact-layout">
+          <div class="contact-intro">
+            <p class="eyebrow" data-i18n="nav.contact">Contact</p>
+            <h2 data-i18n="footer.title">Laten we connecteren.</h2>
+            <p class="footer-text" data-i18n="footer.internship">
+              Ik ben student en op zoek naar een stage. Heb je een plek of een
+              vraag? Stuur me gerust een mail.
+            </p>
+          </div>
+
+          <ul class="contact-list">
+            <li class="contact-row contact-row-mail">
+              <span class="contact-label" data-i18n="contact.email">E-mail</span>
+              <a class="contact-value" href="mailto:amel.ahriga2006@gmail.com"
+                >amel.ahriga2006@gmail.com</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="contact-row contact-row-github">
+              <span class="contact-label">GitHub</span>
+              <a
+                class="contact-value"
+                href="https://github.com/AmelAhriga"
+                target="_blank"
+                rel="noopener"
+                >@AmelAhriga</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="contact-row contact-row-linkedin">
+              <span class="contact-label">LinkedIn</span>
+              <a
+                class="contact-value"
+                href="https://www.linkedin.com/search/results/people/?keywords=Amel%20Ahriga"
+                target="_blank"
+                rel="noopener"
+                >Amel Ahriga</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Amel Ahriga</span>
+          <a href="#top" data-open-home data-i18n="footer.top"
+            >Terug naar boven ↑</a
           >
         </div>
       </footer>

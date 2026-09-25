@@ -94,6 +94,19 @@ document.querySelectorAll("[data-open-home]").forEach((el) => {
   });
 });
 
+// Nav links that scroll to a section on the homepage (e.g. "Mijn projecten").
+document.querySelectorAll("[data-scroll-to]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const target = document.getElementById(button.dataset.scrollTo);
+    if (!target) return;
+    history.replaceState(null, "", `#${button.dataset.scrollTo}`);
+    showHome(false);
+    requestAnimationFrame(() => {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+});
+
 // Homepage category tiles and nav links that open a category directly.
 document.querySelectorAll("[data-open-category]").forEach((button) => {
   button.addEventListener("click", () => {
@@ -176,6 +189,50 @@ window.addEventListener("hashchange", syncViewFromHash);
 syncViewFromHash();
 
 // ---------------------------------------------------------------------------
+// Hero: rotating role (designer / developer / fotograaf).
+// ---------------------------------------------------------------------------
+const hero = document.querySelector("[data-hero]");
+
+if (hero) {
+  const roleEl = hero.querySelector("[data-hero-role]");
+  const roleIds = ["designer", "developer", "photographer"];
+  let roleIndex = 0;
+
+  const renderRole = () => {
+    const dictionary =
+      translations[document.documentElement.lang] || translations.nl;
+    hero.dataset.role = roleIds[roleIndex];
+    roleEl.textContent = dictionary["hero.roles"].split("|")[roleIndex];
+  };
+
+  const nextRole = () => {
+    roleEl.classList.add("is-leaving");
+    setTimeout(() => {
+      roleIndex = (roleIndex + 1) % roleIds.length;
+      roleEl.classList.remove("is-leaving");
+      roleEl.classList.add("is-entering");
+      renderRole();
+      // Force a reflow so the enter transition starts from below.
+      void roleEl.offsetWidth;
+      roleEl.classList.remove("is-entering");
+    }, 500);
+  };
+
+  renderRole();
+  document.addEventListener("portfolio:lang", renderRole);
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    setInterval(nextRole, 3200);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Contact: current year in the footer.
+// ---------------------------------------------------------------------------
+document.querySelectorAll("[data-year]").forEach((el) => {
+  el.textContent = new Date().getFullYear();
+});
+
+// ---------------------------------------------------------------------------
 // Language switcher (NL is the main language, FR and EN are optional).
 // ---------------------------------------------------------------------------
 const supportedLanguages = ["nl", "fr", "en"];
@@ -207,6 +264,11 @@ const applyLanguage = (lang) => {
     const value = translate(el.dataset.i18n);
     if (value !== undefined) el.textContent = value;
   });
+  // Only used for our own strings that contain simple markup (<em>).
+  document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+    const value = translate(el.dataset.i18nHtml);
+    if (value !== undefined) el.innerHTML = value;
+  });
   document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
     const value = translate(el.dataset.i18nAlt);
     if (value !== undefined) el.alt = value;
@@ -219,6 +281,8 @@ const applyLanguage = (lang) => {
     const value = translate(el.dataset.i18nContent);
     if (value !== undefined) el.setAttribute("content", value);
   });
+
+  document.dispatchEvent(new CustomEvent("portfolio:lang", { detail: lang }));
 
   document.querySelectorAll("[data-set-lang]").forEach((button) => {
     button.setAttribute(

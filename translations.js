@@ -9,6 +9,7 @@ const translations = {
     "lang.aria": "Taal kiezen",
     "nav.aria": "Hoofdnavigatie",
     "nav.home": "Home",
+    "nav.projects": "Mijn projecten",
     "nav.contact": "Contact",
     "cat.xd": "XD/UI Design",
     "cat.3d": "3D Design",
@@ -16,12 +17,20 @@ const translations = {
     "count.1": "1 project",
     "count.2": "2 projecten",
 
+    "hero.iam": "Ik ben",
+    "hero.roles": "designer|developer|fotograaf",
+    "hero.status": "Op zoek naar een stage",
+    "hero.ctaProjects": "Bekijk mijn projecten",
     "home.eyebrow": "Portfolio",
     "home.subtitle": "Student Digital Experience Design",
     "home.intro":
       "Ik creëer doordachte visuele ervaringen binnen drie disciplines: fotografie, XD/UI-design en 3D-design. Elk project hieronder is gegroepeerd per soort werk, zodat je meteen kunt zien wat je wilt bekijken.",
+    "about.eyebrow": "Over mij",
+    "about.text":
+      "Mijn passie ligt bij design, creativiteit en digitale ervaringen. Ik vind het leuk om ideeën om te zetten in sterke visuele concepten, van <em class=\"hl-xd\">UX/UI en branding</em> tot <em class=\"hl-photo\">fotografie</em> en <em class=\"hl-3d\">3D</em>. Daarbij combineer ik graag creativiteit met technologie om projecten te maken die niet alleen mooi zijn, maar ook goed werken.",
     "work.eyebrow": "Werk",
     "work.title": "Geselecteerde disciplines.",
+    "work.hint": "Beweeg over een discipline",
     "work.aria": "Projectcategorieën",
 
     "tile.xd.aria": "Bekijk XD/UI Design-projecten",
@@ -36,6 +45,12 @@ const translations = {
 
     "skills.eyebrow": "Vaardigheden",
     "skills.title": "Tools en sterktes.",
+    "skills.design": "Design",
+    "skills.dev": "Development",
+    "skills.visual": "Beeld & 3D",
+    "skills.wireframe": "Wireframes",
+    "skills.prototype": "Prototypes",
+    "skills.ucd": "User-Centered Design",
     "skills.aria": "Lijst met vaardigheden",
 
     "common.backHome": "← Terug naar portfolio",
@@ -210,6 +225,10 @@ const translations = {
     "cloud.reflection":
       "De grootste uitdaging was de scène zacht en harmonieus houden terwijl het merk toch opviel. Werken in 3D leerde me een merk te zien als een ruimte in plaats van een plat beeld: hoe het belicht wordt, hoe mensen er rond zouden bewegen en hoe elk object hetzelfde verhaal ondersteunt. Dit project hielp me groeien in 3D-modelleren, belichting en ruimtelijk merkdenken.",
 
+    "footer.internship":
+      "Ik ben student en op zoek naar een stage. Heb je een plek of een vraag? Stuur me gerust een mail.",
+    "contact.email": "E-mail",
+    "footer.top": "Terug naar boven ↑",
     "footer.title": "Laten we connecteren.",
   },
 
@@ -220,6 +239,7 @@ const translations = {
     "lang.aria": "Choisir la langue",
     "nav.aria": "Navigation principale",
     "nav.home": "Accueil",
+    "nav.projects": "Mes projets",
     "nav.contact": "Contact",
     "cat.xd": "Design XD/UI",
     "cat.3d": "Design 3D",
@@ -227,12 +247,20 @@ const translations = {
     "count.1": "1 projet",
     "count.2": "2 projets",
 
+    "hero.iam": "Je suis",
+    "hero.roles": "designer|développeuse|photographe",
+    "hero.status": "À la recherche d'un stage",
+    "hero.ctaProjects": "Voir mes projets",
     "home.eyebrow": "Portfolio",
     "home.subtitle": "Étudiante en Digital Experience Design",
     "home.intro":
       "Je crée des expériences visuelles réfléchies dans trois disciplines : la photographie, le design XD/UI et le design 3D. Chaque projet ci-dessous est classé par type de travail, pour que tu puisses aller directement à ce que tu veux voir.",
+    "about.eyebrow": "À propos",
+    "about.text":
+      "Ma passion, c'est le design, la créativité et les expériences digitales. J'aime transformer des idées en concepts visuels forts, de <em class=\"hl-xd\">l'UX/UI et du branding</em> à <em class=\"hl-photo\">la photographie</em> et <em class=\"hl-3d\">la 3D</em>. J'aime combiner créativité et technologie pour créer des projets qui ne sont pas seulement beaux, mais qui fonctionnent aussi bien.",
     "work.eyebrow": "Travaux",
     "work.title": "Disciplines sélectionnées.",
+    "work.hint": "Survole une discipline",
     "work.aria": "Catégories de projets",
 
     "tile.xd.aria": "Voir les projets de design XD/UI",
@@ -247,6 +275,12 @@ const translations = {
 
     "skills.eyebrow": "Compétences",
     "skills.title": "Outils et points forts.",
+    "skills.design": "Design",
+    "skills.dev": "Développement",
+    "skills.visual": "Image & 3D",
+    "skills.wireframe": "Wireframes",
+    "skills.prototype": "Prototypage",
+    "skills.ucd": "Conception centrée utilisateur",
     "skills.aria": "Liste des compétences",
 
     "common.backHome": "← Retour au portfolio",
@@ -422,6 +456,10 @@ const translations = {
     "cloud.reflection":
       "Le plus grand défi était de garder la scène douce et harmonieuse tout en faisant ressortir la marque. Travailler en 3D m'a appris à voir une marque comme un espace plutôt qu'un visuel plat : comment elle est éclairée, comment les gens s'y déplaceraient et comment chaque objet soutient la même histoire. Ce projet m'a fait progresser en modélisation 3D, en éclairage et en réflexion spatiale autour de la marque.",
 
+    "footer.internship":
+      "Actuellement aux études, je cherche un stage. Tu as une place ou une question ? Envoie-moi un mail.",
+    "contact.email": "E-mail",
+    "footer.top": "Retour en haut ↑",
     "footer.title": "Restons en contact.",
   },
 
@@ -432,6 +470,7 @@ const translations = {
     "lang.aria": "Choose language",
     "nav.aria": "Main navigation",
     "nav.home": "Home",
+    "nav.projects": "My projects",
     "nav.contact": "Contact",
     "cat.xd": "XD/UI Design",
     "cat.3d": "3D Design",
@@ -439,12 +478,20 @@ const translations = {
     "count.1": "1 project",
     "count.2": "2 projects",
 
+    "hero.iam": "I am a",
+    "hero.roles": "designer|developer|photographer",
+    "hero.status": "Looking for an internship",
+    "hero.ctaProjects": "View my projects",
     "home.eyebrow": "Portfolio",
     "home.subtitle": "Digital Experience Design Student",
     "home.intro":
       "I create thoughtful visual experiences across three disciplines: photography, XD/UI design, and 3D design. Each project below is grouped by the kind of work it is, so you can jump straight to what you want to see.",
+    "about.eyebrow": "About me",
+    "about.text":
+      "My passion lies in design, creativity and digital experiences. I love turning ideas into strong visual concepts, from <em class=\"hl-xd\">UX/UI and branding</em> to <em class=\"hl-photo\">photography</em> and <em class=\"hl-3d\">3D</em>. I like to combine creativity with technology to create projects that don't just look good, but also work well.",
     "work.eyebrow": "Work",
     "work.title": "Selected disciplines.",
+    "work.hint": "Hover over a discipline",
     "work.aria": "Project categories",
 
     "tile.xd.aria": "View XD/UI Design projects",
@@ -459,6 +506,12 @@ const translations = {
 
     "skills.eyebrow": "Skills",
     "skills.title": "Tools and strengths.",
+    "skills.design": "Design",
+    "skills.dev": "Development",
+    "skills.visual": "Visual & 3D",
+    "skills.wireframe": "Wireframing",
+    "skills.prototype": "Prototyping",
+    "skills.ucd": "User-Centered Design",
     "skills.aria": "Skills list",
 
     "common.backHome": "← Back to portfolio",
@@ -634,6 +687,10 @@ const translations = {
     "cloud.reflection":
       "The biggest challenge was keeping the scene soft and harmonious while still making the brand stand out. Working in 3D taught me to think about a brand as a space rather than a flat visual: how it is lit, how people would move around it, and how each object supports the same story. This project helped me grow in 3D modelling, lighting, and spatial brand thinking.",
 
+    "footer.internship":
+      "I'm a student looking for an internship. Have a spot or a question? Feel free to send me an email.",
+    "contact.email": "Email",
+    "footer.top": "Back to top ↑",
     "footer.title": "Let’s connect.",
   },
 };

@@ -54,13 +54,16 @@ body {
 }
 
 .brand,
-.site-nav a,
-.contact-items a {
+.site-nav a {
   color: inherit;
   text-decoration: none;
 }
 
 .brand {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
   font-family: "Cormorant Garamond", serif;
   font-size: 1.6rem;
   letter-spacing: 0.03em;
@@ -85,6 +88,10 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
   transition: color 180ms ease;
+}
+
+#projects {
+  scroll-margin-top: 5rem;
 }
 
 .header-right {
@@ -131,9 +138,7 @@ body {
 .site-nav button:hover,
 .site-nav button:focus-visible,
 .site-nav a:hover,
-.site-nav a:focus-visible,
-.contact-items a:hover,
-.contact-items a:focus-visible {
+.site-nav a:focus-visible {
   color: var(--text);
 }
 
@@ -141,11 +146,191 @@ body {
   padding: 4.5rem 0;
 }
 
+/* ============================ HERO ============================ */
+/* Minimal hero: a big name and one rotating role
+   (designer / developer / fotograaf) in its own accent colour. */
 .hero {
-  display: grid;
-  gap: 1.1rem;
-  padding-bottom: 2rem;
+  --role-color: var(--accent-xd);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: min(80vh, 760px);
+  padding: clamp(3rem, 8vw, 6rem) 0 clamp(3rem, 6vw, 5rem);
   border-bottom: 1px solid var(--line);
+}
+
+.hero[data-role="developer"] {
+  --role-color: var(--accent-3d);
+}
+
+.hero[data-role="photographer"] {
+  --role-color: var(--accent-photo);
+}
+
+.hero-copy {
+  max-width: 980px;
+  animation: hero-up 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s both;
+}
+
+@keyframes hero-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
+.hero-status {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0 0 1.6rem;
+  padding: 0.55rem 1.1rem;
+  appearance: none;
+  border: 1px solid var(--accent-photo);
+  border-radius: 999px;
+  background: var(--bg-soft);
+  box-shadow: 0 8px 28px -12px color-mix(in srgb, var(--accent-photo) 70%, transparent);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: box-shadow 300ms ease;
+}
+
+.hero-status-arrow {
+  color: var(--accent-photo);
+  transition: transform 250ms ease;
+}
+
+.hero-status:hover,
+.hero-status:focus-visible {
+  box-shadow: 0 10px 34px -10px color-mix(in srgb, var(--accent-photo) 90%, transparent);
+}
+
+.hero-status:hover .hero-status-arrow,
+.hero-status:focus-visible .hero-status-arrow {
+  transform: translateX(4px);
+}
+
+.hero-title {
+  max-width: none;
+  margin-bottom: 0.5rem;
+  font-size: clamp(3.4rem, 11vw, 8.5rem);
+  line-height: 0.9;
+  letter-spacing: -0.045em;
+}
+
+.hero-roles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 0.35em;
+  margin-bottom: 1.8rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 5.5vw, 4rem);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--muted);
+}
+
+.hero-role-wrap {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 0.12em 0.22em 0;
+  margin-bottom: -0.22em;
+}
+
+.hero-role {
+  display: inline-block;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--role-color);
+  transition:
+    transform 500ms cubic-bezier(0.6, 0, 0.4, 1),
+    opacity 500ms ease;
+}
+
+.hero-role.is-leaving {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.hero-role.is-entering {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: none;
+}
+
+.hero-intro {
+  max-width: 54ch;
+  margin-bottom: 2.2rem;
+  font-size: 1.02rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.hero-button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.95rem 1.6rem;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition:
+    background 250ms ease,
+    border-color 250ms ease;
+}
+
+.hero-button-primary {
+  border: 1px solid transparent;
+  background: var(--text);
+  color: var(--bg);
+}
+
+.hero-button-primary span[aria-hidden] {
+  transition: transform 250ms ease;
+}
+
+.hero-button-primary:hover,
+.hero-button-primary:focus-visible {
+  background: #fff;
+}
+
+.hero-button-primary:hover span[aria-hidden],
+.hero-button-primary:focus-visible span[aria-hidden] {
+  transform: translateX(4px);
+}
+
+.hero-button-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: transparent;
+  color: var(--text);
+}
+
+.hero-button-ghost:hover,
+.hero-button-ghost:focus-visible {
+  border-color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero *,
+  .hero *::before,
+  .hero *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 .eyebrow {
@@ -201,8 +386,6 @@ h3 {
 .intro,
 .section-text,
 .project-content p,
-.contact-items,
-.skill-list,
 .category-intro {
   color: var(--muted);
   line-height: 1.75;
@@ -215,121 +398,304 @@ h3 {
   max-width: 60ch;
 }
 
-/* Category tiles on the homepage */
-.category-tiles {
+/* ============================ ABOUT ============================ */
+.about {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: 12rem minmax(0, 1fr);
+  gap: 2rem;
+  border-bottom: 1px solid var(--line);
 }
 
-.category-tile {
+.about-label {
+  padding-top: 0.9rem;
+}
+
+.about-text {
+  max-width: 30em;
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.about-text em {
+  font-weight: 600;
+}
+
+.hl-xd {
+  color: var(--accent-xd);
+}
+
+.hl-photo {
+  color: var(--accent-photo);
+}
+
+.hl-3d {
+  color: var(--accent-3d);
+}
+
+/* ===================== WORK INDEX (homepage) =====================
+   Disciplines are shown as an editorial index: big numbered rows with
+   an accent sweep on hover. On touch screens each row shows a thumbnail. */
+.work-heading {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
-  appearance: none;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.02));
-  cursor: pointer;
-  text-align: left;
-  color: inherit;
-  font: inherit;
-  transition:
-    transform 220ms ease,
-    border-color 220ms ease,
-    box-shadow 220ms ease;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.category-tile:hover,
-.category-tile:focus-visible {
-  transform: translateY(-4px);
-  border-color: color-mix(in srgb, var(--tile-accent, var(--accent)) 40%, var(--line));
-  box-shadow: var(--shadow);
+.work-heading .section-heading {
+  margin-bottom: 0;
 }
 
-.category-tile:focus-visible {
-  outline: 2px solid var(--tile-accent, var(--accent));
-  outline-offset: 4px;
+.work-heading-meta {
+  display: grid;
+  justify-items: end;
+  gap: 0.35rem;
+  margin: 0 0 0.4rem;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 
-.category-tile-media {
+.work-heading-total {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  color: var(--text);
+  line-height: 1;
+}
+
+.work-index {
   position: relative;
-  height: 240px;
-  overflow: hidden;
-}
-
-.category-tile-media img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 400ms ease;
-}
-
-.category-tile:hover .category-tile-media img,
-.category-tile:focus-visible .category-tile-media img {
-  transform: scale(1.035);
-}
-
-.category-tile-body {
-  padding: 1.5rem;
   border-top: 1px solid var(--line);
 }
 
-.category-tile-heading {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.75rem;
-  margin-bottom: 0.6rem;
+.work-row {
+  --row-accent: var(--accent);
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1.4fr) minmax(0, 1fr) 7.5rem 3.25rem;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 2.1rem 1.25rem;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  appearance: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.category-tile-heading h3 {
-  margin-bottom: 0;
-  font-size: 1.35rem;
+.work-row-xd {
+  --row-accent: var(--accent-xd);
 }
 
-.category-tile-arrow {
-  color: var(--tile-accent, var(--accent));
-  font-size: 1.1rem;
-  transition: transform 220ms ease;
+.work-row-3d {
+  --row-accent: var(--accent-3d);
 }
 
-.category-tile:hover .category-tile-arrow,
-.category-tile:focus-visible .category-tile-arrow {
-  transform: translateX(3px);
+.work-row-photography {
+  --row-accent: var(--accent-photo);
 }
 
-.category-tile-body p {
-  margin: 0;
+/* Accent sweep that fills the row from the left */
+.work-row::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--row-accent) 20%, transparent),
+    color-mix(in srgb, var(--row-accent) 4%, transparent) 70%
+  );
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.work-row:hover::before,
+.work-row:focus-visible::before {
+  transform: scaleX(1);
+}
+
+.work-row:focus-visible {
+  outline: 2px solid var(--row-accent);
+  outline-offset: -2px;
+}
+
+.work-row-num {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  transition: color 300ms ease;
+}
+
+.work-row-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.4rem, 5.6vw, 4.6rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  transition:
+    transform 500ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    color 300ms ease,
+    opacity 300ms ease;
+}
+
+.work-row-info {
+  display: grid;
+  gap: 0.45rem;
+  transition: opacity 300ms ease;
+}
+
+.work-row-desc {
   color: var(--muted);
   font-size: 0.92rem;
   line-height: 1.55;
 }
 
-.category-tile-count {
-  display: inline-block;
-  margin-top: 0.9rem;
-  color: var(--tile-accent, var(--accent));
-  font-size: 0.76rem;
+.work-row-tools {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--row-accent);
+}
+
+.work-row-count {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.72rem;
   letter-spacing: 0.06em;
+  white-space: nowrap;
+  justify-self: end;
+  color: var(--muted);
+  transition:
+    border-color 300ms ease,
+    color 300ms ease;
 }
 
-.category-tile-photography {
-  --tile-accent: var(--accent-photo);
+.work-row-arrow {
+  display: grid;
+  place-items: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 1.15rem;
+  transition:
+    transform 500ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    background 300ms ease,
+    border-color 300ms ease,
+    color 300ms ease;
 }
 
-.category-tile-xd {
-  --tile-accent: var(--accent-xd);
+.work-row:hover .work-row-num,
+.work-row:focus-visible .work-row-num {
+  color: var(--row-accent);
 }
 
-.category-tile-3d {
-  --tile-accent: var(--accent-3d);
+.work-row:hover .work-row-title,
+.work-row:focus-visible .work-row-title {
+  transform: translateX(0.6rem);
+  font-style: italic;
+  color: var(--row-accent);
 }
 
-.skill-list span,
+.work-row:hover .work-row-count,
+.work-row:focus-visible .work-row-count {
+  border-color: var(--row-accent);
+  color: var(--text);
+}
+
+.work-row:hover .work-row-arrow,
+.work-row:focus-visible .work-row-arrow {
+  transform: rotate(-45deg);
+  border-color: var(--row-accent);
+  background: var(--row-accent);
+  color: #fff;
+}
+
+/* Dim the rows you are not hovering */
+.work-index:has(.work-row:hover) .work-row:not(:hover) .work-row-title,
+.work-index:has(.work-row:hover) .work-row:not(:hover) .work-row-info {
+  opacity: 0.35;
+}
+
+.work-row-thumb {
+  display: none;
+}
+
+@media (hover: none), (max-width: 900px) {
+  .work-heading-meta span:last-child {
+    display: none;
+  }
+
+  .work-row {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "num count"
+      "title arrow"
+      "info info"
+      "thumb thumb";
+    gap: 0.9rem 1rem;
+    padding: 1.75rem 0.25rem;
+  }
+
+  .work-row-num {
+    grid-area: num;
+  }
+
+  .work-row-count {
+    grid-area: count;
+    justify-self: end;
+  }
+
+  .work-row-title {
+    grid-area: title;
+  }
+
+  .work-row-arrow {
+    grid-area: arrow;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .work-row-info {
+    grid-area: info;
+  }
+
+  .work-row-thumb {
+    grid-area: thumb;
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin-top: 0.4rem;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .work-row:hover .work-row-title {
+    transform: none;
+  }
+}
+
 .project-tags li {
   border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 999px;
@@ -470,16 +836,62 @@ h3 {
 }
 
 .project-tags li,
-.skill-list span {
-  padding: 0.68rem 0.95rem;
-  color: #e9e2ee;
-  font-size: 0.92rem;
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
 }
 
-.skill-list {
+/* ============================ SKILLS ============================
+   Three columns (design / development / visual & 3D), each in the
+   colour of the matching hero role. Tools are set as large serif lines. */
+.skill-group {
+  --skill-accent: var(--accent-xd);
+}
+
+.skill-group-dev {
+  --skill-accent: var(--accent-3d);
+}
+
+.skill-group-visual {
+  --skill-accent: var(--accent-photo);
+}
+
+.skill-group-label {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
+  justify-content: space-between;
+  margin: 0;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--skill-accent);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--skill-accent);
+}
+
+.skill-group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-group li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--line);
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  transition:
+    color 250ms ease,
+    transform 300ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.skill-group li:hover {
+  color: var(--skill-accent);
+  transform: translateX(0.4rem);
 }
 
 .portfolio-home[hidden],
@@ -693,10 +1105,147 @@ h3 {
   padding-bottom: 1rem;
 }
 
-.contact-items {
+.footer-text {
+  max-width: 46ch;
+  margin-bottom: 1.4rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ========================== CONTACT ==========================
+   Minimal rows in the same style as the work index. */
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 3rem;
+  align-items: end;
+}
+
+.contact-intro h2 {
+  max-width: 12ch;
+}
+
+.contact-intro .footer-text {
+  margin-bottom: 0;
+}
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.contact-row {
+  --row-accent: var(--accent-photo);
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: 6.5rem minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.35rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-row-github {
+  --row-accent: var(--accent-xd);
+}
+
+.contact-row-linkedin {
+  --row-accent: var(--accent-3d);
+}
+
+.contact-row::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--row-accent) 14%, transparent),
+    transparent 80%
+  );
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms cubic-bezier(0.7, 0, 0.2, 1);
+}
+
+.contact-row:hover::before,
+.contact-row:focus-within::before {
+  transform: scaleX(1);
+}
+
+.contact-label {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--row-accent);
+}
+
+.contact-value {
+  overflow-wrap: anywhere;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.35rem, 2.4vw, 1.9rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 250ms ease;
+}
+
+/* The whole row is clickable */
+.contact-value::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.contact-value:focus-visible {
+  outline: none;
+}
+
+.contact-row:has(.contact-value:focus-visible) {
+  outline: 2px solid var(--row-accent);
+  outline-offset: -2px;
+}
+
+.contact-row:hover .contact-value {
+  color: var(--row-accent);
+}
+
+.contact-arrow {
+  font-size: 1.15rem;
+  color: var(--muted);
+  transition:
+    transform 300ms ease,
+    color 300ms ease;
+}
+
+.contact-row:hover .contact-arrow {
+  color: var(--row-accent);
+  transform: translate(3px, -3px);
+}
+
+.footer-bottom {
   display: flex;
-  gap: 1rem 1.5rem;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 4rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.footer-bottom a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 250ms ease;
+}
+
+.footer-bottom a:hover,
+.footer-bottom a:focus-visible {
+  color: var(--text);
 }
 
 .reveal {
@@ -712,18 +1261,121 @@ h3 {
   transform: translateY(0);
 }
 
+/* ======================= COLOUR ACCENTS =======================
+   Small touches of the three discipline colours on the dark base. */
+
+/* Lets the hero glow fade smoothly between role colours */
+@property --role-color {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #7c76f5;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent-xd) 55%, transparent);
+  color: #fff;
+}
+
+/* Thin accent line along the very top of the page */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  height: 2px;
+  background: var(--accent-photo);
+  opacity: 0.85;
+}
+
+.brand-dot {
+  color: var(--accent-photo);
+}
+
+.lang-switch button[aria-pressed="true"] {
+  color: var(--accent-photo);
+}
+
+/* Hero: soft glow in the current role colour + accent divider */
+.hero {
+  position: relative;
+  isolation: isolate;
+  border-bottom: 0;
+  transition: --role-color 900ms ease;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 8%;
+  right: -6%;
+  width: min(46vw, 560px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--role-color) 32%, transparent),
+    transparent 68%
+  );
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--accent-photo);
+  opacity: 0.35;
+}
+
+.hero-button-primary:hover,
+.hero-button-primary:focus-visible {
+  box-shadow: 0 10px 30px -12px var(--role-color);
+}
+
+.hero-button-ghost:hover,
+.hero-button-ghost:focus-visible {
+  border-color: var(--role-color);
+  color: var(--role-color);
+}
+
+/* Work index: numbers always carry their discipline colour */
+.work-row-num {
+  color: var(--row-accent);
+}
+
+/* Footer: accent divider */
+.site-footer {
+  position: relative;
+}
+
+.site-footer::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 120px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent-photo);
+}
+
 @media (max-width: 900px) {
-  .category-tiles,
   .project-grid,
+  .about,
+  .contact-layout,
+  .skill-groups,
   .detail-hero,
   .detail-meta-grid,
   .process-grid,
   .detail-gallery {
     grid-template-columns: 1fr;
-  }
-
-  .category-tile-media {
-    height: 220px;
   }
 
   .detail-image-frame {
@@ -743,6 +1395,25 @@ h3 {
 
   .header-right {
     gap: 1rem;
+  }
+
+  .contact-row {
+    grid-template-columns: 1fr auto;
+    gap: 0.35rem 1rem;
+    padding: 1.2rem 0.25rem;
+  }
+
+  .contact-label {
+    grid-column: 1 / -1;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-button {
+    flex: 1 1 auto;
+    justify-content: center;
   }
 
   .section {
