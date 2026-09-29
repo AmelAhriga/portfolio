@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">Amel Ahriga | Digital Experience Design</title>
+    <meta
+      name="description"
+      data-i18n-content="meta.description"
+      content="Portfolio van Amel Ahriga, student Digital Experience Design, met werk in fotografie, XD/UI-design en 3D-design."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2308080b' stroke='%23f4f1f8' stroke-width='2'/%3E%3Ctext x='31' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='27' fill='%23f4f1f8'%3EAA%3C/text%3E%3Ccircle cx='51' cy='49' r='4' fill='%23d5849c'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <button
+          class="brand"
+          type="button"
+          data-open-home
+          aria-label="Amel Ahriga, home"
+        >
+          <span class="brand-name">Amel Ahriga</span>
+        </button>
+        <div class="header-right">
+          <nav
+            class="site-nav"
+            aria-label="Hoofdnavigatie"
+            data-i18n-aria="nav.aria"
+          >
+            <button type="button" data-open-home data-i18n="nav.home">
+              Home
+            </button>
+            <button type="button" data-scroll-to="projects" data-i18n="nav.projects">
+              Mijn projecten
+            </button>
+            <button type="button" data-scroll-to="skills" data-i18n="nav.tools">
+              Tools
+            </button>
+            <button type="button" data-scroll-to="contact" data-i18n="nav.contact">
+              Contact
+            </button>
+          </nav>
+          <div
+            class="lang-switch"
+            role="group"
+            aria-label="Taal kiezen"
+            data-i18n-aria="lang.aria"
+          >
+            <button type="button" data-set-lang="nl" lang="nl" aria-pressed="true">
+              NL
+            </button>
+            <button type="button" data-set-lang="fr" lang="fr" aria-pressed="false">
+              FR
+            </button>
+            <button type="button" data-set-lang="en" lang="en" aria-pressed="false">
+              EN
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="top">
+        <!-- ===================== PROJECT: REVIVASPORT ===================== -->
+        <section
+          class="project-detail section"
+          data-project-view="revivasport"
+        >
+          <button
+            class="back-button"
+            type="button"
+            data-back-to-projects
+            data-i18n="common.back"
+          >
+            ← Terug
+          </button>
+
+          <div class="detail-hero reveal is-visible">
+            <div class="detail-copy">
+              <p class="eyebrow" data-i18n="common.projectDetail">Projectdetail</p>
+              <h2>RevivaSport</h2>
+              <p class="section-text" data-i18n="reviva.lead">Een websiteontwerp voor het sportmerk RevivaSport, uitgewerkt als klikbaar prototype in Figma.</p>
+              <div class="hero-actions">
+                <a
+                  class="hero-button hero-button-primary"
+                  href="#prototype"
+                >
+                  <span data-i18n="common.prototypeTitle">Klik zelf door het ontwerp.</span>
+                  <span aria-hidden="true">↓</span>
+                </a>
+                <a
+                  class="hero-button hero-button-ghost"
+                  href="https://www.figma.com/proto/d4YwExkK6ROiJVUiBmOjr1/2024-interface-design-website--Copy-?node-id=4049-4733&amp;page-id=4049%3A4539"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span data-i18n="common.viewFigma">Bekijk in Figma</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="detail-image-frame">
+              <img
+                src="image/revivasport.png"
+                alt="Homepage van het RevivaSport-websiteontwerp met navigatie, de slogan Stay safe, train smarter en een sportfoto."
+                data-i18n-alt="reviva.alt"
+              />
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="common.projectIntro">Projectintro</p>
+              <h2 data-i18n="common.overview">Overzicht</h2>
+            </div>
+            <div class="detail-meta-grid">
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.projectName">Projectnaam</p>
+                <p>RevivaSport</p>
+              </article>
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.shortDesc">Korte beschrijving</p>
+                <p data-i18n="reviva.shortDesc">Een website voor een sportmerk met een sterke slogan, duidelijke navigatie en een oproep om de app te downloaden.</p>
+              </article>
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.role">Mijn rol</p>
+                <p data-i18n="reviva.role">UI-designer: layout, typografie, kleur en prototyping.</p>
+              </article>
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.tools">Gebruikte tools</p>
+                <p>Figma</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="detail-section" id="prototype">
+            <div class="prototype-heading">
+              <div class="section-heading">
+                <p class="eyebrow" data-i18n="common.prototype">Prototype</p>
+                <h2 data-i18n="common.prototypeTitle">Klik zelf door het ontwerp.</h2>
+                <p class="section-text" data-i18n="common.prototypeHint">Het prototype is interactief: klik op knoppen en links om door de pagina's te gaan.</p>
+              </div>
+              <div
+                class="view-switch"
+                role="group"
+                aria-label="Weergave kiezen"
+                data-i18n-aria="common.viewAria"
+                data-prototype-switch
+              >
+                <button type="button" data-prototype-view="desktop" data-prototype-src="https://embed.figma.com/proto/d4YwExkK6ROiJVUiBmOjr1/2024-interface-design-website--Copy-?node-id=4049-4733&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=4049%3A4539&amp;embed-host=share" aria-pressed="true" data-i18n="common.desktop">Desktop</button>
+                <button type="button" data-prototype-view="mobile" data-prototype-src="https://embed.figma.com/proto/d4YwExkK6ROiJVUiBmOjr1/2024-interface-design-website--Copy-?node-id=4049-13148&amp;p=f&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=4049%3A9275&amp;starting-point-node-id=4049%3A13148&amp;embed-host=share" aria-pressed="false" data-i18n="common.mobile">Gsm</button>
+              </div>
+            </div>
+            <div class="prototype-stage">
+              <div class="prototype-frame" data-prototype data-view="desktop">
+                <iframe
+                  src="https://embed.figma.com/proto/d4YwExkK6ROiJVUiBmOjr1/2024-interface-design-website--Copy-?node-id=4049-4733&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=4049%3A4539&amp;embed-host=share"
+                  title="Klikbaar Figma-prototype van RevivaSport"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="common.process">Proces</p>
+              <h2 data-i18n="reviva.processTitle">Van wireframe tot prototype.</h2>
+            </div>
+            <div class="process-grid">
+              <article class="process-card">
+                <p class="meta-label" data-i18n="common.idea">Idee / doel</p>
+                <p data-i18n="reviva.idea">Een website ontwerpen die meteen toont waar het merk voor staat: veilig en slimmer sporten.</p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="common.research">Onderzoek / inspiratie</p>
+                <p data-i18n="reviva.research">Ik begon met een moodboard vol beelden rond sport, natuur en herstel. Zo vond ik de sfeer van het merk: frisse groentinten en woorden als Confidence, Recovery, Harmony, Focus en Vitality.</p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="common.direction">Designrichting</p>
+                <p data-i18n="reviva.direction">Daarna maakte ik een brandsheet met het vlinderlogo in kleur, zwart-wit en als icoon, het kleurenpalet, de typografie (Inter en Jeju) en de slogan «Step by step, back in motion».</p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="common.creation">Creatie / productie</p>
+                <p data-i18n="reviva.creation">Met die basis maakte ik low-fi en daarna mid-fi wireframes in Figma, samen met flowcharts, componenten en iconen, en verbond ik de pagina's tot een klikbaar prototype.</p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="common.result">Eindresultaat</p>
+                <p data-i18n="reviva.result">Een klikbaar prototype dat toont hoe de website eruitziet en werkt.</p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="common.learned">Wat ik geleerd heb</p>
+                <p data-i18n="reviva.learned">Ik leerde dat een duidelijke merkidentiteit vooraf het ontwerpen van de website makkelijker en consistenter maakt.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="common.images">Beelden</p>
+              <h2 data-i18n="common.visualProcess">Visueel proces.</h2>
+            </div>
+            <div class="detail-gallery detail-gallery-boards">
+              <figure class="gallery-card gallery-visual">
+                <img
+                  src="image/revivasport-moodboard.jpg"
+                  alt="Moodboard van RevivaSport met groene kleurvlakken, sportbeelden, limoenen en woorden als Confidence, Recovery en Focus."
+                  data-i18n-alt="reviva.moodboardAlt"
+                />
+                <figcaption>
+                  <span data-i18n="common.moodboard">Moodboard / inspiratie</span>
+                  <p data-i18n="reviva.moodboard">Het moodboard legde de sfeer vast: beweging en rust, in de groentinten #256F5D, #A1EA93 en #71DE86.</p>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card gallery-visual">
+                <img
+                  src="image/revivasport-brandsheet.png"
+                  alt="Brandsheet van RevivaSport met het vlinderlogo in kleur, zwart-wit en als icoon, het kleurenpalet, de typografie en de slogan."
+                  data-i18n-alt="reviva.brandsheetAlt"
+                />
+                <figcaption>
+                  <span data-i18n="common.brandsheet">Brandsheet</span>
+                  <p data-i18n="reviva.brandsheet">De brandsheet bundelt het logo, de kleuren, de typografie en de slogan, zodat elk scherm dezelfde stijl volgt.</p>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card gallery-visual">
+                <img
+                  src="image/revivasport-logo-concept.png"
+                  alt="Eerste logoconcept RecoverySport: een lijntekening van een vliegende vogel met de naam op een lint, als primair logo en als icoon."
+                  data-i18n-alt="reviva.logoConceptAlt"
+                />
+                <figcaption>
+                  <span data-i18n="common.logoConcept">Eerste logoconcept</span>
+                  <p data-i18n="reviva.logoConcept">Mijn eerste logo was een lijntekening van een vliegende vogel, onder de naam RecoverySport.</p>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card gallery-visual">
+                <img
+                  src="image/revivasport-logo-variations.png"
+                  alt="Varianten van het RevivaSport-vlinderlogo in verschillende combinaties van groen, blauw, roze en goud."
+                  data-i18n-alt="reviva.logoVariationsAlt"
+                />
+                <figcaption>
+                  <span data-i18n="common.logoVariations">Logovarianten</span>
+                  <p data-i18n="reviva.logoVariations">Daarna ontwierp ik de vlinder en probeerde ik hem uit in veel kleurcombinaties, tot de groene versie uit de brandsheet.</p>
+                </figcaption>
+              </figure>
+              <figure class="gallery-card gallery-visual gallery-span">
+                <img
+                  src="image/revivasport-wireframes-lofi.png"
+                  alt="Low-fi wireframes van RevivaSport: succesverhalen, een verhaal schrijven, hoe voel je je vandaag, waarom en een herinnering met kalender."
+                  data-i18n-alt="reviva.wireframesAlt"
+                />
+                <img
+                  src="image/revivasport-wireframes-lofi-2.png"
+                  alt="Low-fi wireframes van RevivaSport: een account aanmaken en een profielpagina met accountinformatie en persoonlijke gegevens."
+                  data-i18n-alt="reviva.wireframes2Alt"
+                />
+                <figcaption>
+                  <span data-i18n="common.wireframes">Wireframes</span>
+                  <p data-i18n="reviva.wireframes">In low-fi wireframes legde ik eerst de structuur en de functies vast, zoals succesverhalen, een eigen verhaal schrijven, je gevoel van de dag en herinneringen met een kalender. Daarna werkte ik ze verder uit in mid-fi.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="common.reflection">Reflectie</p>
+              <h2 data-i18n="common.growth">Persoonlijke groei</h2>
+            </div>
+            <div class="reflection-card">
+              <p data-i18n="reviva.reflection">Met dit project leerde ik hoe je een merk vertaalt naar een website: welke typografie, kleuren en beelden passen, en hoe je de bezoeker via de navigatie naar de juiste informatie leidt. Door het prototype kon ik mijn ontwerp testen alsof het een echte website was.</p>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="site-footer section reveal" id="contact">
+        <div class="contact-layout">
+          <div class="contact-intro">
+            <p class="eyebrow" data-i18n="nav.contact">Contact</p>
+            <h2 data-i18n="footer.title">Laten we connecteren</h2>
+            <p class="footer-text" data-i18n="footer.internship">
+              Ik ben student en op zoek naar een stage. Heb je een plek of een
+              vraag? Stuur me gerust een mail.
+            </p>
+          </div>
+
+          <ul class="contact-list">
+            <li class="contact-row contact-row-mail">
+              <span class="contact-label" data-i18n="contact.email">E-mail</span>
+              <a class="contact-value" href="mailto:amel.ahriga2006@gmail.com"
+                >amel.ahriga2006@gmail.com</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="contact-row contact-row-github">
+              <span class="contact-label">GitHub</span>
+              <a
+                class="contact-value"
+                href="https://github.com/AmelAhriga"
+                target="_blank"
+                rel="noopener"
+                >@AmelAhriga</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="contact-row contact-row-linkedin">
+              <span class="contact-label">LinkedIn</span>
+              <a
+                class="contact-value"
+                href="https://www.linkedin.com/search/results/people/?keywords=Amel%20Ahriga"
+                target="_blank"
+                rel="noopener"
+                >Amel Ahriga</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Amel Ahriga</span>
+          <a href="#top" data-i18n="footer.top"
+            >Terug naar boven ↑</a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

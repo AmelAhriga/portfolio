@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">Amel Ahriga | Digital Experience Design</title>
+    <meta
+      name="description"
+      data-i18n-content="meta.description"
+      content="Portfolio van Amel Ahriga, student Digital Experience Design, met werk in fotografie, XD/UI-design en 3D-design."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2308080b' stroke='%23f4f1f8' stroke-width='2'/%3E%3Ctext x='31' y='42' text-anchor='middle' font-family='Georgia,serif' font-size='27' fill='%23f4f1f8'%3EAA%3C/text%3E%3Ccircle cx='51' cy='49' r='4' fill='%23d5849c'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <button
+          class="brand"
+          type="button"
+          data-open-home
+          aria-label="Amel Ahriga, home"
+        >
+          <span class="brand-name">Amel Ahriga</span>
+        </button>
+        <div class="header-right">
+          <nav
+            class="site-nav"
+            aria-label="Hoofdnavigatie"
+            data-i18n-aria="nav.aria"
+          >
+            <button type="button" data-open-home data-i18n="nav.home">
+              Home
+            </button>
+            <button type="button" data-scroll-to="projects" data-i18n="nav.projects">
+              Mijn projecten
+            </button>
+            <button type="button" data-scroll-to="skills" data-i18n="nav.tools">
+              Tools
+            </button>
+            <button type="button" data-scroll-to="contact" data-i18n="nav.contact">
+              Contact
+            </button>
+          </nav>
+          <div
+            class="lang-switch"
+            role="group"
+            aria-label="Taal kiezen"
+            data-i18n-aria="lang.aria"
+          >
+            <button type="button" data-set-lang="nl" lang="nl" aria-pressed="true">
+              NL
+            </button>
+            <button type="button" data-set-lang="fr" lang="fr" aria-pressed="false">
+              FR
+            </button>
+            <button type="button" data-set-lang="en" lang="en" aria-pressed="false">
+              EN
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="top">
+        <!-- ===================== PROJECT: HABIT TRACKER ===================== -->
+        <section
+          class="project-detail section"
+          data-project-view="habit-tracker"
+        >
+          <button
+            class="back-button"
+            type="button"
+            data-back-to-projects
+            data-i18n="common.back"
+          >
+            ← Terug
+          </button>
+
+          <div class="detail-hero reveal is-visible">
+            <div class="detail-copy">
+              <p class="eyebrow" data-i18n="common.projectDetail">
+                Projectdetail
+              </p>
+              <h2>Habit Tracker</h2>
+              <p class="section-text" data-i18n="habit.lead">
+                Een mobiele webapp om dagelijkse gewoontes bij te houden,
+                gebouwd met HTML en CSS.
+              </p>
+              <div class="hero-actions">
+                <a
+                  class="hero-button hero-button-primary"
+                  href="https://habit-tracker-amel.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span data-i18n="common.viewLive">Bekijk de website</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="detail-image-frame">
+              <img
+                src="image/habit-tracker.png"
+                alt="Het scherm Mijn taken van de Habit Tracker met een weekkalender, voortgangsbalk en vijf dagelijkse gewoontes."
+                data-i18n-alt="habit.alt"
+              />
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="common.projectIntro">
+                Projectintro
+              </p>
+              <h2 data-i18n="common.overview">Overzicht</h2>
+            </div>
+            <div class="detail-meta-grid">
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.projectName">
+                  Projectnaam
+                </p>
+                <p>Habit Tracker</p>
+              </article>
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.shortDesc">
+                  Korte beschrijving
+                </p>
+                <p data-i18n="habit.shortDesc">
+                  Een overzichtelijke takenlijst voor elke dag, met een
+                  weekkalender en een voortgangsbalk per gewoonte.
+                </p>
+              </article>
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.role">Mijn rol</p>
+                <p data-i18n="habit.role">Ontwerp en front-end development.</p>
+              </article>
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.tools">
+                  Gebruikte tools
+                </p>
+                <p>HTML, CSS, Vercel</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="common.process">Proces</p>
+              <h2 data-i18n="habit.processTitle">Van ontwerp tot code.</h2>
+            </div>
+            <div class="process-grid">
+              <article class="process-card">
+                <p class="meta-label" data-i18n="common.idea">Idee / doel</p>
+                <p data-i18n="habit.idea">
+                  Een eenvoudige app maken waarmee je in één oogopslag ziet
+                  welke gewoontes je vandaag al gedaan hebt.
+                </p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="common.direction">
+                  Designrichting
+                </p>
+                <p data-i18n="habit.direction">
+                  Een rustige, mobiele interface met lichte kaarten, een
+                  donkere voortgangskaart en een eigen kleur en icoon per
+                  gewoonte.
+                </p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="common.creation">
+                  Creatie / productie
+                </p>
+                <p data-i18n="habit.creation">
+                  Ik bouwde de weekkalender, de voortgangskaart en de lijst
+                  met vijf gewoontes: fitness, lezen, water drinken, ontbijt
+                  en wandelen.
+                </p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="common.result">
+                  Eindresultaat
+                </p>
+                <p data-i18n="habit.result">
+                  Een werkende webapp, online gezet met Vercel, die je op je
+                  gsm of computer kunt openen.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="common.reflection">Reflectie</p>
+              <h2 data-i18n="common.growth">Persoonlijke groei</h2>
+            </div>
+            <div class="reflection-card">
+              <p data-i18n="habit.reflection">
+                Met dit project zette ik een ontwerp zelf om in HTML en CSS.
+                Ik leerde hoe belangrijk een duidelijke structuur en
+                consistente spacing zijn om een interface rustig en
+                gebruiksvriendelijk te laten aanvoelen.
+              </p>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="site-footer section reveal" id="contact">
+        <div class="contact-layout">
+          <div class="contact-intro">
+            <p class="eyebrow" data-i18n="nav.contact">Contact</p>
+            <h2 data-i18n="footer.title">Laten we connecteren</h2>
+            <p class="footer-text" data-i18n="footer.internship">
+              Ik ben student en op zoek naar een stage. Heb je een plek of een
+              vraag? Stuur me gerust een mail.
+            </p>
+          </div>
+
+          <ul class="contact-list">
+            <li class="contact-row contact-row-mail">
+              <span class="contact-label" data-i18n="contact.email">E-mail</span>
+              <a class="contact-value" href="mailto:amel.ahriga2006@gmail.com"
+                >amel.ahriga2006@gmail.com</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="contact-row contact-row-github">
+              <span class="contact-label">GitHub</span>
+              <a
+                class="contact-value"
+                href="https://github.com/AmelAhriga"
+                target="_blank"
+                rel="noopener"
+                >@AmelAhriga</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="contact-row contact-row-linkedin">
+              <span class="contact-label">LinkedIn</span>
+              <a
+                class="contact-value"
+                href="https://www.linkedin.com/search/results/people/?keywords=Amel%20Ahriga"
+                target="_blank"
+                rel="noopener"
+                >Amel Ahriga</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Amel Ahriga</span>
+          <a href="#top" data-i18n="footer.top"
+            >Terug naar boven ↑</a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
