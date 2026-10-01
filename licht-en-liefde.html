@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="meta.title">Amel Ahriga | Digital Experience Design</title>
+    <meta
+      name="description"
+      data-i18n-content="meta.description"
+      content="Portfolio van Amel Ahriga, student Digital Experience Design, met werk in fotografie, XD/UI-design en 3D-design."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <button
+          class="brand"
+          type="button"
+          data-open-home
+          aria-label="Amel Ahriga, home"
+        >
+          <span class="brand-name">Amel Ahriga</span>
+        </button>
+        <div class="header-right">
+          <nav
+            class="site-nav"
+            aria-label="Hoofdnavigatie"
+            data-i18n-aria="nav.aria"
+          >
+            <button type="button" data-open-home data-i18n="nav.home">
+              Home
+            </button>
+            <button type="button" data-scroll-to="projects" data-i18n="nav.projects">
+              Mijn projecten
+            </button>
+            <button type="button" data-scroll-to="skills" data-i18n="nav.tools">
+              Tools
+            </button>
+            <button type="button" data-scroll-to="contact" data-i18n="nav.contact">
+              Contact
+            </button>
+          </nav>
+          <div
+            class="lang-switch"
+            role="group"
+            aria-label="Taal kiezen"
+            data-i18n-aria="lang.aria"
+          >
+            <button type="button" data-set-lang="nl" lang="nl" aria-pressed="true">
+              NL
+            </button>
+            <button type="button" data-set-lang="fr" lang="fr" aria-pressed="false">
+              FR
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main id="top">
+        <!-- ===================== PROJECT: LICHT &amp; LIEFDE ===================== -->
+        <section
+          class="project-detail section"
+          data-project-view="licht-en-liefde"
+        >
+          <button
+            class="back-button"
+            type="button"
+            data-back-to-projects
+            data-i18n="common.back"
+          >
+            ← Terug
+          </button>
+
+          <div class="detail-hero reveal is-visible">
+            <div class="detail-copy">
+              <p class="eyebrow" data-i18n="common.projectDetail">Projectdetail</p>
+              <h2>Licht &amp; Liefde</h2>
+              <p class="section-text" data-i18n="ll.lead">Een schoolopdracht in groep waarin we de website van Licht &amp; Liefde opnieuw ontwierpen.</p>
+              <p class="in-progress-note status-note">
+                <span class="in-progress-dot" aria-hidden="true"></span>
+                <span data-i18n="ll.note">Groepswerk voor school, niet in opdracht van Licht &amp; Liefde.</span>
+              </p>
+              <div class="hero-actions">
+                <a class="hero-button hero-button-primary" href="#prototype">
+                  <span data-i18n="common.prototypeTitle">Klik zelf door het ontwerp.</span>
+                  <span aria-hidden="true">↓</span>
+                </a>
+                <a
+                  class="hero-button hero-button-ghost"
+                  href="https://www.figma.com/proto/BmdX1hwFQbO1dwaCABqiJA/Wireframe-Licht---Liefde?node-id=11-14&amp;page-id=0%3A1&amp;starting-point-node-id=11%3A14"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span data-i18n="common.viewFigma">Bekijk in Figma</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+            <div class="detail-image-frame">
+              <img
+                src="image/licht-en-liefde.png"
+                alt="Homepage van het nieuwe Licht &amp; Liefde-ontwerp met de titel Autonomie boven hulp, een korte uitleg over het netwerk en een foto van een vrouw met een zonnebril."
+                data-i18n-alt="ll.alt"
+              />
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="common.projectIntro">Projectintro</p>
+              <h2 data-i18n="common.overview">Overzicht</h2>
+            </div>
+            <div class="detail-meta-grid">
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.projectName">Projectnaam</p>
+                <p>Licht &amp; Liefde</p>
+              </article>
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.shortDesc">Korte beschrijving</p>
+                <p data-i18n="ll.shortDesc">Een herontwerp van de bestaande website, uitgewerkt als klikbaar prototype in Figma.</p>
+              </article>
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.role">Mijn rol</p>
+                <p data-i18n="ll.role">Groepswerk: samen ontwierpen we de nieuwe website en het prototype.</p>
+              </article>
+              <article class="detail-meta-card">
+                <p class="meta-label" data-i18n="common.tools">Gebruikte tools</p>
+                <p>Figma</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="detail-section" id="prototype">
+            <div class="prototype-heading">
+              <div class="section-heading">
+                <p class="eyebrow" data-i18n="common.prototype">Prototype</p>
+                <h2 data-i18n="common.prototypeTitle">Klik zelf door het ontwerp.</h2>
+                <p class="section-text" data-i18n="common.prototypeHint">Het prototype is interactief: klik op knoppen en links om door de pagina's te gaan.</p>
+              </div>
+            </div>
+            <div class="prototype-stage">
+              <div class="prototype-frame" data-prototype data-view="desktop">
+                <iframe
+                  src="https://embed.figma.com/proto/BmdX1hwFQbO1dwaCABqiJA/Wireframe-Licht---Liefde?node-id=11-14&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=11%3A14&amp;embed-host=share"
+                  title="Klikbaar Figma-prototype van de Licht &amp; Liefde-website"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="ll.mmEyebrow">Analyse</p>
+              <h2 data-i18n="ll.mmTitle">De bestaande site in kaart.</h2>
+              <p class="section-text" data-i18n="ll.mm">We begonnen met een mindmap van de huidige website. Vanuit de homepage brachten we alle pagina's en onderdelen in kaart, zoals Wie zijn wij, Hoe kunt u helpen, Nieuws en events, Partners en Contact, en ook de digitale toegankelijkheid en het team met diensten als AnyReader en AnySurfer. Zo zagen we hoeveel informatie er was, waar ze verspreid stond en wat we zeker moesten behouden.</p>
+            </div>
+            <div class="detail-gallery">
+              <figure class="gallery-card gallery-visual gallery-span">
+                <img
+                  src="image/licht-en-liefde-mindmap.jpg"
+                  alt="Mindmap van de website van Licht &amp; Liefde met in het midden de homepage en daarrond alle pagina's, de digitale toegankelijkheid en het toegankelijkheidsteam met zijn diensten."
+                  data-i18n-alt="ll.mmAlt"
+                />
+                <figcaption>
+                  <span data-i18n="ll.mmEyebrow">Analyse</span>
+                  <p data-i18n="ll.mmCaption">Onze mindmap van de huidige website, met de onderdelen die we volgens de opdrachtgever moesten behouden.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="ll.brandEyebrow">Branding</p>
+              <h2 data-i18n="ll.brandTitle">Het merk als basis.</h2>
+              <p class="section-text" data-i18n="ll.brand">We vertrokken van de bestaande huisstijl van Licht &amp; Liefde: het logo, de vijf merkkleuren (donkerblauw, geel, turquoise, oranje en roze) en het lettertype Inter. Daarop bouwden we een duidelijke typografische schaal en knoppen. Elke kleurcombinatie controleerden we op contrast volgens de WCAG-richtlijnen, zodat de teksten ook voor slechtziende mensen goed leesbaar zijn.</p>
+            </div>
+            <div class="detail-gallery">
+              <figure class="gallery-card gallery-visual gallery-span">
+                <img
+                  src="image/licht-en-liefde-branding.jpg"
+                  alt="Brandingbord van Licht &amp; Liefde met notities, het logo, de vijf merkkleuren, de lettergroottes, het lettertype Inter, de knoppen en een WCAG-contrasttabel."
+                  data-i18n-alt="ll.brandAlt"
+                />
+                <figcaption>
+                  <span data-i18n="ll.brandEyebrow">Branding</span>
+                  <p data-i18n="ll.brandCaption">Ons brandingbord in Figma: notities, logo, kleuren, typografie, knoppen en de contrastcheck.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="detail-section">
+            <div class="section-heading">
+              <p class="eyebrow" data-i18n="ll.a11yEyebrow">Toegankelijkheid</p>
+              <h2 data-i18n="ll.a11yTitle">Een site voor iedereen.</h2>
+              <p class="section-text" data-i18n="ll.goal">Licht &amp; Liefde ondersteunt blinde en slechtziende mensen. Onze nieuwe website moest daarom voor iedereen toegankelijk zijn: duidelijke structuur, leesbare teksten en een navigatie die je snel naar de juiste informatie brengt.</p>
+            </div>
+            <h3 class="detail-subtitle" data-i18n="ll.planLabel">Testplan</h3>
+            <div class="process-grid process-grid-plan">
+              <article class="process-card">
+                <p class="meta-label" data-i18n="ll.hypLabel">Hypothese</p>
+                <p data-i18n="ll.hyp">De huidige structuur van de website sluit niet goed aan bij wat gebruikers verwachten. Met een nieuwe navigatiestructuur vinden ze informatie sneller en makkelijker terug.</p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="ll.questionsLabel">Onderzoeksvragen</p>
+                <p data-i18n="ll.questions">Hoe groeperen gebruikers de informatie? Begrijpen ze de namen van de categorieën? Vinden ze snel wat ze zoeken? En welke onderdelen zijn onduidelijk?</p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="ll.methodLabel">Methode</p>
+                <p data-i18n="ll.method">Een kwalitatief onderzoek met card sorting en een digitale gebruikerstest van de navigatie. Deelnemers dachten luidop terwijl ze taken uitvoerden, zoals info zoeken over een visuele beperking, vrijwilliger worden, workshops zoeken en contact opnemen.</p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="ll.participantsLabel">Deelnemers</p>
+                <p data-i18n="ll.participants">Drie deelnemers tussen 18 en 65 jaar, één per teamlid, uit ons eigen netwerk. Vooraf deden we een oefentest om de timing en de flow te controleren.</p>
+              </article>
+            </div>
+            <h3 class="detail-subtitle" data-i18n="ll.csLabel">Card sorting</h3>
+            <p class="section-text detail-subtext" data-i18n="ll.cs">De testpersoon kreeg 30 kaartjes met de onderdelen van de website, zoals Over ons, Workshops, Doneren en Contact, en groepeerde ze zoals het voor hem logisch was. Daaruit kwamen acht groepen: Over de organisatie, Activiteiten &amp; nieuws, Helpen en deelnemen, Informatie voor gebruikers, Contact, Samenwerking, Account en Extra info. Alleen bij 'Digitale toegankelijkheid' twijfelde hij waar het hoorde. Deze groepen gebruikten we als basis voor de nieuwe navigatie.</p>
+            <div class="detail-gallery">
+              <figure class="gallery-card gallery-visual gallery-span">
+                <img
+                  src="image/licht-en-liefde-cardsorting.jpg"
+                  alt="Card sorting in FigJam: bovenaan de losse kaartjes met de onderdelen van de website, onderaan de acht groepen die de testpersoon maakte."
+                  data-i18n-alt="ll.csAlt"
+                />
+                <figcaption>
+                  <span data-i18n="ll.csLabel">Card sorting</span>
+                  <p data-i18n="ll.csCaption">De card sorting in FigJam: de losse kaartjes bovenaan en de groepen die de testpersoon maakte onderaan.</p>
+                </figcaption>
+              </figure>
+            </div>
+            <h3 class="detail-subtitle" data-i18n="ll.testLabel">Usertests</h3>
+            <div class="process-grid process-grid-3">
+              <article class="process-card">
+                <p class="meta-label" data-i18n="ll.testLabel">Usertests</p>
+                <p data-i18n="ll.test">We testten ons ontwerp met drie gebruikers. Elke gebruiker kreeg dezelfde taken, zoals info vinden bij Hulp &amp; info, vrijwilliger worden, een activiteit zoeken, contact opnemen, doneren en de historiek vinden. We noteerden wat vlot ging en waar ze twijfelden.</p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="ll.findingsLabel">Wat we leerden</p>
+                <p data-i18n="ll.findings">De meeste categorieën waren duidelijk en contact, adres en doneren werden meteen gevonden. Maar 'Nieuws &amp; Events' was verwarrend naast 'Activiteiten', de workshops stonden op een onlogische plek en de historiek was moeilijk te vinden.</p>
+              </article>
+              <article class="process-card">
+                <p class="meta-label" data-i18n="ll.changesLabel">Wat we aanpasten</p>
+                <p data-i18n="ll.changes">Op basis van de tests stelden we voor om de workshops onder Activiteiten te zetten, 'Nieuws &amp; Events' duidelijker te maken, nieuws hoger op de homepage te tonen, de historiek bereikbaar te maken via een dropdown en contact ook bovenaan in de navigatie te zetten.</p>
+              </article>
+            </div>
+            <div class="detail-gallery">
+              <figure class="gallery-card gallery-visual gallery-span">
+                <img
+                  src="image/licht-en-liefde-usertests.jpg"
+                  alt="Notities van de usertests met Xian, Gabriel en Imane: per taak wat de gebruiker deed, wat goed ging en welke feedback ze gaven."
+                  data-i18n-alt="ll.usertestsAlt"
+                />
+                <figcaption>
+                  <span data-i18n="ll.testLabel">Usertests</span>
+                  <p data-i18n="ll.usertestsCaption">Onze notities van de drie usertests, per taak uitgeschreven.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="site-footer section reveal" id="contact">
+        <div class="contact-layout">
+          <div class="contact-intro">
+            <p class="eyebrow" data-i18n="nav.contact">Contact</p>
+            <h2 data-i18n="footer.title">Laten we connecteren</h2>
+            <p class="footer-text" data-i18n="footer.internship">
+              Ik ben student en op zoek naar een stage. Heb je een plek of een
+              vraag? Stuur me gerust een mail.
+            </p>
+          </div>
+
+          <ul class="contact-list">
+            <li class="contact-row contact-row-mail">
+              <span class="contact-label" data-i18n="contact.email">E-mail</span>
+              <a class="contact-value" href="mailto:amel.ahriga2006@gmail.com"
+                >amel.ahriga2006@gmail.com</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="contact-row contact-row-github">
+              <span class="contact-label">GitHub</span>
+              <a
+                class="contact-value"
+                href="https://github.com/AmelAhriga"
+                target="_blank"
+                rel="noopener"
+                >@AmelAhriga</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+            <li class="contact-row contact-row-linkedin">
+              <span class="contact-label">LinkedIn</span>
+              <a
+                class="contact-value"
+                href="https://www.linkedin.com/search/results/people/?keywords=Amel%20Ahriga"
+                target="_blank"
+                rel="noopener"
+                >Amel Ahriga</a
+              >
+              <span class="contact-arrow" aria-hidden="true">↗</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span data-year>2026</span> Amel Ahriga</span>
+          <a href="#top" data-i18n="footer.top"
+            >Terug naar boven ↑</a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

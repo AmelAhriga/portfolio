@@ -1254,6 +1254,33 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.detail-subtitle {
+  margin: 2.25rem 0 1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.6rem, 2.4vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.detail-subtext {
+  margin: 0 0 1rem;
+}
+
+.process-grid-plan {
+  margin-bottom: 0.5rem;
+}
+
+.process-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .process-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
 .detail-gallery .gallery-card {
   margin: 0;
 }

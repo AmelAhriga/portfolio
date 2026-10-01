@@ -103,9 +103,9 @@ document.querySelectorAll("[data-year]").forEach((el) => {
 });
 
 // ---------------------------------------------------------------------------
-// Language switcher (NL is the main language, FR and EN are optional).
+// Language switcher (NL is the main language, FR is optional).
 // ---------------------------------------------------------------------------
-const supportedLanguages = ["nl", "fr", "en"];
+const supportedLanguages = ["nl", "fr"];
 const defaultLanguage = "nl";
 
 const getSavedLanguage = () => {
