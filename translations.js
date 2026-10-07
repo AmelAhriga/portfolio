@@ -1,219 +1,154 @@
+// All translatable text of the portfolio. Dutch (nl) is the main language.
+// Elements use data-i18n (text), data-i18n-alt (image alt) and
+// data-i18n-aria (aria-label) to point to a key below.
 const translations = {
   nl: {
     "ll.mmEyebrow": "Analyse",
     "ll.mmTitle": "De bestaande site in kaart.",
-    "ll.mm":
-      "We begonnen met een mindmap van de huidige website. Vanuit de homepage brachten we alle pagina's en onderdelen in kaart, zoals Wie zijn wij, Hoe kunt u helpen, Nieuws en events, Partners en Contact, en ook de digitale toegankelijkheid en het team met diensten als AnyReader en AnySurfer. Zo zagen we hoeveel informatie er was, waar ze verspreid stond en wat we zeker moesten behouden.",
-    "ll.mmAlt":
-      "Mindmap van de website van Licht & Liefde met in het midden de homepage en daarrond alle pagina's, de digitale toegankelijkheid en het toegankelijkheidsteam met zijn diensten.",
-    "ll.mmCaption":
-      "Onze mindmap van de huidige website, met de onderdelen die we volgens de opdrachtgever moesten behouden.",
+    "ll.mm": "We begonnen met een mindmap van de huidige website. Vanuit de homepage brachten we alle pagina's en onderdelen in kaart, zoals Wie zijn wij, Hoe kunt u helpen, Nieuws en events, Partners en Contact, en ook de digitale toegankelijkheid en het team met diensten als AnyReader en AnySurfer. Zo zagen we hoeveel informatie er was, waar ze verspreid stond en wat we zeker moesten behouden.",
+    "ll.mmAlt": "Mindmap van de website van Licht & Liefde met in het midden de homepage en daarrond alle pagina's, de digitale toegankelijkheid en het toegankelijkheidsteam met zijn diensten.",
+    "ll.mmCaption": "Onze mindmap van de huidige website, met de onderdelen die we volgens de opdrachtgever moesten behouden.",
     "ll.csLabel": "Card sorting",
-    "ll.cs":
-      "De testpersoon kreeg 30 kaartjes met de onderdelen van de website, zoals Over ons, Workshops, Doneren en Contact, en groepeerde ze zoals het voor hem logisch was. Daaruit kwamen acht groepen: Over de organisatie, Activiteiten & nieuws, Helpen en deelnemen, Informatie voor gebruikers, Contact, Samenwerking, Account en Extra info. Alleen bij 'Digitale toegankelijkheid' twijfelde hij waar het hoorde. Deze groepen gebruikten we als basis voor de nieuwe navigatie.",
-    "ll.csAlt":
-      "Card sorting in FigJam: bovenaan de losse kaartjes met de onderdelen van de website, onderaan de acht groepen die de testpersoon maakte.",
-    "ll.csCaption":
-      "De card sorting in FigJam: de losse kaartjes bovenaan en de groepen die de testpersoon maakte onderaan.",
+    "ll.cs": "De testpersoon kreeg 30 kaartjes met de onderdelen van de website, zoals Over ons, Workshops, Doneren en Contact, en groepeerde ze zoals het voor hem logisch was. Daaruit kwamen acht groepen: Over de organisatie, Activiteiten & nieuws, Helpen en deelnemen, Informatie voor gebruikers, Contact, Samenwerking, Account en Extra info. Alleen bij 'Digitale toegankelijkheid' twijfelde hij waar het hoorde. Deze groepen gebruikten we als basis voor de nieuwe navigatie.",
+    "ll.csAlt": "Card sorting in FigJam: bovenaan de losse kaartjes met de onderdelen van de website, onderaan de acht groepen die de testpersoon maakte.",
+    "ll.csCaption": "De card sorting in FigJam: de losse kaartjes bovenaan en de groepen die de testpersoon maakte onderaan.",
     "ll.planLabel": "Testplan",
     "ll.hypLabel": "Hypothese",
-    "ll.hyp":
-      "De huidige structuur van de website sluit niet goed aan bij wat gebruikers verwachten. Met een nieuwe navigatiestructuur vinden ze informatie sneller en makkelijker terug.",
+    "ll.hyp": "De huidige structuur van de website sluit niet goed aan bij wat gebruikers verwachten. Met een nieuwe navigatiestructuur vinden ze informatie sneller en makkelijker terug.",
     "ll.questionsLabel": "Onderzoeksvragen",
-    "ll.questions":
-      "Hoe groeperen gebruikers de informatie? Begrijpen ze de namen van de categorieën? Vinden ze snel wat ze zoeken? En welke onderdelen zijn onduidelijk?",
+    "ll.questions": "Hoe groeperen gebruikers de informatie? Begrijpen ze de namen van de categorieën? Vinden ze snel wat ze zoeken? En welke onderdelen zijn onduidelijk?",
     "ll.methodLabel": "Methode",
-    "ll.method":
-      "Een kwalitatief onderzoek met card sorting en een digitale gebruikerstest van de navigatie. Deelnemers dachten luidop terwijl ze taken uitvoerden, zoals info zoeken over een visuele beperking, vrijwilliger worden, workshops zoeken en contact opnemen.",
+    "ll.method": "Een kwalitatief onderzoek met card sorting en een digitale gebruikerstest van de navigatie. Deelnemers dachten luidop terwijl ze taken uitvoerden, zoals info zoeken over een visuele beperking, vrijwilliger worden, workshops zoeken en contact opnemen.",
     "ll.participantsLabel": "Deelnemers",
-    "ll.participants":
-      "Drie deelnemers tussen 18 en 65 jaar, één per teamlid, uit ons eigen netwerk. Vooraf deden we een oefentest om de timing en de flow te controleren.",
+    "ll.participants": "Drie deelnemers tussen 18 en 65 jaar, één per teamlid, uit ons eigen netwerk. Vooraf deden we een oefentest om de timing en de flow te controleren.",
     "ll.brandEyebrow": "Branding",
     "ll.brandTitle": "Het merk als basis.",
-    "ll.brand":
-      "We vertrokken van de bestaande huisstijl van Licht & Liefde: het logo, de vijf merkkleuren (donkerblauw, geel, turquoise, oranje en roze) en het lettertype Inter. Daarop bouwden we een duidelijke typografische schaal en knoppen. Elke kleurcombinatie controleerden we op contrast volgens de WCAG-richtlijnen, zodat de teksten ook voor slechtziende mensen goed leesbaar zijn.",
-    "ll.brandAlt":
-      "Brandingbord van Licht & Liefde met notities, het logo, de vijf merkkleuren, de lettergroottes, het lettertype Inter, de knoppen en een WCAG-contrasttabel.",
-    "ll.brandCaption":
-      "Ons brandingbord in Figma: notities, logo, kleuren, typografie, knoppen en de contrastcheck.",
+    "ll.brand": "We vertrokken van de bestaande huisstijl van Licht & Liefde: het logo, de vijf merkkleuren (donkerblauw, geel, turquoise, oranje en roze) en het lettertype Inter. Daarop bouwden we een duidelijke typografische schaal en knoppen. Elke kleurcombinatie controleerden we op contrast volgens de WCAG-richtlijnen, zodat de teksten ook voor slechtziende mensen goed leesbaar zijn.",
+    "ll.brandAlt": "Brandingbord van Licht & Liefde met notities, het logo, de vijf merkkleuren, de lettergroottes, het lettertype Inter, de knoppen en een WCAG-contrasttabel.",
+    "ll.brandCaption": "Ons brandingbord in Figma: notities, logo, kleuren, typografie, knoppen en de contrastcheck.",
     "ll.a11yEyebrow": "Toegankelijkheid",
     "ll.a11yTitle": "Een site voor iedereen.",
-    "ll.goal":
-      "Licht & Liefde ondersteunt blinde en slechtziende mensen. Onze nieuwe website moest daarom voor iedereen toegankelijk zijn: duidelijke structuur, leesbare teksten en een navigatie die je snel naar de juiste informatie brengt.",
+    "ll.goal": "Licht & Liefde ondersteunt blinde en slechtziende mensen. Onze nieuwe website moest daarom voor iedereen toegankelijk zijn: duidelijke structuur, leesbare teksten en een navigatie die je snel naar de juiste informatie brengt.",
     "ll.testLabel": "Usertests",
-    "ll.test":
-      "We testten ons ontwerp met drie gebruikers. Elke gebruiker kreeg dezelfde taken, zoals info vinden bij Hulp & info, vrijwilliger worden, een activiteit zoeken, contact opnemen, doneren en de historiek vinden. We noteerden wat vlot ging en waar ze twijfelden.",
+    "ll.test": "We testten ons ontwerp met drie gebruikers. Elke gebruiker kreeg dezelfde taken, zoals info vinden bij Hulp & info, vrijwilliger worden, een activiteit zoeken, contact opnemen, doneren en de historiek vinden. We noteerden wat vlot ging en waar ze twijfelden.",
     "ll.findingsLabel": "Wat we leerden",
-    "ll.findings":
-      "De meeste categorieën waren duidelijk en contact, adres en doneren werden meteen gevonden. Maar 'Nieuws & Events' was verwarrend naast 'Activiteiten', de workshops stonden op een onlogische plek en de historiek was moeilijk te vinden.",
+    "ll.findings": "De meeste categorieën waren duidelijk en contact, adres en doneren werden meteen gevonden. Maar 'Nieuws & Events' was verwarrend naast 'Activiteiten', de workshops stonden op een onlogische plek en de historiek was moeilijk te vinden.",
     "ll.changesLabel": "Wat we aanpasten",
-    "ll.changes":
-      "Op basis van de tests stelden we voor om de workshops onder Activiteiten te zetten, 'Nieuws & Events' duidelijker te maken, nieuws hoger op de homepage te tonen, de historiek bereikbaar te maken via een dropdown en contact ook bovenaan in de navigatie te zetten.",
-    "ll.usertestsAlt":
-      "Notities van de usertests met Xian, Gabriel en Imane: per taak wat de gebruiker deed, wat goed ging en welke feedback ze gaven.",
-    "ll.usertestsCaption":
-      "Onze notities van de drie usertests, per taak uitgeschreven.",
-    "ll.alt":
-      "Homepage van het nieuwe Licht & Liefde-ontwerp met de titel Autonomie boven hulp, een korte uitleg over het netwerk en een foto van een vrouw met een zonnebril.",
-    "ll.lead":
-      "Een schoolopdracht in groep waarin we de website van Licht & Liefde opnieuw ontwierpen.",
-    "ll.shortDesc":
-      "Een herontwerp van de bestaande website, uitgewerkt als klikbaar prototype in Figma.",
-    "ll.role":
-      "Groepswerk: samen ontwierpen we de nieuwe website en het prototype.",
+    "ll.changes": "Op basis van de tests stelden we voor om de workshops onder Activiteiten te zetten, 'Nieuws & Events' duidelijker te maken, nieuws hoger op de homepage te tonen, de historiek bereikbaar te maken via een dropdown en contact ook bovenaan in de navigatie te zetten.",
+    "ll.usertestsAlt": "Notities van de usertests met Xian, Gabriel en Imane: per taak wat de gebruiker deed, wat goed ging en welke feedback ze gaven.",
+    "ll.usertestsCaption": "Onze notities van de drie usertests, per taak uitgeschreven.",
+    "ll.alt": "Homepage van het nieuwe Licht & Liefde-ontwerp met de titel Autonomie boven hulp, een korte uitleg over het netwerk en een foto van een vrouw met een zonnebril.",
+    "ll.lead": "Een schoolopdracht in groep waarin we de website van Licht & Liefde opnieuw ontwierpen.",
+    "ll.shortDesc": "Een herontwerp van de bestaande website, uitgewerkt als klikbaar prototype in Figma.",
+    "ll.role": "Groepswerk: samen ontwierpen we de nieuwe website en het prototype.",
     "ll.note": "Groepswerk voor school, niet in opdracht van Licht & Liefde.",
-    "row.licht-en-liefde.text":
-      "Een nieuw ontwerp voor de website van Licht & Liefde, als groepswerk.",
+    "row.licht-en-liefde.text": "Een nieuw ontwerp voor de website van Licht & Liefde, als groepswerk.",
     "row.licht-en-liefde.kind": "UI-design",
     "cloud.counterLabel": "De machine in 3D",
-    "cloud.counterAlt":
-      "Close-up van de toonbank in de Sweet Cloud-truck met de zelf gemodelleerde roze suikerspinmachine, suikerspinnen in pastelkleuren, stokjes en een kassa.",
-    "cloud.counter":
-      "Op basis van mijn referenties modelleerde ik de suikerspinmachine zelf in Blender, met de inox kuip, het bedieningspaneel en de lade. Rond de machine plaatste ik suikerspinnen, stokjes en een kassa om de toonbank echt te laten aanvoelen.",
+    "cloud.counterAlt": "Close-up van de toonbank in de Sweet Cloud-truck met de zelf gemodelleerde roze suikerspinmachine, suikerspinnen in pastelkleuren, stokjes en een kassa.",
+    "cloud.counter": "Op basis van mijn referenties modelleerde ik de suikerspinmachine zelf in Blender, met de inox kuip, het bedieningspaneel en de lade. Rond de machine plaatste ik suikerspinnen, stokjes en een kassa om de toonbank echt te laten aanvoelen.",
     "cloud.machineLabel": "Details zoeken",
-    "cloud.machineAlt":
-      "Referentiebord met foto's van roze suikerspinmachines: de onderdelen, de afmetingen, de ronde inox kuip, het bedieningspaneel en de kop in het midden.",
-    "cloud.machine":
-      "Omdat het een examenopdracht was, wilde ik de suikerspinmachine zo echt mogelijk modelleren. Ik verzamelde referentiefoto's van bestaande machines om de onderdelen, afmetingen en details te bestuderen: de inox kuip, het bedieningspaneel en de kop in het midden.",
-    "cloud.moodboardAlt":
-      "Moodboard van Sweet Cloud met roze en blauwe suikerspin, foodtrucks, marshmallows, rood-witte strepen, een ruitpatroon, zilveren stof en een kleurenpalet in roze, rood, grijs en wit.",
-    "cloud.moodboard":
-      "Ik begon met een moodboard vol suikerspin, snoep en roze foodtrucks. Daaruit haalde ik de sfeer en het kleurenpalet van het merk: zacht roze, kersenrood, zilvergrijs en wit.",
+    "cloud.machineAlt": "Referentiebord met foto's van roze suikerspinmachines: de onderdelen, de afmetingen, de ronde inox kuip, het bedieningspaneel en de kop in het midden.",
+    "cloud.machine": "Omdat het een examenopdracht was, wilde ik de suikerspinmachine zo echt mogelijk modelleren. Ik verzamelde referentiefoto's van bestaande machines om de onderdelen, afmetingen en details te bestuderen: de inox kuip, het bedieningspaneel en de kop in het midden.",
+    "cloud.moodboardAlt": "Moodboard van Sweet Cloud met roze en blauwe suikerspin, foodtrucks, marshmallows, rood-witte strepen, een ruitpatroon, zilveren stof en een kleurenpalet in roze, rood, grijs en wit.",
+    "cloud.moodboard": "Ik begon met een moodboard vol suikerspin, snoep en roze foodtrucks. Daaruit haalde ik de sfeer en het kleurenpalet van het merk: zacht roze, kersenrood, zilvergrijs en wit.",
     "marquee.aria": "Disciplines en tools",
-    "skills.designText":
-      "Van onderzoek en wireframes tot een doordacht, gebruiksvriendelijk eindontwerp.",
+    "skills.designText": "Van onderzoek en wireframes tot een doordacht, gebruiksvriendelijk eindontwerp.",
     "skills.devText": "Ontwerpen omzetten naar werkende websites en apps.",
-    "skills.visualText":
-      "Beelden en 3D-werelden die een merk tot leven brengen.",
+    "skills.visualText": "Beelden en 3D-werelden die een merk tot leven brengen.",
     "work.viewAll": "Bekijk al mijn projecten",
     "projects.title": "Al mijn projecten",
-    "row.bysaphir.text":
-      "Fotografie, websiteontwerp en productbeheer voor een modewebshop.",
+    "row.bysaphir.text": "Fotografie, websiteontwerp en productbeheer voor een modewebshop.",
     "row.bysaphir.kind": "Fotografie · Web",
-    "row.revivasport.text":
-      "Branding en websiteontwerp voor een sportmerk, als klikbaar prototype.",
+    "row.revivasport.text": "Branding en websiteontwerp voor een sportmerk, als klikbaar prototype.",
     "row.revivasport.kind": "UI-design",
-    "row.habit-tracker.text":
-      "Een mobiele webapp om dagelijkse gewoontes bij te houden.",
+    "row.habit-tracker.text": "Een mobiele webapp om dagelijkse gewoontes bij te houden.",
     "row.habit-tracker.kind": "Web app",
-    "row.soumy-gold.text":
-      "Skincarefotografie en branding voor een luxe verzorgingsmerk.",
+    "row.soumy-gold.text": "Skincarefotografie en branding voor een luxe verzorgingsmerk.",
     "row.soumy-gold.kind": "Fotografie",
-    "row.sweet-cloud.text":
-      "Een merkwereld voor een vegan suikerspin-foodtruck, in 3D.",
+    "row.sweet-cloud.text": "Een merkwereld voor een vegan suikerspin-foodtruck, in 3D.",
     "row.sweet-cloud.kind": "3D",
     "common.figmaDesign": "Ontwerp in Figma",
-    "saphir.figmaAlt":
-      "Twee Figma-ontwerpen van de BYSAPHIR-homepage met de hero Style & Confort, bestsellers, klantreviews en een nieuwsbriefblok.",
-    "saphir.figma":
-      "Voor ik de homepage in Shopify aanpaste, ontwierp ik ze eerst in Figma. Ik werkte twee varianten uit met een andere hero-foto, met bestsellers, klantreviews en een nieuwsbriefblok.",
+    "saphir.figmaAlt": "Twee Figma-ontwerpen van de BYSAPHIR-homepage met de hero Style & Confort, bestsellers, klantreviews en een nieuwsbriefblok.",
+    "saphir.figma": "Voor ik de homepage in Shopify aanpaste, ontwierp ik ze eerst in Figma. Ik werkte twee varianten uit met een andere hero-foto, met bestsellers, klantreviews en een nieuwsbriefblok.",
     "common.products": "Productbeheer",
-    "saphir.productsAlt":
-      "Collectiepagina van BYSAPHIR met hijabs in verschillende kleuren, productfoto's, prijzen en filters.",
-    "saphir.products":
-      "Ik fotografeerde de producten en voegde ze zelf toe in Shopify, met titels, prijzen, beschrijvingen en details, zodat de collectie er rustig en uniform uitziet.",
+    "saphir.productsAlt": "Collectiepagina van BYSAPHIR met hijabs in verschillende kleuren, productfoto's, prijzen en filters.",
+    "saphir.products": "Ik fotografeerde de producten en voegde ze zelf toe in Shopify, met titels, prijzen, beschrijvingen en details, zodat de collectie er rustig en uniform uitziet.",
     "saphir.maintenance": "De website is momenteel in onderhoud.",
-    "reviva.wireframes2Alt":
-      "Low-fi wireframes van RevivaSport: een account aanmaken en een profielpagina met accountinformatie en persoonlijke gegevens.",
-    "common.inProgress":
-      "In progress: er komen binnenkort nog nieuwe projecten bij.",
-    "reviva.wireframes":
-      "In low-fi wireframes legde ik eerst de structuur en de functies vast, zoals succesverhalen, een eigen verhaal schrijven, je gevoel van de dag en herinneringen met een kalender. Daarna werkte ik ze verder uit in mid-fi.",
-    "reviva.wireframesAlt":
-      "Low-fi wireframes van RevivaSport: succesverhalen, een verhaal schrijven, hoe voel je je vandaag, waarom en een herinnering met kalender.",
+    "reviva.wireframes2Alt": "Low-fi wireframes van RevivaSport: een account aanmaken en een profielpagina met accountinformatie en persoonlijke gegevens.",
+    "common.inProgress": "In progress: er komen binnenkort nog nieuwe projecten bij.",
+    "reviva.wireframes": "In low-fi wireframes legde ik eerst de structuur en de functies vast, zoals succesverhalen, een eigen verhaal schrijven, je gevoel van de dag en herinneringen met een kalender. Daarna werkte ik ze verder uit in mid-fi.",
+    "reviva.wireframesAlt": "Low-fi wireframes van RevivaSport: succesverhalen, een verhaal schrijven, hoe voel je je vandaag, waarom en een herinnering met kalender.",
     "common.wireframes": "Wireframes",
     "common.logoConcept": "Eerste logoconcept",
     "common.logoVariations": "Logovarianten",
-    "reviva.logoConceptAlt":
-      "Eerste logoconcept RecoverySport: een lijntekening van een vliegende vogel met de naam op een lint, als primair logo en als icoon.",
-    "reviva.logoConcept":
-      "Mijn eerste logo was een lijntekening van een vliegende vogel, onder de naam RecoverySport.",
-    "reviva.logoVariationsAlt":
-      "Varianten van het RevivaSport-vlinderlogo in verschillende combinaties van groen, blauw, roze en goud.",
-    "reviva.logoVariations":
-      "Daarna ontwierp ik de vlinder en probeerde ik hem uit in veel kleurcombinaties, tot de groene versie uit de brandsheet.",
-    "reviva.brandsheet":
-      "De brandsheet bundelt het logo, de kleuren, de typografie en de slogan, zodat elk scherm dezelfde stijl volgt.",
-    "reviva.brandsheetAlt":
-      "Brandsheet van RevivaSport met het vlinderlogo in kleur, zwart-wit en als icoon, het kleurenpalet, de typografie en de slogan.",
-    "reviva.moodboard":
-      "Het moodboard legde de sfeer vast: beweging en rust, in de groentinten #256F5D, #A1EA93 en #71DE86.",
-    "reviva.moodboardAlt":
-      "Moodboard van RevivaSport met groene kleurvlakken, sportbeelden, limoenen en woorden als Confidence, Recovery en Focus.",
-    "reviva.learned":
-      "Ik leerde dat een duidelijke merkidentiteit vooraf het ontwerpen van de website makkelijker en consistenter maakt.",
-    "reviva.research":
-      "Ik begon met een moodboard vol beelden rond sport, natuur en herstel. Zo vond ik de sfeer van het merk: frisse groentinten en woorden als Confidence, Recovery, Harmony, Focus en Vitality.",
+    "reviva.logoConceptAlt": "Eerste logoconcept RecoverySport: een lijntekening van een vliegende vogel met de naam op een lint, als primair logo en als icoon.",
+    "reviva.logoConcept": "Mijn eerste logo was een lijntekening van een vliegende vogel, onder de naam RecoverySport.",
+    "reviva.logoVariationsAlt": "Varianten van het RevivaSport-vlinderlogo in verschillende combinaties van groen, blauw, roze en goud.",
+    "reviva.logoVariations": "Daarna ontwierp ik de vlinder en probeerde ik hem uit in veel kleurcombinaties, tot de groene versie uit de brandsheet.",
+    "reviva.brandsheet": "De brandsheet bundelt het logo, de kleuren, de typografie en de slogan, zodat elk scherm dezelfde stijl volgt.",
+    "reviva.brandsheetAlt": "Brandsheet van RevivaSport met het vlinderlogo in kleur, zwart-wit en als icoon, het kleurenpalet, de typografie en de slogan.",
+    "reviva.moodboard": "Het moodboard legde de sfeer vast: beweging en rust, in de groentinten #256F5D, #A1EA93 en #71DE86.",
+    "reviva.moodboardAlt": "Moodboard van RevivaSport met groene kleurvlakken, sportbeelden, limoenen en woorden als Confidence, Recovery en Focus.",
+    "reviva.learned": "Ik leerde dat een duidelijke merkidentiteit vooraf het ontwerpen van de website makkelijker en consistenter maakt.",
+    "reviva.research": "Ik begon met een moodboard vol beelden rond sport, natuur en herstel. Zo vond ik de sfeer van het merk: frisse groentinten en woorden als Confidence, Recovery, Harmony, Focus en Vitality.",
     "common.brandsheet": "Brandsheet",
     "common.viewFigma": "Bekijk in Figma",
     "common.prototype": "Prototype",
     "common.prototypeTitle": "Klik zelf door het ontwerp.",
-    "common.prototypeHint":
-      "Het prototype is interactief: klik op knoppen en links om door de pagina's te gaan.",
+    "common.prototypeHint": "Het prototype is interactief: klik op knoppen en links om door de pagina's te gaan.",
     "common.viewAria": "Weergave kiezen",
     "common.desktop": "Desktop",
     "common.mobile": "Gsm",
     "card.reviva.aria": "Open de projectdetails van RevivaSport",
     "card.reviva.tagsAria": "Vaardigheden in het RevivaSport-project",
-    "card.reviva.alt":
-      "Homepage van het RevivaSport-websiteontwerp met de slogan Stay safe, train smarter.",
-    "card.reviva.text":
-      "Een websiteontwerp voor een sportmerk, uitgewerkt als klikbaar prototype in Figma.",
-    "reviva.lead":
-      "Een websiteontwerp voor het sportmerk RevivaSport, uitgewerkt als klikbaar prototype in Figma.",
-    "reviva.alt":
-      "Homepage van het RevivaSport-websiteontwerp met navigatie, de slogan Stay safe, train smarter en een sportfoto.",
-    "reviva.shortDesc":
-      "Een website voor een sportmerk met een sterke slogan, duidelijke navigatie en een oproep om de app te downloaden.",
+    "card.reviva.alt": "Homepage van het RevivaSport-websiteontwerp met de slogan Stay safe, train smarter.",
+    "card.reviva.text": "Een websiteontwerp voor een sportmerk, uitgewerkt als klikbaar prototype in Figma.",
+    "reviva.lead": "Een websiteontwerp voor het sportmerk RevivaSport, uitgewerkt als klikbaar prototype in Figma.",
+    "reviva.alt": "Homepage van het RevivaSport-websiteontwerp met navigatie, de slogan Stay safe, train smarter en een sportfoto.",
+    "reviva.shortDesc": "Een website voor een sportmerk met een sterke slogan, duidelijke navigatie en een oproep om de app te downloaden.",
     "reviva.role": "UI-designer: layout, typografie, kleur en prototyping.",
     "reviva.processTitle": "Van wireframe tot prototype.",
-    "reviva.idea":
-      "Een website ontwerpen die meteen toont waar het merk voor staat: veilig en slimmer sporten.",
-    "reviva.direction":
-      "Daarna maakte ik een brandsheet met het vlinderlogo in kleur, zwart-wit en als icoon, het kleurenpalet, de typografie (Inter en Jeju) en de slogan «Step by step, back in motion».",
-    "reviva.creation":
-      "Met die basis maakte ik low-fi en daarna mid-fi wireframes in Figma, samen met flowcharts, componenten en iconen, en verbond ik de pagina's tot een klikbaar prototype.",
-    "reviva.result":
-      "Een klikbaar prototype dat toont hoe de website eruitziet en werkt.",
-    "reviva.reflection":
-      "Met dit project leerde ik hoe je een merk vertaalt naar een website: welke typografie, kleuren en beelden passen, en hoe je de bezoeker via de navigatie naar de juiste informatie leidt. Door het prototype kon ik mijn ontwerp testen alsof het een echte website was.",
+    "reviva.idea": "Een website ontwerpen die meteen toont waar het merk voor staat: veilig en slimmer sporten.",
+    "reviva.direction": "Daarna maakte ik een brandsheet met het vlinderlogo in kleur, zwart-wit en als icoon, het kleurenpalet, de typografie (Inter en Jeju) en de slogan «Step by step, back in motion».",
+    "reviva.creation": "Met die basis maakte ik low-fi en daarna mid-fi wireframes in Figma, samen met flowcharts, componenten en iconen, en verbond ik de pagina's tot een klikbaar prototype.",
+    "reviva.result": "Een klikbaar prototype dat toont hoe de website eruitziet en werkt.",
+    "reviva.reflection": "Met dit project leerde ik hoe je een merk vertaalt naar een website: welke typografie, kleuren en beelden passen, en hoe je de bezoeker via de navigatie naar de juiste informatie leidt. Door het prototype kon ik mijn ontwerp testen alsof het een echte website was.",
     "common.viewLive": "Bekijk de website",
     "card.habit.aria": "Open de projectdetails van de Habit Tracker",
     "card.habit.tagsAria": "Vaardigheden in het Habit Tracker-project",
-    "card.habit.alt":
-      "Het scherm Mijn taken van de Habit Tracker met dagelijkse gewoontes en een voortgangsbalk.",
-    "card.habit.text":
-      "Een mobiele webapp om dagelijkse gewoontes en je voortgang bij te houden.",
-    "habit.lead":
-      "Een mobiele webapp om dagelijkse gewoontes bij te houden, gebouwd met HTML en CSS.",
-    "habit.alt":
-      "Het scherm Mijn taken van de Habit Tracker met een weekkalender, voortgangsbalk en vijf dagelijkse gewoontes.",
-    "habit.shortDesc":
-      "Een overzichtelijke takenlijst voor elke dag, met een weekkalender en een voortgangsbalk per gewoonte.",
+    "card.habit.alt": "Het scherm Mijn taken van de Habit Tracker met dagelijkse gewoontes en een voortgangsbalk.",
+    "card.habit.text": "Een mobiele webapp om dagelijkse gewoontes en je voortgang bij te houden.",
+    "habit.lead": "Een mobiele webapp om dagelijkse gewoontes bij te houden, gebouwd met HTML en CSS.",
+    "habit.alt": "Het scherm Mijn taken van de Habit Tracker met een weekkalender, voortgangsbalk en vijf dagelijkse gewoontes.",
+    "habit.shortDesc": "Een overzichtelijke takenlijst voor elke dag, met een weekkalender en een voortgangsbalk per gewoonte.",
     "habit.role": "Ontwerp en front-end development.",
     "habit.processTitle": "Van ontwerp tot code.",
-    "habit.idea":
-      "Een eenvoudige app maken waarmee je in één oogopslag ziet welke gewoontes je vandaag al gedaan hebt.",
-    "habit.direction":
-      "Een rustige, mobiele interface met lichte kaarten, een donkere voortgangskaart en een eigen kleur en icoon per gewoonte.",
-    "habit.creation":
-      "Ik bouwde de weekkalender, de voortgangskaart en de lijst met vijf gewoontes: fitness, lezen, water drinken, ontbijt en wandelen.",
-    "habit.result":
-      "Een werkende webapp, online gezet met Vercel, die je op je gsm of computer kunt openen.",
-    "habit.reflection":
-      "Met dit project zette ik een ontwerp zelf om in HTML en CSS. Ik leerde hoe belangrijk een duidelijke structuur en consistente spacing zijn om een interface rustig en gebruiksvriendelijk te laten aanvoelen.",
+    "habit.idea": "Een eenvoudige app maken waarmee je in één oogopslag ziet welke gewoontes je vandaag al gedaan hebt.",
+    "habit.direction": "Een rustige, mobiele interface met lichte kaarten, een donkere voortgangskaart en een eigen kleur en icoon per gewoonte.",
+    "habit.creation": "Ik bouwde de weekkalender, de voortgangskaart en de lijst met vijf gewoontes: fitness, lezen, water drinken, ontbijt en wandelen.",
+    "habit.result": "Een werkende webapp, online gezet met Vercel, die je op je gsm of computer kunt openen.",
+    "habit.reflection": "Met dit project zette ik een ontwerp zelf om in HTML en CSS. Ik leerde hoe belangrijk een duidelijke structuur en consistente spacing zijn om een interface rustig en gebruiksvriendelijk te laten aanvoelen.",
 
     "meta.title": "Portfolio Amel Ahriga | UX/UI, Fotografie & 3D-design",
     "meta.description":
-      "Portfolio van Amel Ahriga, student Digital Experience Design. Mijn werk in UX/UI-design, fotografie en 3D-design. Op zoek naar een stage.",
-    "meta.projects.title":
-      "Projecten | UX/UI-design, Fotografie & 3D - Amel Ahriga",
+      "Portfolio van Amel Ahriga, student Digital Experience Design: UX/UI-design, fotografie en 3D. Op zoek naar een stage.",
+    "meta.projects.title": "Projecten | UX/UI-design, Fotografie & 3D - Amel Ahriga",
     "meta.projects.description":
-      "Bekijk al mijn projecten: UX/UI-design, websites, productfotografie en 3D-design van Amel Ahriga, student Digital Experience Design.",
-    "meta.bysaphir.title":
-      "BYSAPHIR.COM | Fotografie & Shopify voor een modewebshop",
+      "Bekijk al mijn projecten: UX/UI-design, websites, productfotografie en 3D-design van Amel Ahriga.",
+    "meta.bysaphir.title": "BYSAPHIR.COM | Fotografie & Shopify voor een modewebshop",
     "meta.bysaphir.description":
-      "Productfotografie, websiteontwerp en productbeheer in Shopify voor de modewebshop BYSAPHIR.COM. Een project van Amel Ahriga.",
+      "Productfotografie en productbeheer in Shopify voor de modewebshop BYSAPHIR.COM. Een project van Amel Ahriga.",
+    "meta.revivasport.title": "RevivaSport | Website-ontwerp in Figma voor een sportmerk",
+    "meta.revivasport.description": "Ontwerp van een klikbare website voor het sportmerk RevivaSport, gemaakt in Figma. Een UX/UI-project van Amel Ahriga.",
+    "meta.habit.title": "Habit Tracker | Mobiele webapp in HTML en CSS - Amel Ahriga",
+    "meta.habit.description": "Habit Tracker: een mobiele webapp om dagelijkse gewoontes bij te houden, gebouwd met HTML en CSS door Amel Ahriga.",
+    "meta.gold.title": "Soumy Gold | Skincare-fotografie en branding - Amel Ahriga",
+    "meta.gold.description": "Soumy Gold: een luxe skincareproject met productfotografie, branding en creative direction door Amel Ahriga.",
+    "meta.cloud.title": "Sweet Cloud | 3D-design in Blender voor een foodtruck",
+    "meta.cloud.description": "Sweet Cloud: een 3D-wereld in Blender voor een foodtruck met veganistische suikerspinnen. Een project van Amel Ahriga.",
+    "meta.lichtliefde.title": "Licht & Liefde | Website herontwerp met Figma en usertests",
+    "meta.lichtliefde.description": "Groepsproject: het herontwerp van de website van Licht & Liefde, met card sorting, usertests en toegankelijkheid (WCAG).",
     "lang.aria": "Taal kiezen",
     "nav.aria": "Hoofdnavigatie",
     "nav.home": "Home",
@@ -231,10 +166,11 @@ const translations = {
       "Ik creëer doordachte visuele ervaringen, van fotografie en UX/UI-design tot 3D. Hieronder vind je een selectie van mijn projecten.",
     "about.eyebrow": "Over mij",
     "about.text":
-      'Mijn passie ligt bij design, creativiteit en digitale ervaringen. Ik vind het leuk om ideeën om te zetten in sterke visuele concepten, van <em class="hl-xd">UX/UI en branding</em> tot <em class="hl-photo">fotografie</em> en <em class="hl-3d">3D</em>. Daarbij combineer ik graag creativiteit met technologie om projecten te maken die niet alleen mooi zijn, maar ook goed werken.',
+      "Mijn passie ligt bij design, creativiteit en digitale ervaringen. Ik vind het leuk om ideeën om te zetten in sterke visuele concepten, van <em class=\"hl-xd\">UX/UI en branding</em> tot <em class=\"hl-photo\">fotografie</em> en <em class=\"hl-3d\">3D</em>. Daarbij combineer ik graag creativiteit met technologie om projecten te maken die niet alleen mooi zijn, maar ook goed werken.",
     "work.eyebrow": "Werk",
     "work.title": "Geselecteerde projecten",
     "work.aria": "Projecten",
+
 
     "skills.eyebrow": "Vaardigheden",
     "skills.title": "Tools en sterktes",
@@ -302,8 +238,7 @@ const translations = {
     "card.saphir.xd.text":
       "Websitecontent, layout en productbeheer voor een mode-webshop, gebouwd voor een strakke en moderne shopervaring.",
     "card.gold.aria": "Open de projectdetails van Soumy Gold",
-    "card.gold.alt":
-      "Soumy Gold-skincareverpakking gefotografeerd op zachte witte stof.",
+    "card.gold.alt": "Soumy Gold-skincareverpakking gefotografeerd op zachte witte stof.",
     "card.gold.text":
       "Een luxe skincareconcept vormgegeven via skincarefotografie, branding en creative direction, met een zachte, premium beeldtaal.",
     "card.gold.tagsAria": "Vaardigheden in het Soumy Gold-project",
@@ -318,8 +253,7 @@ const translations = {
       "Een modecontentproject gericht op een verzorgde visuele identiteit in fotografie, sociale media, websitecontent en productpresentatie.",
     "saphir.shortDesc":
       "Een eigentijds modeproject dat contentcreatie en digitale presentatie combineert voor een elegante online merkervaring.",
-    "saphir.role":
-      "Fotograaf, contentcreator, visual curator en productcontentmanager.",
+    "saphir.role": "Fotograaf, contentcreator, visual curator en productcontentmanager.",
     "saphir.tools": "Photoshop, Shopify-contentupdates, camerawerk",
     "saphir.processTitle": "Van concept tot content.",
     "saphir.idea":
@@ -334,8 +268,7 @@ const translations = {
       "Het eindresultaat was een coherentere modeaanwezigheid met sterkere beelden en een strakkere digitale presentatie.",
     "saphir.learned":
       "Ik leerde hoe belangrijk consistentie is wanneer fotografie, productinformatie en websitepresentatie allemaal samenwerken.",
-    "saphir.moodboardAlt":
-      "Pinterest-inspiratiebord voor BYSAPHIR met minimalistische modewebsites, neutrale kleurpaletten en editoriale modebeelden.",
+    "saphir.moodboardAlt": "Pinterest-inspiratiebord voor BYSAPHIR met minimalistische modewebsites, neutrale kleurpaletten en editoriale modebeelden.",
     "saphir.moodboard":
       "Ik zocht inspiratie op Pinterest en modewebsites om een moderne en minimalistische esthetiek te vinden voor de visuals en de website.",
     "saphir.wipAlt":
@@ -409,8 +342,7 @@ const translations = {
     "cloud.detailLabel": "Detail van de etalage",
     "cloud.detail":
       "Het verkoopraam met oplichtend logo, suikerspindisplay en kleine props geeft de truck een warm, uitnodigend blikvanger.",
-    "cloud.seatingAlt":
-      "Open-bord van Sweet Cloud met stoelen en een klein rond tafeltje.",
+    "cloud.seatingAlt": "Open-bord van Sweet Cloud met stoelen en een klein rond tafeltje.",
     "cloud.seatingLabel": "Signalisatie & zitplaatsen",
     "cloud.seating":
       "Het open-bord, de stoelen en de tafels trekken de merkkleuren door naar de ruimte rond de truck.",
@@ -431,220 +363,150 @@ const translations = {
   fr: {
     "ll.mmEyebrow": "Analyse",
     "ll.mmTitle": "Cartographier le site existant.",
-    "ll.mm":
-      "Nous avons commencé par une mindmap du site actuel. À partir de la page d'accueil, nous avons répertorié toutes les pages et rubriques, comme Wie zijn wij, Hoe kunt u helpen, Nieuws en events, Partners et Contact, ainsi que l'accessibilité numérique et l'équipe avec des services comme AnyReader et AnySurfer. Cela nous a montré la quantité d'informations, où elles étaient dispersées et ce qu'il fallait absolument garder.",
-    "ll.mmAlt":
-      "Mindmap du site de Licht & Liefde avec la page d'accueil au centre et autour toutes les pages, l'accessibilité numérique et l'équipe accessibilité avec ses services.",
-    "ll.mmCaption":
-      "Notre mindmap du site actuel, avec les éléments à conserver selon le commanditaire.",
+    "ll.mm": "Nous avons commencé par une mindmap du site actuel. À partir de la page d'accueil, nous avons répertorié toutes les pages et rubriques, comme Wie zijn wij, Hoe kunt u helpen, Nieuws en events, Partners et Contact, ainsi que l'accessibilité numérique et l'équipe avec des services comme AnyReader et AnySurfer. Cela nous a montré la quantité d'informations, où elles étaient dispersées et ce qu'il fallait absolument garder.",
+    "ll.mmAlt": "Mindmap du site de Licht & Liefde avec la page d'accueil au centre et autour toutes les pages, l'accessibilité numérique et l'équipe accessibilité avec ses services.",
+    "ll.mmCaption": "Notre mindmap du site actuel, avec les éléments à conserver selon le commanditaire.",
     "ll.csLabel": "Card sorting",
-    "ll.cs":
-      "Le participant a reçu 30 cartes avec les rubriques du site, comme Over ons, Workshops, Doneren et Contact, et les a regroupées de la façon qui lui semblait logique. Cela a donné huit groupes : l'organisation, activités et actualités, aider et participer, informations pour les utilisateurs, contact, partenariats, compte et infos supplémentaires. Il n'a hésité que pour « Digitale toegankelijkheid ». Ces groupes ont servi de base à la nouvelle navigation.",
-    "ll.csAlt":
-      "Card sorting dans FigJam : en haut les cartes mélangées avec les rubriques du site, en bas les huit groupes créés par le participant.",
-    "ll.csCaption":
-      "Le card sorting dans FigJam : les cartes mélangées en haut et les groupes créés par le participant en bas.",
+    "ll.cs": "Le participant a reçu 30 cartes avec les rubriques du site, comme Over ons, Workshops, Doneren et Contact, et les a regroupées de la façon qui lui semblait logique. Cela a donné huit groupes : l'organisation, activités et actualités, aider et participer, informations pour les utilisateurs, contact, partenariats, compte et infos supplémentaires. Il n'a hésité que pour « Digitale toegankelijkheid ». Ces groupes ont servi de base à la nouvelle navigation.",
+    "ll.csAlt": "Card sorting dans FigJam : en haut les cartes mélangées avec les rubriques du site, en bas les huit groupes créés par le participant.",
+    "ll.csCaption": "Le card sorting dans FigJam : les cartes mélangées en haut et les groupes créés par le participant en bas.",
     "ll.planLabel": "Plan de test",
     "ll.hypLabel": "Hypothèse",
-    "ll.hyp":
-      "La structure actuelle du site ne correspond pas bien aux attentes des utilisateurs. Avec une nouvelle navigation, ils trouvent l'information plus vite et plus facilement.",
+    "ll.hyp": "La structure actuelle du site ne correspond pas bien aux attentes des utilisateurs. Avec une nouvelle navigation, ils trouvent l'information plus vite et plus facilement.",
     "ll.questionsLabel": "Questions de recherche",
-    "ll.questions":
-      "Comment les utilisateurs regroupent-ils l'information ? Comprennent-ils le nom des catégories ? Trouvent-ils vite ce qu'ils cherchent ? Et quelles parties sont peu claires ?",
+    "ll.questions": "Comment les utilisateurs regroupent-ils l'information ? Comprennent-ils le nom des catégories ? Trouvent-ils vite ce qu'ils cherchent ? Et quelles parties sont peu claires ?",
     "ll.methodLabel": "Méthode",
-    "ll.method":
-      "Une recherche qualitative avec du card sorting et un test utilisateur numérique de la navigation. Les participants pensaient à voix haute en réalisant des tâches, comme chercher une info sur un handicap visuel, devenir bénévole, trouver des ateliers et prendre contact.",
+    "ll.method": "Une recherche qualitative avec du card sorting et un test utilisateur numérique de la navigation. Les participants pensaient à voix haute en réalisant des tâches, comme chercher une info sur un handicap visuel, devenir bénévole, trouver des ateliers et prendre contact.",
     "ll.participantsLabel": "Participants",
-    "ll.participants":
-      "Trois participants de 18 à 65 ans, un par membre de l'équipe, recrutés dans notre propre réseau. Avant cela, nous avons fait un test d'essai pour vérifier le timing et le déroulement.",
+    "ll.participants": "Trois participants de 18 à 65 ans, un par membre de l'équipe, recrutés dans notre propre réseau. Avant cela, nous avons fait un test d'essai pour vérifier le timing et le déroulement.",
     "ll.brandEyebrow": "Branding",
     "ll.brandTitle": "La marque comme base.",
-    "ll.brand":
-      "Nous sommes partis de l'identité existante de Licht & Liefde : le logo, les cinq couleurs de la marque (bleu foncé, jaune, turquoise, orange et rose) et la police Inter. Nous y avons ajouté une échelle typographique claire et des boutons. Chaque combinaison de couleurs a été vérifiée selon les règles de contraste WCAG, pour que les textes restent lisibles pour les personnes malvoyantes.",
-    "ll.brandAlt":
-      "Planche de branding de Licht & Liefde avec des notes, le logo, les cinq couleurs, les tailles de texte, la police Inter, les boutons et un tableau de contraste WCAG.",
-    "ll.brandCaption":
-      "Notre planche de branding dans Figma : notes, logo, couleurs, typographie, boutons et vérification du contraste.",
+    "ll.brand": "Nous sommes partis de l'identité existante de Licht & Liefde : le logo, les cinq couleurs de la marque (bleu foncé, jaune, turquoise, orange et rose) et la police Inter. Nous y avons ajouté une échelle typographique claire et des boutons. Chaque combinaison de couleurs a été vérifiée selon les règles de contraste WCAG, pour que les textes restent lisibles pour les personnes malvoyantes.",
+    "ll.brandAlt": "Planche de branding de Licht & Liefde avec des notes, le logo, les cinq couleurs, les tailles de texte, la police Inter, les boutons et un tableau de contraste WCAG.",
+    "ll.brandCaption": "Notre planche de branding dans Figma : notes, logo, couleurs, typographie, boutons et vérification du contraste.",
     "ll.a11yEyebrow": "Accessibilité",
     "ll.a11yTitle": "Un site pour tout le monde.",
-    "ll.goal":
-      "Licht & Liefde accompagne les personnes aveugles et malvoyantes. Notre nouveau site devait donc être accessible à tous : une structure claire, des textes lisibles et une navigation qui mène vite à la bonne information.",
+    "ll.goal": "Licht & Liefde accompagne les personnes aveugles et malvoyantes. Notre nouveau site devait donc être accessible à tous : une structure claire, des textes lisibles et une navigation qui mène vite à la bonne information.",
     "ll.testLabel": "Tests utilisateurs",
-    "ll.test":
-      "Nous avons testé notre design avec trois utilisateurs. Chacun a reçu les mêmes tâches, comme trouver une info dans Hulp & info, devenir bénévole, chercher une activité, prendre contact, faire un don et trouver l'historique. Nous avons noté ce qui allait bien et où ils hésitaient.",
+    "ll.test": "Nous avons testé notre design avec trois utilisateurs. Chacun a reçu les mêmes tâches, comme trouver une info dans Hulp & info, devenir bénévole, chercher une activité, prendre contact, faire un don et trouver l'historique. Nous avons noté ce qui allait bien et où ils hésitaient.",
     "ll.findingsLabel": "Ce que nous avons appris",
-    "ll.findings":
-      "La plupart des catégories étaient claires et le contact, l'adresse et le don étaient trouvés tout de suite. Mais « Nieuws & Events » prêtait à confusion à côté d'« Activiteiten », les ateliers étaient mal placés et l'historique était difficile à trouver.",
+    "ll.findings": "La plupart des catégories étaient claires et le contact, l'adresse et le don étaient trouvés tout de suite. Mais « Nieuws & Events » prêtait à confusion à côté d'« Activiteiten », les ateliers étaient mal placés et l'historique était difficile à trouver.",
     "ll.changesLabel": "Ce que nous avons adapté",
-    "ll.changes":
-      "Suite aux tests, nous avons proposé de placer les ateliers sous Activiteiten, de clarifier « Nieuws & Events », d'afficher les actualités plus haut sur la page d'accueil, de rendre l'historique accessible via un menu déroulant et d'ajouter le contact en haut de la navigation.",
-    "ll.usertestsAlt":
-      "Notes des tests utilisateurs avec Xian, Gabriel et Imane : pour chaque tâche, ce que l'utilisateur a fait, ce qui a bien fonctionné et leurs retours.",
-    "ll.usertestsCaption":
-      "Nos notes des trois tests utilisateurs, rédigées tâche par tâche.",
-    "ll.alt":
-      "Page d'accueil du nouveau design de Licht & Liefde avec le titre Autonomie boven hulp, une courte présentation du réseau et la photo d'une femme portant des lunettes de soleil.",
-    "ll.lead":
-      "Un projet d'école en groupe dans lequel nous avons redessiné le site de Licht & Liefde.",
-    "ll.shortDesc":
-      "Une refonte du site existant, réalisée comme prototype cliquable dans Figma.",
-    "ll.role":
-      "Travail de groupe : ensemble, nous avons conçu le nouveau site et le prototype.",
-    "ll.note":
-      "Travail de groupe pour l'école, non commandé par Licht & Liefde.",
-    "row.licht-en-liefde.text":
-      "Un nouveau design pour le site de Licht & Liefde, en travail de groupe.",
+    "ll.changes": "Suite aux tests, nous avons proposé de placer les ateliers sous Activiteiten, de clarifier « Nieuws & Events », d'afficher les actualités plus haut sur la page d'accueil, de rendre l'historique accessible via un menu déroulant et d'ajouter le contact en haut de la navigation.",
+    "ll.usertestsAlt": "Notes des tests utilisateurs avec Xian, Gabriel et Imane : pour chaque tâche, ce que l'utilisateur a fait, ce qui a bien fonctionné et leurs retours.",
+    "ll.usertestsCaption": "Nos notes des trois tests utilisateurs, rédigées tâche par tâche.",
+    "ll.alt": "Page d'accueil du nouveau design de Licht & Liefde avec le titre Autonomie boven hulp, une courte présentation du réseau et la photo d'une femme portant des lunettes de soleil.",
+    "ll.lead": "Un projet d'école en groupe dans lequel nous avons redessiné le site de Licht & Liefde.",
+    "ll.shortDesc": "Une refonte du site existant, réalisée comme prototype cliquable dans Figma.",
+    "ll.role": "Travail de groupe : ensemble, nous avons conçu le nouveau site et le prototype.",
+    "ll.note": "Travail de groupe pour l'école, non commandé par Licht & Liefde.",
+    "row.licht-en-liefde.text": "Un nouveau design pour le site de Licht & Liefde, en travail de groupe.",
     "row.licht-en-liefde.kind": "UI design",
     "cloud.counterLabel": "La machine en 3D",
-    "cloud.counterAlt":
-      "Gros plan sur le comptoir du camion Sweet Cloud avec la machine à barbe à papa rose modélisée par moi, des barbes à papa pastel, des bâtonnets et une caisse.",
-    "cloud.counter":
-      "À partir de mes références, j'ai modélisé moi-même la machine à barbe à papa dans Blender, avec la cuve en inox, le panneau de commande et le tiroir. Autour, j'ai placé des barbes à papa, des bâtonnets et une caisse pour rendre le comptoir crédible.",
+    "cloud.counterAlt": "Gros plan sur le comptoir du camion Sweet Cloud avec la machine à barbe à papa rose modélisée par moi, des barbes à papa pastel, des bâtonnets et une caisse.",
+    "cloud.counter": "À partir de mes références, j'ai modélisé moi-même la machine à barbe à papa dans Blender, avec la cuve en inox, le panneau de commande et le tiroir. Autour, j'ai placé des barbes à papa, des bâtonnets et une caisse pour rendre le comptoir crédible.",
     "cloud.machineLabel": "Recherche de détails",
-    "cloud.machineAlt":
-      "Planche de références avec des photos de machines à barbe à papa roses : les pièces, les dimensions, la cuve ronde en inox, le panneau de commande et la tête au centre.",
-    "cloud.machine":
-      "Comme c'était un projet d'examen, je voulais modéliser la machine à barbe à papa de la façon la plus réaliste possible. J'ai rassemblé des photos de machines existantes pour étudier les pièces, les dimensions et les détails : la cuve en inox, le panneau de commande et la tête au centre.",
-    "cloud.moodboardAlt":
-      "Moodboard de Sweet Cloud avec barbe à papa rose et bleue, food trucks, marshmallows, rayures rouges et blanches, motif à carreaux, tissu argenté et une palette rose, rouge, gris et blanc.",
-    "cloud.moodboard":
-      "J'ai commencé par un moodboard rempli de barbe à papa, de bonbons et de food trucks roses. J'en ai tiré l'ambiance et la palette de la marque : rose doux, rouge cerise, gris argenté et blanc.",
+    "cloud.machineAlt": "Planche de références avec des photos de machines à barbe à papa roses : les pièces, les dimensions, la cuve ronde en inox, le panneau de commande et la tête au centre.",
+    "cloud.machine": "Comme c'était un projet d'examen, je voulais modéliser la machine à barbe à papa de la façon la plus réaliste possible. J'ai rassemblé des photos de machines existantes pour étudier les pièces, les dimensions et les détails : la cuve en inox, le panneau de commande et la tête au centre.",
+    "cloud.moodboardAlt": "Moodboard de Sweet Cloud avec barbe à papa rose et bleue, food trucks, marshmallows, rayures rouges et blanches, motif à carreaux, tissu argenté et une palette rose, rouge, gris et blanc.",
+    "cloud.moodboard": "J'ai commencé par un moodboard rempli de barbe à papa, de bonbons et de food trucks roses. J'en ai tiré l'ambiance et la palette de la marque : rose doux, rouge cerise, gris argenté et blanc.",
     "marquee.aria": "Disciplines et outils",
-    "skills.designText":
-      "De la recherche et des wireframes jusqu'à un design final réfléchi et facile à utiliser.",
-    "skills.devText":
-      "Transformer des designs en sites et applications qui fonctionnent.",
-    "skills.visualText":
-      "Des images et des univers 3D qui donnent vie à une marque.",
+    "skills.designText": "De la recherche et des wireframes jusqu'à un design final réfléchi et facile à utiliser.",
+    "skills.devText": "Transformer des designs en sites et applications qui fonctionnent.",
+    "skills.visualText": "Des images et des univers 3D qui donnent vie à une marque.",
     "work.viewAll": "Voir tous mes projets",
     "projects.title": "Tous mes projets",
-    "row.bysaphir.text":
-      "Photographie, design du site et gestion des produits pour un e-shop de mode.",
+    "row.bysaphir.text": "Photographie, design du site et gestion des produits pour un e-shop de mode.",
     "row.bysaphir.kind": "Photo · Web",
-    "row.revivasport.text":
-      "Branding et design de site pour une marque de sport, en prototype cliquable.",
+    "row.revivasport.text": "Branding et design de site pour une marque de sport, en prototype cliquable.",
     "row.revivasport.kind": "UI design",
-    "row.habit-tracker.text":
-      "Une web app mobile pour suivre ses habitudes quotidiennes.",
+    "row.habit-tracker.text": "Une web app mobile pour suivre ses habitudes quotidiennes.",
     "row.habit-tracker.kind": "Web app",
-    "row.soumy-gold.text":
-      "Photographie skincare et branding pour une marque de soins de luxe.",
+    "row.soumy-gold.text": "Photographie skincare et branding pour une marque de soins de luxe.",
     "row.soumy-gold.kind": "Photo",
-    "row.sweet-cloud.text":
-      "Un univers de marque pour un food truck de barbe à papa vegan, en 3D.",
+    "row.sweet-cloud.text": "Un univers de marque pour un food truck de barbe à papa vegan, en 3D.",
     "row.sweet-cloud.kind": "3D",
     "common.figmaDesign": "Design dans Figma",
-    "saphir.figmaAlt":
-      "Deux designs Figma de la page d'accueil BYSAPHIR avec le hero Style & Confort, les bestsellers, les avis clients et un bloc newsletter.",
-    "saphir.figma":
-      "Avant de modifier la page d'accueil dans Shopify, je l'ai d'abord conçue dans Figma. J'ai réalisé deux variantes avec une photo hero différente, avec les bestsellers, les avis clients et un bloc newsletter.",
+    "saphir.figmaAlt": "Deux designs Figma de la page d'accueil BYSAPHIR avec le hero Style & Confort, les bestsellers, les avis clients et un bloc newsletter.",
+    "saphir.figma": "Avant de modifier la page d'accueil dans Shopify, je l'ai d'abord conçue dans Figma. J'ai réalisé deux variantes avec une photo hero différente, avec les bestsellers, les avis clients et un bloc newsletter.",
     "common.products": "Gestion des produits",
-    "saphir.productsAlt":
-      "Page de collection BYSAPHIR avec des hijabs de différentes couleurs, photos produits, prix et filtres.",
-    "saphir.products":
-      "J'ai photographié les produits et je les ai ajoutés moi-même dans Shopify, avec titres, prix, descriptions et détails, pour que la collection soit présentée de façon calme et uniforme.",
+    "saphir.productsAlt": "Page de collection BYSAPHIR avec des hijabs de différentes couleurs, photos produits, prix et filtres.",
+    "saphir.products": "J'ai photographié les produits et je les ai ajoutés moi-même dans Shopify, avec titres, prix, descriptions et détails, pour que la collection soit présentée de façon calme et uniforme.",
     "saphir.maintenance": "Le site est actuellement en maintenance.",
-    "reviva.wireframes2Alt":
-      "Wireframes low-fi de RevivaSport : créer un compte et une page de profil avec les informations du compte et les données personnelles.",
+    "reviva.wireframes2Alt": "Wireframes low-fi de RevivaSport : créer un compte et une page de profil avec les informations du compte et les données personnelles.",
     "common.inProgress": "En cours : de nouveaux projets arrivent bientôt.",
-    "reviva.wireframes":
-      "Avec des wireframes low-fi, j'ai d'abord fixé la structure et les fonctionnalités, comme les témoignages, écrire sa propre histoire, son ressenti du jour et des rappels avec un calendrier. Ensuite, je les ai développés en mid-fi.",
-    "reviva.wireframesAlt":
-      "Wireframes low-fi de RevivaSport : témoignages, écrire son histoire, comment te sens-tu aujourd'hui, pourquoi et un rappel avec calendrier.",
+    "reviva.wireframes": "Avec des wireframes low-fi, j'ai d'abord fixé la structure et les fonctionnalités, comme les témoignages, écrire sa propre histoire, son ressenti du jour et des rappels avec un calendrier. Ensuite, je les ai développés en mid-fi.",
+    "reviva.wireframesAlt": "Wireframes low-fi de RevivaSport : témoignages, écrire son histoire, comment te sens-tu aujourd'hui, pourquoi et un rappel avec calendrier.",
     "common.wireframes": "Wireframes",
     "common.logoConcept": "Premier concept de logo",
     "common.logoVariations": "Variantes du logo",
-    "reviva.logoConceptAlt":
-      "Premier concept de logo RecoverySport : un dessin au trait d'un oiseau en vol avec le nom sur un ruban, en logo principal et en icône.",
-    "reviva.logoConcept":
-      "Mon premier logo était un dessin au trait d'un oiseau en vol, sous le nom RecoverySport.",
-    "reviva.logoVariationsAlt":
-      "Variantes du logo papillon RevivaSport dans différentes combinaisons de vert, bleu, rose et or.",
-    "reviva.logoVariations":
-      "Ensuite, j'ai dessiné le papillon et je l'ai essayé dans de nombreuses combinaisons de couleurs, jusqu'à la version verte du brandsheet.",
-    "reviva.brandsheet":
-      "Le brandsheet réunit le logo, les couleurs, la typographie et le slogan, pour que chaque écran suive le même style.",
-    "reviva.brandsheetAlt":
-      "Brandsheet de RevivaSport avec le logo papillon en couleur, en noir et blanc et en icône, la palette, la typographie et le slogan.",
-    "reviva.moodboard":
-      "Le moodboard a fixé l'ambiance : mouvement et calme, dans les verts #256F5D, #A1EA93 et #71DE86.",
-    "reviva.moodboardAlt":
-      "Moodboard de RevivaSport avec des aplats verts, des images de sport, des citrons verts et des mots comme Confidence, Recovery et Focus.",
-    "reviva.learned":
-      "J'ai appris qu'une identité de marque claire, définie à l'avance, rend le design du site plus simple et plus cohérent.",
-    "reviva.research":
-      "J'ai commencé par un moodboard rempli d'images autour du sport, de la nature et de la récupération. J'y ai trouvé l'ambiance de la marque : des verts frais et des mots comme Confidence, Recovery, Harmony, Focus et Vitality.",
+    "reviva.logoConceptAlt": "Premier concept de logo RecoverySport : un dessin au trait d'un oiseau en vol avec le nom sur un ruban, en logo principal et en icône.",
+    "reviva.logoConcept": "Mon premier logo était un dessin au trait d'un oiseau en vol, sous le nom RecoverySport.",
+    "reviva.logoVariationsAlt": "Variantes du logo papillon RevivaSport dans différentes combinaisons de vert, bleu, rose et or.",
+    "reviva.logoVariations": "Ensuite, j'ai dessiné le papillon et je l'ai essayé dans de nombreuses combinaisons de couleurs, jusqu'à la version verte du brandsheet.",
+    "reviva.brandsheet": "Le brandsheet réunit le logo, les couleurs, la typographie et le slogan, pour que chaque écran suive le même style.",
+    "reviva.brandsheetAlt": "Brandsheet de RevivaSport avec le logo papillon en couleur, en noir et blanc et en icône, la palette, la typographie et le slogan.",
+    "reviva.moodboard": "Le moodboard a fixé l'ambiance : mouvement et calme, dans les verts #256F5D, #A1EA93 et #71DE86.",
+    "reviva.moodboardAlt": "Moodboard de RevivaSport avec des aplats verts, des images de sport, des citrons verts et des mots comme Confidence, Recovery et Focus.",
+    "reviva.learned": "J'ai appris qu'une identité de marque claire, définie à l'avance, rend le design du site plus simple et plus cohérent.",
+    "reviva.research": "J'ai commencé par un moodboard rempli d'images autour du sport, de la nature et de la récupération. J'y ai trouvé l'ambiance de la marque : des verts frais et des mots comme Confidence, Recovery, Harmony, Focus et Vitality.",
     "common.brandsheet": "Brandsheet",
     "common.viewFigma": "Voir dans Figma",
     "common.prototype": "Prototype",
     "common.prototypeTitle": "Parcourez le design vous-même.",
-    "common.prototypeHint":
-      "Le prototype est interactif : cliquez sur les boutons et les liens pour passer d'une page à l'autre.",
+    "common.prototypeHint": "Le prototype est interactif : cliquez sur les boutons et les liens pour passer d'une page à l'autre.",
     "common.viewAria": "Choisir l'affichage",
     "common.desktop": "Ordinateur",
     "common.mobile": "Mobile",
     "card.reviva.aria": "Ouvrir les détails du projet RevivaSport",
     "card.reviva.tagsAria": "Compétences du projet RevivaSport",
-    "card.reviva.alt":
-      "Page d'accueil du design de site RevivaSport avec le slogan Stay safe, train smarter.",
-    "card.reviva.text":
-      "Un design de site pour une marque de sport, réalisé comme prototype cliquable dans Figma.",
-    "reviva.lead":
-      "Un design de site pour la marque de sport RevivaSport, réalisé comme prototype cliquable dans Figma.",
-    "reviva.alt":
-      "Page d'accueil du design de site RevivaSport avec la navigation, le slogan Stay safe, train smarter et une photo de sport.",
-    "reviva.shortDesc":
-      "Un site pour une marque de sport avec un slogan fort, une navigation claire et un appel à télécharger l'app.",
-    "reviva.role":
-      "UI designer : mise en page, typographie, couleurs et prototypage.",
+    "card.reviva.alt": "Page d'accueil du design de site RevivaSport avec le slogan Stay safe, train smarter.",
+    "card.reviva.text": "Un design de site pour une marque de sport, réalisé comme prototype cliquable dans Figma.",
+    "reviva.lead": "Un design de site pour la marque de sport RevivaSport, réalisé comme prototype cliquable dans Figma.",
+    "reviva.alt": "Page d'accueil du design de site RevivaSport avec la navigation, le slogan Stay safe, train smarter et une photo de sport.",
+    "reviva.shortDesc": "Un site pour une marque de sport avec un slogan fort, une navigation claire et un appel à télécharger l'app.",
+    "reviva.role": "UI designer : mise en page, typographie, couleurs et prototypage.",
     "reviva.processTitle": "Du wireframe au prototype.",
-    "reviva.idea":
-      "Concevoir un site qui montre tout de suite ce que la marque défend : faire du sport en sécurité et plus intelligemment.",
-    "reviva.direction":
-      "Ensuite, j'ai créé un brandsheet avec le logo papillon en couleur, en noir et blanc et en icône, la palette de couleurs, la typographie (Inter et Jeju) et le slogan « Step by step, back in motion ».",
-    "reviva.creation":
-      "Sur cette base, j'ai créé des wireframes low-fi puis mid-fi dans Figma, avec des flowcharts, des composants et des icônes, puis j'ai relié les pages en un prototype cliquable.",
-    "reviva.result":
-      "Un prototype cliquable qui montre à quoi ressemble le site et comment il fonctionne.",
-    "reviva.reflection":
-      "Avec ce projet, j'ai appris à traduire une marque en site web : quelle typographie, quelles couleurs et quelles images conviennent, et comment guider le visiteur vers la bonne information grâce à la navigation. Le prototype m'a permis de tester mon design comme un vrai site.",
+    "reviva.idea": "Concevoir un site qui montre tout de suite ce que la marque défend : faire du sport en sécurité et plus intelligemment.",
+    "reviva.direction": "Ensuite, j'ai créé un brandsheet avec le logo papillon en couleur, en noir et blanc et en icône, la palette de couleurs, la typographie (Inter et Jeju) et le slogan « Step by step, back in motion ».",
+    "reviva.creation": "Sur cette base, j'ai créé des wireframes low-fi puis mid-fi dans Figma, avec des flowcharts, des composants et des icônes, puis j'ai relié les pages en un prototype cliquable.",
+    "reviva.result": "Un prototype cliquable qui montre à quoi ressemble le site et comment il fonctionne.",
+    "reviva.reflection": "Avec ce projet, j'ai appris à traduire une marque en site web : quelle typographie, quelles couleurs et quelles images conviennent, et comment guider le visiteur vers la bonne information grâce à la navigation. Le prototype m'a permis de tester mon design comme un vrai site.",
     "common.viewLive": "Voir le site",
     "card.habit.aria": "Ouvrir les détails du projet Habit Tracker",
     "card.habit.tagsAria": "Compétences du projet Habit Tracker",
-    "card.habit.alt":
-      "L'écran Mes tâches du Habit Tracker avec les habitudes du jour et une barre de progression.",
-    "card.habit.text":
-      "Une web app mobile pour suivre ses habitudes quotidiennes et sa progression.",
-    "habit.lead":
-      "Une web app mobile pour suivre ses habitudes quotidiennes, construite en HTML et CSS.",
-    "habit.alt":
-      "L'écran Mes tâches du Habit Tracker avec un calendrier de la semaine, une barre de progression et cinq habitudes quotidiennes.",
-    "habit.shortDesc":
-      "Une liste de tâches claire pour chaque jour, avec un calendrier de la semaine et une barre de progression par habitude.",
+    "card.habit.alt": "L'écran Mes tâches du Habit Tracker avec les habitudes du jour et une barre de progression.",
+    "card.habit.text": "Une web app mobile pour suivre ses habitudes quotidiennes et sa progression.",
+    "habit.lead": "Une web app mobile pour suivre ses habitudes quotidiennes, construite en HTML et CSS.",
+    "habit.alt": "L'écran Mes tâches du Habit Tracker avec un calendrier de la semaine, une barre de progression et cinq habitudes quotidiennes.",
+    "habit.shortDesc": "Une liste de tâches claire pour chaque jour, avec un calendrier de la semaine et une barre de progression par habitude.",
     "habit.role": "Design et développement front-end.",
     "habit.processTitle": "Du design au code.",
-    "habit.idea":
-      "Créer une app simple qui montre en un coup d'œil quelles habitudes on a déjà faites aujourd'hui.",
-    "habit.direction":
-      "Une interface mobile calme avec des cartes claires, une carte de progression foncée et une couleur et une icône propres à chaque habitude.",
-    "habit.creation":
-      "J'ai construit le calendrier de la semaine, la carte de progression et la liste de cinq habitudes : fitness, lecture, boire de l'eau, petit-déjeuner et marche.",
-    "habit.result":
-      "Une web app fonctionnelle, mise en ligne avec Vercel, qu'on peut ouvrir sur son téléphone ou son ordinateur.",
-    "habit.reflection":
-      "Avec ce projet, j'ai moi-même traduit un design en HTML et CSS. J'ai appris à quel point une structure claire et des espacements cohérents rendent une interface calme et facile à utiliser.",
+    "habit.idea": "Créer une app simple qui montre en un coup d'œil quelles habitudes on a déjà faites aujourd'hui.",
+    "habit.direction": "Une interface mobile calme avec des cartes claires, une carte de progression foncée et une couleur et une icône propres à chaque habitude.",
+    "habit.creation": "J'ai construit le calendrier de la semaine, la carte de progression et la liste de cinq habitudes : fitness, lecture, boire de l'eau, petit-déjeuner et marche.",
+    "habit.result": "Une web app fonctionnelle, mise en ligne avec Vercel, qu'on peut ouvrir sur son téléphone ou son ordinateur.",
+    "habit.reflection": "Avec ce projet, j'ai moi-même traduit un design en HTML et CSS. J'ai appris à quel point une structure claire et des espacements cohérents rendent une interface calme et facile à utiliser.",
 
     "meta.title": "Portfolio Amel Ahriga | UX/UI, Photographie & 3D",
     "meta.description":
-      "Portfolio d'Amel Ahriga, étudiante en Digital Experience Design. Mon travail en design UX/UI, photographie et design 3D. À la recherche d'un stage.",
-    "meta.projects.title":
-      "Projets | Design UX/UI, Photographie & 3D - Amel Ahriga",
+      "Portfolio d'Amel Ahriga, étudiante en Digital Experience Design : UX/UI, photographie et 3D. À la recherche d'un stage.",
+    "meta.projects.title": "Projets | Design UX/UI, Photographie & 3D - Amel Ahriga",
     "meta.projects.description":
-      "Découvrez tous mes projets : design UX/UI, sites web, photographie de produits et design 3D par Amel Ahriga, étudiante en Digital Experience Design.",
-    "meta.bysaphir.title":
-      "BYSAPHIR.COM | Photographie & Shopify pour un e-shop de mode",
+      "Découvrez tous mes projets : design UX/UI, sites web, photographie de produits et design 3D d'Amel Ahriga.",
+    "meta.bysaphir.title": "BYSAPHIR.COM | Photographie & Shopify pour un e-shop de mode",
     "meta.bysaphir.description":
-      "Photographie de produits, design du site et gestion des produits sur Shopify pour l'e-shop de mode BYSAPHIR.COM. Un projet d'Amel Ahriga.",
+      "Photographie et gestion des produits sur Shopify pour l'e-shop de mode BYSAPHIR.COM. Un projet d'Amel Ahriga.",
+    "meta.revivasport.title": "RevivaSport | Design de site web dans Figma pour une marque de sport",
+    "meta.revivasport.description": "Design d'un site web cliquable pour la marque de sport RevivaSport, réalisé dans Figma. Un projet UX/UI d'Amel Ahriga.",
+    "meta.habit.title": "Habit Tracker | Webapp mobile en HTML et CSS - Amel Ahriga",
+    "meta.habit.description": "Habit Tracker : une webapp mobile pour suivre ses habitudes quotidiennes, construite en HTML et CSS par Amel Ahriga.",
+    "meta.gold.title": "Soumy Gold | Photographie skincare et branding - Amel Ahriga",
+    "meta.gold.description": "Soumy Gold : un projet skincare de luxe avec photographie de produits, branding et direction créative par Amel Ahriga.",
+    "meta.cloud.title": "Sweet Cloud | Design 3D dans Blender pour un food truck",
+    "meta.cloud.description": "Sweet Cloud : un univers 3D dans Blender pour un food truck de barbe à papa végane. Un projet d'Amel Ahriga.",
+    "meta.lichtliefde.title": "Licht & Liefde | Refonte de site web avec Figma et tests utilisateurs",
+    "meta.lichtliefde.description": "Projet de groupe : refonte du site web de Licht & Liefde, avec card sorting, tests utilisateurs et accessibilité (WCAG).",
     "lang.aria": "Choisir la langue",
     "nav.aria": "Navigation principale",
     "nav.home": "Accueil",
@@ -662,10 +524,11 @@ const translations = {
       "Je crée des expériences visuelles réfléchies, de la photographie et du design UX/UI à la 3D. Tu trouveras ci-dessous une sélection de mes projets.",
     "about.eyebrow": "À propos",
     "about.text":
-      'Ma passion, c\'est le design, la créativité et les expériences digitales. J\'aime transformer des idées en concepts visuels forts, de <em class="hl-xd">l\'UX/UI et du branding</em> à <em class="hl-photo">la photographie</em> et <em class="hl-3d">la 3D</em>. J\'aime combiner créativité et technologie pour créer des projets qui ne sont pas seulement beaux, mais qui fonctionnent aussi bien.',
+      "Ma passion, c'est le design, la créativité et les expériences digitales. J'aime transformer des idées en concepts visuels forts, de <em class=\"hl-xd\">l'UX/UI et du branding</em> à <em class=\"hl-photo\">la photographie</em> et <em class=\"hl-3d\">la 3D</em>. J'aime combiner créativité et technologie pour créer des projets qui ne sont pas seulement beaux, mais qui fonctionnent aussi bien.",
     "work.eyebrow": "Travaux",
     "work.title": "Projets sélectionnés",
     "work.aria": "Projets",
+
 
     "skills.eyebrow": "Compétences",
     "skills.title": "Outils et points forts",
@@ -733,8 +596,7 @@ const translations = {
     "card.saphir.xd.text":
       "Contenu, mise en page et gestion des produits pour un e-shop de mode, pensés pour une expérience d'achat épurée et moderne.",
     "card.gold.aria": "Ouvrir les détails du projet Soumy Gold",
-    "card.gold.alt":
-      "Packaging skincare Soumy Gold photographié sur un tissu blanc et doux.",
+    "card.gold.alt": "Packaging skincare Soumy Gold photographié sur un tissu blanc et doux.",
     "card.gold.text":
       "Un concept skincare de luxe façonné par la photographie skincare, le branding et la direction créative, avec un langage visuel doux et premium.",
     "card.gold.tagsAria": "Compétences du projet Soumy Gold",
@@ -765,8 +627,7 @@ const translations = {
       "Le résultat final est une présence mode plus cohérente, avec des images plus fortes et une présentation digitale plus épurée.",
     "saphir.learned":
       "J'ai appris à quel point la cohérence compte lorsque la photographie, les informations produit et la présentation du site fonctionnent ensemble.",
-    "saphir.moodboardAlt":
-      "Tableau d'inspiration Pinterest pour BYSAPHIR avec des sites de mode minimalistes, des palettes neutres et des images de mode éditoriales.",
+    "saphir.moodboardAlt": "Tableau d'inspiration Pinterest pour BYSAPHIR avec des sites de mode minimalistes, des palettes neutres et des images de mode éditoriales.",
     "saphir.moodboard":
       "J'ai cherché de l'inspiration sur Pinterest et sur des sites de mode pour trouver une esthétique moderne et minimaliste pour les visuels et le site.",
     "saphir.wipAlt":
@@ -785,8 +646,7 @@ const translations = {
       "Un concept skincare de luxe développé à travers la photographie, le branding et la direction créative.",
     "gold.role":
       "Photographe, réflexion de marque et directrice créative pour l'identité visuelle du projet.",
-    "gold.tools":
-      "Photoshop, prise de vue, recherche de marque, stylisme visuel",
+    "gold.tools": "Photoshop, prise de vue, recherche de marque, stylisme visuel",
     "gold.processTitle": "Créer une sensation skincare de luxe.",
     "gold.idea":
       "Créer un concept skincare calme, premium et soigneusement pensé à travers l'image et le branding.",
@@ -841,8 +701,7 @@ const translations = {
     "cloud.detailLabel": "Détail de la devanture",
     "cloud.detail":
       "Le comptoir avec son logo lumineux, son présentoir de barbe à papa et ses petits accessoires donne au truck un point focal chaleureux et accueillant.",
-    "cloud.seatingAlt":
-      "Panneau « open » de Sweet Cloud avec des chaises et une petite table ronde.",
+    "cloud.seatingAlt": "Panneau « open » de Sweet Cloud avec des chaises et une petite table ronde.",
     "cloud.seatingLabel": "Enseigne & places assises",
     "cloud.seating":
       "Le panneau « open », les chaises et les tables prolongent les couleurs de la marque dans l'espace autour du truck.",
@@ -859,4 +718,5 @@ const translations = {
     "footer.top": "Retour en haut ↑",
     "footer.title": "Restons en contact",
   },
+
 };
