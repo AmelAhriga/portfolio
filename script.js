@@ -96,6 +96,47 @@ document.querySelectorAll("[data-prototype-switch]").forEach((group) => {
 });
 
 // ---------------------------------------------------------------------------
+// Screenshot prototype: hotspots with data-go switch to another page. The
+// other pages load the first time the visitor points at or focuses the frame.
+// ---------------------------------------------------------------------------
+document.querySelectorAll("[data-site-proto]").forEach((proto) => {
+  const screen = proto.querySelector("[data-site-proto-screen]");
+  const img = proto.querySelector("[data-site-proto-img]");
+  const title = proto.querySelector("[data-site-proto-title]");
+  const layers = proto.querySelectorAll(".site-proto-layer");
+  const navs = proto.querySelectorAll(".site-proto-nav");
+
+  const show = (page) => {
+    layers.forEach((layer) => {
+      const active = layer.dataset.page === page;
+      layer.hidden = !active;
+      if (active) {
+        img.src = layer.dataset.src;
+        title.textContent = layer.dataset.title;
+      }
+    });
+    navs.forEach((nav) => {
+      if (nav.dataset.go === page) nav.setAttribute("aria-current", "page");
+      else nav.removeAttribute("aria-current");
+    });
+    screen.scrollTop = 0;
+  };
+
+  const preload = () => {
+    layers.forEach((layer) => {
+      new Image().src = layer.dataset.src;
+    });
+  };
+  proto.addEventListener("pointerenter", preload, { once: true });
+  proto.addEventListener("focusin", preload, { once: true });
+
+  proto.addEventListener("click", (event) => {
+    const target = event.target.closest("[data-go]");
+    if (target) show(target.dataset.go);
+  });
+});
+
+// ---------------------------------------------------------------------------
 // Contact: current year in the footer.
 // ---------------------------------------------------------------------------
 document.querySelectorAll("[data-year]").forEach((el) => {

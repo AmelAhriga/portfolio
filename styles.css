@@ -1956,6 +1956,118 @@ body::before {
   border: 0;
 }
 
+/* Clickable prototype built from screenshots: a browser frame with a
+   scrollable page, a sticky menu and invisible hotspots on the links. */
+.site-proto {
+  display: flex;
+  flex-direction: column;
+  background: #fefcf6;
+}
+
+.site-proto-bar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.6rem 0.9rem;
+  border-bottom: 1px solid var(--line);
+  background: #f3f1ee;
+  color: var(--muted);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+.site-proto-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.site-proto-dots i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(22, 21, 28, 0.15);
+}
+
+.site-proto-url {
+  flex: 1;
+  max-width: 340px;
+  margin-inline: auto;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: #fff;
+  text-align: center;
+}
+
+.site-proto-screen {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.site-proto-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 1px 0 rgba(7, 38, 28, 0.08);
+}
+
+.site-proto-header img,
+.site-proto-page img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.site-proto-page {
+  position: relative;
+}
+
+.site-proto-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.site-proto-layer[hidden] {
+  display: none;
+}
+
+.site-proto-hotspot {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+
+.site-proto-hotspot:hover,
+.site-proto-hotspot:focus-visible {
+  background: rgba(255, 180, 0, 0.16);
+  outline: 2px solid rgba(255, 180, 0, 0.75);
+  outline-offset: 2px;
+}
+
+.site-proto-nav[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: -8%;
+  height: 3px;
+  border-radius: 2px;
+  background: #ffb400;
+}
+
+@media (max-width: 600px) {
+  .site-proto {
+    aspect-ratio: 3 / 4;
+  }
+}
+
 @media (max-width: 900px) {
   .project-grid,
   .about,
